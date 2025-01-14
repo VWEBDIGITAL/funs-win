@@ -1,0 +1,67 @@
+const data = [{
+	img: '/static/touxiang/1.png',
+	id: 1
+}, {
+	img: '/static/touxiang/2.png',
+	id: 2
+}, {
+	img: '/static/touxiang/3.png',
+	id: 3
+}, {
+	img: '/static/touxiang/4.png',
+	id: 4
+}, {
+	img: '/static/touxiang/5.png',
+	id: 5
+}, {
+	img: '/static/touxiang/6.png',
+	id: 6
+}, {
+	img: '/static/touxiang/7.png',
+	id: 7
+}, {
+	img: '/static/touxiang/8.png',
+	id: 8
+}, {
+	img: '/static/touxiang/9.png',
+	id: 9
+}, {
+	img: '/static/touxiang/10.png',
+	id: 10
+}, {
+	img: '/static/touxiang/11.png',
+	id: 11
+}, {
+	img: '/static/touxiang/12.png',
+	id: 12
+}, {
+	img: '/static/touxiang/13.png',
+	id: 13
+}, {
+	img: '/static/touxiang/14.png',
+	id: 14
+}, {
+	img: '/static/touxiang/15.png',
+	id: 15
+}, {
+	img: '/static/touxiang/16.png',
+	id: 16
+}, {
+	img: '/static/touxiang/17.png',
+	id: 17
+}, {
+	img: '/static/touxiang/18.png',
+	id: 18
+}, {
+	img: '/static/touxiang/19.png',
+	id: 19
+}, {
+	img: '/static/touxiang/20.png',
+	id: 20
+}, {
+	img: '/static/touxiang/21.png',
+	id: 21
+}]
+module.exports = {
+	avatarlist: data
+}

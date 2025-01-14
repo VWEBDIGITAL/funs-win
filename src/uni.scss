@@ -1,0 +1,360 @@
+/* 页面背景色 */
+$body-bg-color: var(--body-bg-color);//页面整体颜色
+
+/* 查看更多按钮 */
+$more-btn-bg: var(--more-btn-bg);
+
+/* 主题切换按钮 */
+$ztqh-bg-color: var(--ztqh-bg-color);
+$ztqh-xz-color: var(--ztqh-xz-color);
+
+/* 首页游戏列表的背景色 */
+$home-games-wrap-color: var(--home-games-wrap-color);
+
+/* #181f2b的页面辅助色 */
+$all-secondary-color: var(--all-secondary-color);//#181f2b的页面某些盒子辅助色
+
+/* #ffffff的页面某些字体辅助色 */
+$all-secondary-text-color: var(--all-secondary-text-color);//#ffffff的页面某些字体辅助色
+
+/* 统一字体颜色 */
+$font-all-color: var(--font-all-color);
+
+/* 选项卡颜色 */
+$u-tabs-xzbgcolor: var(--u-tabs-xzbgcolor);
+
+/* 弹窗颜色控制 */
+$pupUp-title-closeIcon-color: var(--pupUp-title-closeIcon-color);
+$pupUp-bg-color: var(--pupUp-bg-color);//弹窗背景色
+$pupUp-title-bg-color: var(--pupUp-title-bg-color);//弹窗标题渐变背景色
+$pupUp-title-border-color: var(--pupUp-title-border-color);//弹窗标题边框颜色
+$pupUp-title-color: var(--pupUp-title-color);//弹窗的标题颜色
+
+/* 我的页面颜色变量 */
+$me-text-color: var(--me-text-color);//标题文字颜色
+$me-subtext-color: var(--me-subtext-color);//副标题文字颜色
+$me-box-color: var(--me-box-color);//页面盒子背景色
+$me-icon-color: var(--me-icon-color);//页面盒子背景色
+
+/* 导航栏颜色变量 */
+$navbar-bg-color: var(--navbar-bg-color);//背景色
+$wallet-bg-color: var(--wallet-bg-color);//钱包背景色
+$wallet-border: var(--wallet-border);//钱包背景边框色
+$wallet-myedu: var(--wallet-myedu);//我的余额字体颜色
+$wallet-edithb: var(--wallet-edithb);//修改货币弹窗颜色
+$wallet-edithbitem: var(--wallet-edithbitem);//选择货币选中颜色
+
+/* 底部tabbar */
+$tabbar-bg-color: var(--tabbar-bg-color);//背景色
+
+/* 选择下拉框 */
+$select-drop-down-color: var(--select-drop-down-color);//背景色
+$select-drop-down-border-color: var(--select-drop-down-border-color);//边框色
+$select-drop-down-bg-color: var(--select-drop-down-bg-color);//下拉框的背景颜色
+$select-drop-down-xz-color: var(--select-drop-down-xz-color);//下拉框的选中背景色
+
+/* 输入框 */
+$input-border-color: var(--input-border-color);//输入框的边框颜色
+
+/* 添加提款账户上滑列表item背景色 */
+$addAc-list-bg-color: var(--addAc-list-bg-color);
+
+/* 底部信息的边框颜色 */
+$bottom-info-border: var(--bottom-info-border);
+
+/* 底部信息的背景色 */
+$bottom-info-bg-color: var(--bottom-info-bg-color);
+
+/* 首页游戏标题数量颜色 */
+$home-gamelist-num-color: var(--home-gamelist-num-color);
+
+/* 首页通知滚动栏字体颜色 */
+$notice-font-color: var(--notice-font-color);
+
+/* 吸顶组件的背景色 */
+$xiding-bg-color: var(--xiding-bg-color);
+
+/* 首页选项卡加载中方块颜色 */
+$home-tabas-langding: var(--home-tabas-langding);
+
+/* 弹窗的遮罩层背景色 */
+$uniMask-bg-color: var(--uniMask-bg-color);
+
+/* 注册和登录弹窗 */
+$signlnPopup-tabs-bg-color: var(--signlnPopup-tabs-bg-color);//选项卡背景色
+$signlnPopup-tabs-xz-color: var(--signlnPopup-tabs-xz-color);//选中背景色
+$signlnPopup-tabs-xzFont-color: var(--signlnPopup-tabs-xzFont-color);//选中字体颜色
+$signlnPopup-tabs-mzFont-color: var(--signlnPopup-tabs-mzFont-color);//默认字体颜色
+$disanfang-border-color: var(--disanfang-border-color);//第三方登录两边框
+
+/* 首页选项卡未选中的背景色 */
+$home-xxk-mzbg-color: var(--home-xxk-mzbg-color);
+/* 首页选项卡未选中的字体颜色 */
+$hone-xxk-mzfont-color: var(--hone-xxk-mzfont-color);
+$hone-xxk-xzfont-color: var(--hone-xxk-xzfont-color);
+$hone-xxk-numfont-color: var(--hone-xxk-numfont-color);
+$hone-xxk-numbg-color: var(--hone-xxk-numbg-color);
+$hone-xxk-img-color: var(--hone-xxk-img-color);
+
+/* 提款充值页面的法币虚拟币选项卡 */
+$fabi-xunibi-tabs-mz-color: var(--fabi-xunibi-tabs-mz-color);//默认背景色
+$fabi-xunibi-tabs-mzfont-color: var(--fabi-xunibi-tabs-mzfont-color);//默认未选中字体颜色
+$tkcz-max-btn: var(--tkcz-max-btn);//提款页面MAX按钮
+$tkzh-bnak-name-color: var(--tkzh-bnak-name-color);//提款账户下拉选择的银行卡名字颜色
+$thcz-back-btn-bg-color: var(--thcz-back-btn-bg-color);//提款和充值页面的返回和记录按钮背景色
+$thcz-top-aq-bg-color: var(--thcz-top-aq-bg-color);//提款充值页面顶部安全提示颜色
+$thcz-top-aq-nei-color: var(--thcz-top-aq-nei-color);//提款充值页面顶部安全提示颜色
+$thcz-top-aq-nei-border: var(--thcz-top-aq-nei-border);//提款充值页面顶部安全提示颜色
+
+/* 充值页面支付方式选择 */
+$czym-paytype-xzbg-color: var(--czym-paytype-xzbg-color);
+$czym-paytype-xzborder-color: var(--czym-paytype-xzborder-color);
+$czym-paytype-xzfont-color: var(--czym-paytype-xzfont-color);
+$czym-paytype-mzbg-color: var(--czym-paytype-mzbg-color);
+$czym-paytype-mzfont-color: var(--czym-paytype-mzfont-color);
+$czym-paytype-mzborder-color: var(--czym-paytype-mzborder-color);
+
+/* 首页热门暴奖 */
+$hot-jiangli-bg-color: var(--hot-jiangli-bg-color);
+$hot-jiangli-font-color: var(--hot-jiangli-font-color);
+
+/* 促销页面标题背景色 */
+$bonus-title-bg-color: var(--bonus-title-bg-color);
+
+/* 进度条的默认底色 */
+$u-line-progress-mz-color: var(--u-line-progress-mz-color);
+
+/* 推荐分享页面 */
+$referandearn-page-boxone-bg: var(--referandearn-page-boxone-bg);
+$referandearn-page-boxtwo-bg: var(--referandearn-page-boxtwo-bg);
+$referandearn-page-boxthree-bg: var(--referandearn-page-boxthree-bg);
+$referandearn-page-boxfour-bg: var(--referandearn-page-boxfour-bg);
+$referandearn-page-boxfive-bg: var(--referandearn-page-boxfive-bg);
+$referandearn-page-boxfive-six: var(--referandearn-page-boxfive-six);
+$referandearn-page-boxtitle-color: var(--referandearn-page-boxtitle-color);
+$referandearn-page-linkInput: var(--referandearn-page-linkInput);
+$referandearn-page-linkInputbor: var(--referandearn-page-linkInputbor);
+$referandearn-page-linkcolor: var(--referandearn-page-linkcolor);
+$referandearn-page-boxone-yqbgcolor: var(--referandearn-page-boxone-yqbgcolor);
+$referandearn-page-boxone-yqtextcolor: var(--referandearn-page-boxone-yqtextcolor);
+$referandearn-page-balance-card: var(--referandearn-page-balance-card);
+$referandearn-page-balance-cardbor: var(--referandearn-page-balance-cardbor);
+$card-main-bottombain: var(--card-main-bottombain);
+$rewards-leaderboard: var(--rewards-leaderboard);
+$rewards-leaderboard-wrap: var(--rewards-leaderboard-wrap);
+$bonus-Logoin-page-boxseven-bg: var(--bonus-Logoin-page-boxseven-bg);
+
+/* 推荐奖金弹窗 */
+$sange-box-item: var(--sange-box-item);
+$sange-box-item-xh: var(--sange-box-item-xh);
+$referralBonus-popup-list-bg: var(--referralBonus-popup-list-bg);
+$tabl-list-box-item: var(--tabl-list-box-item);
+
+
+/* 返佣奖励页面 */
+$bonus-Logoin-page-boxone-bg: var(--bonus-Logoin-page-boxone-bg);//每日返水盒子
+$bonus-Logoin-page-boxtwo-bg: var(--bonus-Logoin-page-boxtwo-bg);
+$bonus-Logoin-page-boxthree-bg: var(--bonus-Logoin-page-boxthree-bg);
+$bonus-Logoin-page-boxfour-bg: var(--bonus-Logoin-page-boxfour-bg);
+$bonus-Logoin-page-boxfive-bg: var(--bonus-Logoin-page-boxfive-bg);
+$bonus-Logoin-page-boxsix-bg: var(--bonus-Logoin-page-boxsix-bg);
+$anniu-type-bgcolor: var(--anniu-type-bgcolor);
+$anniu-type-bordercolor: var(--anniu-type-bordercolor);
+$anniu-type-textcolor: var(--anniu-type-textcolor);
+$bonus-Logoin-page-DailyColor: var(--bonus-Logoin-page-DailyColor);
+$bonus-Logoin-page-fubiaoti: var(--bonus-Logoin-page-fubiaoti);
+$bonus-Logoin-page-one: var(--bonus-Logoin-page-one);
+$bonus-Logoin-page-two: var(--bonus-Logoin-page-two);
+$type3jindutiao: var(--type3jindutiao);
+$sib_bgColor4-bgone: var(--sib_bgColor4-bgone);
+$sib_bgColor4-bgtwo: var(--sib_bgColor4-bgtwo);
+$sib_bgColor4-bgthree: var(--sib_bgColor4-bgthree);
+$sib_bgColor4-bgfour: var(--sib_bgColor4-bgfour);
+$bonus-Logoin-page-top_box_wrap: var(--bonus-Logoin-page-top_box_wrap);
+$bonus-list-box-item-border: var(--bonus-list-box-item-border);
+
+/* 签到页面 */
+$sigin-task-popup-box: var(--sigin-task-popup-box);
+$sigin-task-popup-sigindatebox: var(--sigin-task-popup-sigindatebox);
+$sigin-task-popup-day-box4: var(--sigin-task-popup-day-box4);
+$sigin-task-popup-day-box4-font: var(--sigin-task-popup-day-box4-font);
+$sigin-task-popup-sigin-date-daybor: var(--sigin-task-popup-sigin-date-daybor);
+$sigin-task-popup-task-btn: var(--sigin-task-popup-task-btn);
+$sigin-task-popup-task-btnfont: var(--sigin-task-popup-task-btnfont);
+$sigin-task-popup-task-btnbors:var(--sigin-task-popup-task-btnbors);
+$sigin-task-popup-task-list-item: var(--sigin-task-popup-task-list-item);
+$sigin-task-popup-task-list-item-line: var(--sigin-task-popup-task-list-item-line);
+$sigin-task-popup-task-sm-jd: var(--sigin-task-popup-task-sm-jd);
+
+$anniu-type1-bg: var(--anniu-type1-bg);
+$anniu-type1-bg-border: var(--anniu-type1-bg-border);
+$anniu-type1-text-colo: var(--anniu-type1-text-colo);
+
+$vaultpro-maxbtn-bgcolor: var(--vaultpro-maxbtn-bgcolor);
+$vaultpro-maxbtn-fontcolor: var(--vaultpro-maxbtn-fontcolor);
+$vaultpro-maxbtn-border: var(--vaultpro-maxbtn-border);
+
+$fenxBtn1-bgcolor: var(--fenxBtn1-bgcolor);
+$fenxBtn1-fontcolor: var(--fenxBtn1-fontcolor);
+
+/*游戏加载*/
+$loader-bg-color: var(--loader-bg-color);
+
+/*6位密码输入框*/
+$code-area-bgcolo: var(--code-area-bgcolo);
+$code-area-border: var(--code-area-border);
+$code-area-font: var(--code-area-font);
+
+/* 礼包弹窗的每一项背景色 */
+$novice-popup-itembg: var(--novice-popup-itembg);
+$novice-popup-itemborder: var(--novice-popup-itemborder);
+
+/* 促销页面的tabs */
+$bonus-tabs-inactivebg: var(--bonus-tabs-inactivebg);
+$bonus-tabs-inactivecolor: var(--bonus-tabs-inactivecolor);
+
+/* 欢迎礼包 */
+$bonuspack-bg-color: var(--bonuspack-bg-color);
+$bonuspack-title: var(--bonuspack-title);
+$bonuspack-item-bg-color: var(--bonuspack-item-bg-color);
+$bonuspack-item-bg-colorTwo: var(--bonuspack-item-bg-colorTwo);
+$bonuspack-item-border: var(--bonuspack-item-border);
+$bonuspack-item-titleOne: var(--bonuspack-item-titleOne);
+$bonuspack-item-titleTwo: var(--bonuspack-item-titleTwo);
+$bonuspack-item-titleThree: var(--bonuspack-item-titleThree);
+$bonuspack-item-line: var(--bonuspack-item-line);
+$bonuspack-item-countdownBg: var(--bonuspack-item-countdownBg);
+$bonuspack-item-countdownBorder: var(--bonuspack-item-countdownBorder);
+
+
+/* VIP等级轮播 */
+$vip-swiper-item-xz-bg: var(--vip-swiper-item-xz-bg);
+$vip-swiper-item-xz-title: var(--vip-swiper-item-xz-title);
+$vip-swiper-item-line: var(--vip-swiper-item-line);
+$vip-swiper-item-mr-bgColor: var(--vip-swiper-item-mr-bgColor);
+$vip-swiper-item-mr-bg: var(--vip-swiper-item-mr-bg);
+$vip-swiper-item-mr-title: var(--vip-swiper-item-mr-title);
+$vip-swiper-item-mr-line: var(--vip-swiper-item-mr-line);
+$mylevce-bg-color: var(--mylevce-bg-color);
+$mylevce-font-color: var(--mylevce-font-color);
+
+
+/* 奖金礼包未登录页面 */
+$bonus-cabinet-top-bgcolor: var(--bonus-cabinet-top-bgcolor);
+$bonus-cabinet-top-title: var(--bonus-cabinet-top-title);
+$bonus-cabinet-block: var(--bonus-cabinet-block);
+$bonus-cabinet-bgColor1: var(--bonus-cabinet-bgColor1);
+$bonus-cabinet-bgColor2: var(--bonus-cabinet-bgColor2);
+$bonus-cabinet-bgColor3: var(--bonus-cabinet-bgColor3);
+$bonus-cabinet-bgColor4: var(--bonus-cabinet-bgColor4);
+$bonus-cabinet-bgColor5: var(--bonus-cabinet-bgColor5);
+$bonus-cabinet-bgColor6: var(--bonus-cabinet-bgColor6);
+$bonus-cabinet-bonus-regular: var(--bonus-cabinet-bonus-regular);
+$bonus-cabinet-top-subtitle: var(--bonus-cabinet-top-subtitle);
+$bonus-cabinet-furywheel-mc: var(--bonus-cabinet-furywheel-mc);
+$bonus-cabinet-two: var(--bonus-cabinet-two);
+$bonus-cabinet-sib-bgColor1: var(--bonus-cabinet-sib-bgColor1);
+$bonus-cabinet-sib-bgColor2: var(--bonus-cabinet-sib-bgColor2);
+$bonus-cabinet-sib-title: var(--bonus-cabinet-sib-title);
+$bonus-cabinet-sib-subtitle: var(--bonus-cabinet-sib-subtitle);
+$bonus-cabinet-sib-border: var(--bonus-cabinet-sib-border);
+$qiehuan-box-bg: var(--qiehuan-box-bg);
+
+/* 密码提示 */
+$mimats-box-bg-color: var(--mimats-box-bg-color);
+$mimats-box-mr-font: var(--mimats-box-mr-font);
+$mimats-box-xz-font: var(--mimats-box-xz-font);
+
+
+/* 轮盘 */
+$spin-log-popup-back: var(--spin-log-popup-back);
+$spin-log-popup-item-bg: var(--spin-log-popup-item-bg);
+$spin-log-popup-item-fontColor: var(--spin-log-popup-item-fontColor);
+
+$indicator-item-round: var(--indicator-item-round);
+
+/* 首页客服 */
+$home-kf-bg-color: var(--home-kf-bg-color);
+$home-kf-border-color: var(--home-kf-border-color);
+$home-kf-shadow-color: var(--home-kf-shadow-color);
+$home-kf-kefu-icon: var(--home-kf-kefu-icon);
+$home-kf-kefu-icon-border: var(--home-kf-kefu-icon-border);
+$home-kf-kefu-gb-icon: var(--home-kf-kefu-gb-icon);
+$home-kf-kefu-title: var(--home-kf-kefu-title);
+$home-kf-kefu-text: var(--home-kf-kefu-text);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import '@/uview-ui/theme.scss';
+
+/* 行为相关颜色 */
+$uni-color-primary: #007aff;
+$uni-color-success: #4cd964;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
+
+/* 文字基本颜色 */
+$uni-text-color:#333;//基本色
+$uni-text-color-inverse:#fff;//反色
+$uni-text-color-grey:#999;//辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: #808080;
+$uni-text-color-disable:#c0c0c0;
+
+/* 背景颜色 */
+$uni-bg-color:#ffffff;
+$uni-bg-color-grey:#f8f8f8;
+$uni-bg-color-hover:#f1f1f1;//点击状态颜色
+$uni-bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
+
+/* 边框颜色 */
+$uni-border-color:#c8c7cc;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$uni-font-size-sm:12px;
+$uni-font-size-base:14px;
+$uni-font-size-lg:16px;
+
+/* 图片尺寸 */
+$uni-img-size-sm:20px;
+$uni-img-size-base:26px;
+$uni-img-size-lg:40px;
+
+/* Border Radius */
+$uni-border-radius-sm: 2px;
+$uni-border-radius-base: 3px;
+$uni-border-radius-lg: 6px;
+$uni-border-radius-circle: 50%;
+
+/* 水平间距 */
+$uni-spacing-row-sm: 5px;
+$uni-spacing-row-base: 10px;
+$uni-spacing-row-lg: 15px;
+
+/* 垂直间距 */
+$uni-spacing-col-sm: 4px;
+$uni-spacing-col-base: 8px;
+$uni-spacing-col-lg: 12px;
+
+/* 透明度 */
+$uni-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$uni-color-title: #2C405A; // 文章标题颜色
+$uni-font-size-title:20px;
+$uni-color-subtitle: #555555; // 二级标题颜色
+$uni-font-size-subtitle:26px;
+$uni-color-paragraph: #3F536E; // 文章段落颜色
+$uni-font-size-paragraph:15px;

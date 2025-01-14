@@ -1,0 +1,1244 @@
+{
+	"tgwqj": "待領取",
+	"njy": "您將使用",
+	"jxyx": "進行遊戲",
+	"qtxsywt": "請填寫所有問題",
+	"sqcj": "申請彩金",
+	"jjsq": "拒絕申請",
+	"tsjl": "特殊獎金",
+	"hdsq": "活動申請",
+	
+	"qsrndxf": "請輸入你的想法...",
+	
+	"whtext1": "由於目前系統停機升級中，請待更新後再進行登錄。",
+	"whtext2": "造成不便，敬請諒解！",
+	"whtext3": "維護開始時間:",
+	"whtext4": "維護結束時間:",
+	
+	
+	
+	
+	
+	
+	"DiSanFangdl": "使用第三方登入",
+	"aqyz": "安全驗證",
+	"hdhkpintu": "滑動滑桿完成拼圖",
+	"shuaxin": "刷新",
+	
+	"HotGames": "熱門遊戲",
+	"jmhb": "虛擬幣",
+	"fbck": "法幣",
+	"bizhong": "幣種",
+	"xianedu": "限額",
+	"njhde": "您將獲得",
+	"tongguo": "於",
+	"yujidaozhang": "預計到帳",
+	"xuanzejine": "选择金额",
+	"Wtopis1": "注意：您的存款獎金需要 {l} 倍的投注額才能提現",
+	"Wtopis2": "您可以在提現頁面查看進度",
+	
+	
+	
+	
+	
+	
+	
+	"btnTextiOS": "立即前往更新",
+	"btnTextDownLoad": "立即下載更新",
+	"downLoadingText": "正在下載安裝檔案，請稍候。",
+	"btnTextInstall": "下載完成，立即安裝",
+	"installText": "正在安裝...",
+	"btnTextRestart": "安裝完成，點擊重新啟動",
+
+	"yjhsBtn": "請通過“全部回收”按鈕取回遊戲中的餘額。",
+	"yjhs": "全部回收",
+	"dqye": "當前餘額",
+
+	"inputPhoneNumErr": "請輸入正確的電話號碼",
+	"XuanZeQianBao": "選擇錢包",
+	"QianBaoDiZhi": "錢包地址",
+	"KaHaoNum": "卡號",
+	"huMingWuXiao": "戶名無效",
+	"TianAllInfo": "請輸入完整資訊",
+	"DiZhiWuXiao": "地址無效",
+	"nameWuXiao": "名稱無效",
+	"getZhenshiName": "請輸入真實姓名",
+	"getPhoneCode": "請輸入手機驗證碼",
+	"getYouXiangCode": "請輸入郵箱驗證碼",
+
+	"emailGeShi": "郵箱格式不正確",
+	"xuanTian": "選填項",
+	"hbqian": "抱歉，目前無法進行此操作。",
+	"RenZhengSuc": "恭喜！驗證成功。",
+	"RenZhengSucSub": "現在您可以開始遊戲了。",
+	"BiTian": "必填",
+	"Needtopay": "需要支付",
+	"ViewAll": "查看全部",
+	"addactishi": "確認後無法修改賬戶資訊。如有誤，請刪除並重新添加。",
+	"tabBar.home": "首頁",
+	"Lobby": "娛樂大廳",
+	"Slots": "電子",
+	"LiveCasino": "真人",
+	"PlayS": "開始",
+	"Fishing": "捕魚",
+	"Sports": "體育",
+	"MiniGames": "迷你",
+	"Cards": "卡牌",
+	"Providers": "遊戲提供者",
+	"Popular": "熱門",
+	"GameProviders": "遊戲提供者",
+	"prompt": "正在顯示 {l} 個遊戲中的 {c} 個。",
+	"LoadMore": "載入更多",
+	"LatestBets": "最近的投注",
+	"InputGamesName": "輸入遊戲名稱",
+	"WagerRanking": "投注排名",
+	"AboutUs": "關於我們",
+	"PrivacyPolicy": "隱私政策",
+	"Licenses": "許可證",
+	"AMLPolicy": "反洗錢政策",
+	"TermsofService": "服務條款",
+	"ResponsibleGambling": "負責任的遊戲",
+	"Support": "支持",
+	"Fairness": "公平性",
+	"VIPClub": "VIP俱樂部",
+	"Refer&Earn": "推薦與賺錢",
+	"Promotions": "促銷",
+	"LiveSupport": "在線客服",
+	"HelpCenter": "幫助中心",
+	"Community": "社區",
+	"tabBar.bonus": "獎金",
+	"SpecialBonus": "歡迎禮包",
+	"tabBar.wallet": "錢包",
+	"DEPBtn": "存款",
+	"WDBtn": "提款",
+	"PayMethod": "支付方式",
+	"PayProvider": "支付提供者",
+	"ChooseM": "输入金額",
+	"DEP": "存款",
+	"WDMethod": "提款方式",
+	"WDAccount": "提款帳戶",
+	"WDM": "提款金額",
+	"Available": "可用資金",
+	"LockFunds": "鎖定資金",
+	"GameBalance": "遊戲餘額",
+	"Recycle": "回收",
+	"Fee": "手續費",
+	"ActualPayment": "實際支付",
+	"NotSet": "未設置資金密碼",
+	"NotAdded": "未添加提款帳戶",
+	"popupbtn": "確認",
+	"tabBar.profile": "個人資料",
+	"XP": "等級進度",
+	"QUEST": "任務",
+	"SPIN": "轉盤",
+	"Deposit": "存款",
+	"Withdraw": "提款",
+	"Vault Pro": "金庫",
+	"Details": "詳情",
+	"GameHistory": "遊戲歷史",
+	"Transaction": "交易記錄",
+	"ManageAccount": "管理帳戶",
+	"Bonus Offer": "獎金優惠",
+	"Music": "音樂",
+	"Set": "設置",
+	"regiserPopup": {
+		"title": "註冊帳戶",
+		"username": "用戶名",
+		"password": "密碼",
+		"secondConfirmation": "確認密碼",
+		"lagree": "我同意使用者條款並確認我已年滿18歲。",
+		"Unselected": "請同意使用者條款。",
+		"regBtn": "立即註冊",
+		"signIn": "登錄"
+	},
+	"signInPopup": {
+		"title": "登錄",
+		"username": "手機",
+		"password": "密碼",
+		"RememberMe": "記住我",
+		"ForgotPassword": "忘記密碼",
+		"signBtn": "立即登錄",
+		"regtoIn": "創建帳戶"
+	},
+	"ResetPopup": {
+		"title": "重置密碼",
+		"VerificationType": "驗證類型",
+		"Phone": "手機",
+		"Email": "電子郵件",
+		"VCode": "驗證碼",
+		"Sent": "發送",
+		"Resent": "重新發送",
+		"NewPassword": "新密碼",
+		"popupbtn": "確認",
+		"signIn": "立即登錄"
+	},
+	"SignoutPopup": {
+		"title": "登出",
+		"prompt": "退出前，請查看推薦的娛樂場和體育促銷活動！",
+		"outBtn": "確認登出"
+	},
+	"emailPopup": {
+		"title": "電子郵件",
+		"emailverification": "電子郵件驗證",
+		"HaSent": "驗證碼已發送，請輸入：",
+		"VCode": "驗證碼",
+		"verifyBtn": "驗證"
+	},
+	"phonePopup": {
+		"title": "手機",
+		"emailverification": "手機號碼驗證",
+		"HaSent": "驗證碼已發送，請輸入：",
+		"VCode": "驗證碼",
+		"verifyBtn": "驗證"
+	},
+	"loginPasswordPopup": {
+		"title": "登錄密碼",
+		"changeLoginPassword": "更改登錄密碼",
+		"OldPassword": "舊密碼",
+		"Newpassword": "新密碼",
+		"Confirmpassword": "確認密碼",
+		"prompt": "更改密碼後需要重新登錄。",
+		"popupbtn": "確認"
+	},
+	"fundPasswordPopup": {
+		"title": "資金密碼",
+		"changeFundPassword": "更改資金密碼",
+		"OldPassword": "舊密碼",
+		"Newpassword": "新密碼",
+		"Confirmpassword": "確認密碼",
+		"popupbtn": "確認"
+	},
+	"languagePopup": {
+		"title": "選擇語言",
+		"popupbtn": "確認"
+	},
+	"avatarPopup": {
+		"title": "選擇頭像",
+		"popupbtn": "確認"
+	},
+	"PerStatisticsPopup": {
+		"title": "個人統計",
+		"Joinedon": "加入日期",
+		"Statistics": "統計數據",
+		"TotalDeposits": "總存款次數",
+		"AccumulatedDeposits": "累計存款",
+		"AvailableFunds": "可用資金",
+		"TotalBets": "總投注次數",
+		"TotalWins": "總贏次數",
+		"TotalWagered": "總投注金額",
+		"ViewGameDetailsBtn": "查看遊戲詳情"
+	},
+	"musicPopup": {
+		"title": "音樂",
+		"Message": "下載完成",
+		"Download": "下載進度%"
+	},
+	"PlayStatisticsPopup": {
+		"title": "玩家統計",
+		"Joinedon": "加入日期",
+		"Statistics": "統計數據",
+		"TotalDeposits": "總存款次數",
+		"AccumulatedDeposits": "累計存款",
+		"AvailableFunds": "可用資金",
+		"TotalBets": "總投注次數",
+		"TotalWins": "總贏次數",
+		"TotalWagered": "總投注金額",
+		"Contribute": "我的貢獻",
+		"BettingContribution": "直接佣金",
+		"AgentContribution": "間接佣金",
+		"TotalContribution": "總佣金",
+		"Referralbonus": "推薦獎金",
+		"ViewGameDetailsBtn": "查看遊戲詳情"
+	},
+	"CommissionRatePopup": {
+		"title": "佣金比例",
+		"Slots": "老虎機",
+		"Live Casino": "真人娛樂場",
+		"Fishing": "捕魚遊戲",
+		"Sports": "體育",
+		"Mini Games": "迷你遊戲",
+		"Cards": "卡牌遊戲",
+		"Level": "代理等級",
+		"ValidBets": "有效投注",
+		"Commission": "佣金"
+	},
+	"RebateRatePopup": {
+		"title": "返點比例",
+		"Slots": "老虎機",
+		"Live Casino": "真人娛樂場",
+		"Fishing": "捕魚遊戲",
+		"Sports": "體育",
+		"Mini Games": "迷你遊戲",
+		"Cards": "卡牌遊戲",
+		"VIP": "VIP等級",
+		"ValidBets": "有效投注",
+		"RebateRate": "返點比例"
+	},
+	"AddAccoundPopup": {
+		"title": "添加帳戶",
+		"AccoundType": "帳戶類型",
+		"Accound": "帳戶",
+		"AccoundName": "真實姓名",
+		"SaveBtn": "保存"
+	},
+	"DeleteAccoundPopup": {
+		"title": "刪除帳戶",
+		"prompt": "確認後無法修改帳戶資訊。如有誤，請刪除並重新添加。",
+		"DeleteBtn": "刪除"
+	},
+	"navBar": {
+		"rtitle1": "登錄",
+		"rtitle2": "註冊"
+	},
+	"navBarTitle": {
+		"ProfileInfo": "個人資料",
+		"Name": "名稱",
+		"Birthday": "生日",
+		"Email": "電子郵件",
+		"Phone": "電話號碼",
+		"Verify": "驗證",
+		"SaveBtn": "保存"
+	},
+	"sidebar": {
+		"title1": "個人中心",
+		"title2": "促銷活動",
+		"title3": "音樂",
+		"title4": "娛樂場",
+		"title5": "體育",
+		"title6": "收藏夾",
+		"title7": "最近",
+		"title8": "推薦與賺錢",
+		"title9": "VIP俱樂部",
+		"title10": "在線客服",
+		"title11": "語言"
+	},
+	"VaultPage": {
+		"title": "金庫",
+		"TransferIn": "轉入",
+		"TransferOut": "轉出",
+		"Amount": "金額",
+		"Max": "最大",
+		"Available": "可用資金",
+		"LockFunds": "鎖定資金",
+		"TransferVault": "轉入金庫",
+		"VaultBalance": "金庫餘額",
+		"WithdrawWallet": "轉出至錢包",
+		"Details": "詳情",
+		"F&Q": "常見問題"
+	},
+	"NotificationPage": {
+		"title": "通知",
+		"SystemNotice": "系統通知",
+		"PersonalNotice": "個人通知",
+		"ShowAll": "查看全部",
+		"Hide": "隱藏",
+		"Blankprompt1": "暫無通知。"
+	},
+	"DetailsPage": {
+		"title": "存取款明細",
+		"DownOption1": "存款",
+		"DownOption2": "提款",
+		"DateOption1": "今天",
+		"DateOption2": "昨天",
+		"DateOption3": "最近7天",
+		"DateOption4": "最近30天",
+		"Status0": "所有狀態",
+		"Status1": "等待支付",
+		"Status2": "支付失敗",
+		"Status3": "完成",
+		"Status4": "等待審核",
+		"Status5": "審核通過",
+		"Status6": "拒絕",
+		"Status7": "提款拒絕"
+	},
+	"GamingHistoryPage": {
+		"title": "遊戲歷史",
+		"DownOption3": "已結算投注",
+		"DownOption4": "未結算投注",
+		"Providers": "遊戲提供者",
+		"Bet": "投注",
+		"W/L": "勝/負",
+		"Blankprompt2": "暫無數據。"
+	},
+	"TransactionPage": {
+		"title": "交易記錄",
+		"TraOption0": "所有類型",
+		"FundingCorrection": "資金修正",
+		"Commission": "佣金",
+		"RebateRewards": "返點獎勵",
+		"Deposit": "存款",
+		"DepositBonus": "存款獎金",
+		"LevelUpBonus": "升級獎金",
+		"BirthdayBonus": "生日獎金",
+		"WeeklyBonus": "每週獎金",
+		"MonthlyBonus": "每月獎金",
+		"ReferralRewards": "推薦獎勵",
+		"SpinBonus": "轉盤獎金",
+		"QuestBonus": "任務獎金",
+		"OtherBonuses": "其他獎金",
+		"Withdraw": "提款",
+		"WithdrawFee": "提款手續費",
+		"Refunded": "退款完成",
+		"Vault": "金庫",
+		"GamePoints": "遊戲積分",
+		"GameScores": "遊戲得分"
+	},
+	"ManageAccountPage": {
+		"title": "管理帳戶",
+		"WDAccount": "提款帳戶",
+		"AddAccound": "添加帳戶"
+	},
+	"BonusOfferPage": {
+		"title": "獎金優惠",
+		"BonusOption0": "獎金類型",
+		"BonusOption1": "存款獎金",
+		"BonusOption2": "返點獎勵",
+		"BonusOption3": "升級獎勵",
+		"BonusOption4": "生日獎金",
+		"BonusOption5": "每週獎金",
+		"BonusOption6": "每月獎金",
+		"BonusOption7": "推薦獎勵",
+		"BonusOption8": "任務獎勵",
+		"BonusOption9": "轉盤獎金",
+		"BonusOption10": "代理佣金",
+		"BonusOption11": "其他獎金"
+	},
+	"SetPage": {
+		"title": "設置",
+		"LoginPassword": "登錄密碼",
+		"FundPassword": "資金密碼",
+		"ProfileInfo": "個人資料",
+		"Language": "語言",
+		"Theme": "主題",
+		"SignOut": "登出"
+	},
+	"NEWReferpageA": {
+		"title": "推薦每位好友可獲得最高 {MAX} 獎勵及最高 {max}% 的佣金",
+		"subtitle": "推薦朋友，獲得更多間接佣金",
+		"InBTN": "立即推薦",
+		"TotalReferrlas": "總推薦",
+		"TotalRewards": "總獎勵",
+		"LiveRewards": "實時獎勵",
+		"title1": "推薦每位好友可獲得 {MAX} 獎勵",
+		"subtitle1": "您推薦的好友將為您帶來 {MAX} 獎勵！",
+		"title2": "獲得最高 {max}% 的佣金",
+		"subtitle2": "邀請好友，並從他們的遊戲中獲得最高 {max}% 的佣金。",
+		"title3": "間接推薦佣金",
+		"title4": "您的團隊玩得越多，您的收益也會越多。",
+		"subtitle4": "壯大您的團隊，鼓勵他們玩更多的遊戲並賺取更多的錢。投注金額越大，您的佣金比例也會更高！",
+		"Exclusive": "獨家聯盟計劃",
+		"subtitle5": "擁有大量追隨者或受眾嗎？成為我們的合作夥伴，獲得最高85%的收益。您將從推薦的玩家收益中獲得一定比例的佣金。讓我們一起分享成功。",
+		"title5": "特別優惠",
+		"BecomeBTN": "成為合作夥伴"
+	},
+	"NEWReferpageB": {
+		"title": "推薦計劃",
+		"ReferralBTN": "推薦系統",
+		"Dashboard": "儀表板",
+		"Referrals": "推薦人",
+		"Mytotalprofit": "我的總收益",
+		"Totalreferrals": "總推薦",
+		"invite1": "邀請新用戶時：",
+		"invite2": "每成功推薦一次可獲得最高 {MAX} 獎勵",
+		"invite3": "從有效帳戶中獲得最高 {max}% 的佣金",
+		"Yourreferrallink": "您的推薦鏈接",
+		"QRBTN": "查看二維碼",
+		"ShareviasocialsBTN": "分享到社交媒體",
+		"Mybalance": "我的餘額",
+		"ReferralBonus": "推薦獎金",
+		"LockedBalance": "鎖定餘額",
+		"CommissionRewards": "佣金獎勵",
+		"Available": "可用",
+		"Details": "詳情",
+		"ViewCommission": "查看佣金記錄",
+		"ClaimAvailableBonus": "領取可用獎金",
+		"MyReferrals": "我的推薦人",
+		"MyProfit": "我的收益",
+		"Last7days": "最近7天",
+		"Last30days": "最近30天",
+		"TotalReferrals": "推薦人數",
+		"TotalDeposits": "存款人數",
+		"MyTotalProfit": "我的總收益",
+		"MyRewardsHistory": "我的獎勵記錄",
+		"REWARDTYPE": "獎勵類型",
+		"REWARDTYPE1": "推薦獎金",
+		"REWARDTYPE2": "佣金獎勵",
+		"DATE": "日期",
+		"AMOUNT": "金額",
+		"LiveRewards": "實時獎勵",
+		"TotalRewards": "總獎勵",
+		"Leaderboard": "排行榜",
+		"ComingSoon": "即將推出",
+		"GoToLeaderboard": "前往排行榜"
+	},
+	"CommissionPopup": {
+		"title": "佣金比例",
+		"Slots": "老虎機",
+		"LiveCasino": "真人",
+		"Fishing": "捕魚",
+		"Sports": "體育",
+		"Mini Games": "迷你",
+		"Cards": "卡牌",
+		"Bingo": "抽籤",
+		"Level": "代理等級",
+		"ValidBets": "有效投注",
+		"Commission": "佣金比例",
+		"title1": "直接佣金計算公式：推薦的所有老虎機遊戲（投注金額 × 佣金比例） + 捕魚遊戲（投注金額 × 佣金比例） + 真人娛樂場（投注金額 × 佣金比例）...",
+		"title2": "間接佣金計算公式：推薦的所有老虎機遊戲（投注金額 ×（我的佣金比例 - 下級代理佣金比例）） + 捕魚遊戲（投注金額 ×（我的佣金比例 - 下級代理佣金比例）） + 真人娛樂場（投注金額 ×（我的佣金比例 - 下級代理佣金比例））..."
+	},
+	"RecommendPopup": {
+		"title1": "與朋友分享",
+		"title2": "分享推薦鏈接或二維碼給您的朋友。",
+		"title3": "獲得 {max} 獎勵",
+		"title4": "您的推薦獎金將被暫時鎖定。",
+		"title5": "解鎖獎金",
+		"title6": "隨著投注金額增加，獎金將會被解鎖。",
+		"title7": "解鎖規則",
+		"title8": "隨著推薦人的總投注金額增加，推薦獎金將會被解鎖。解鎖的獎金可以用於遊戲或提款。",
+		"title9": "玩家總投注金額",
+		"title0": "已解鎖金額"
+	},
+	"ReferPage": {
+		"title": "推薦佣金",
+		"RecommendedLink": "推薦鏈接",
+		"ReferralBonus": "推薦獎金",
+		"Commission": "佣金",
+		"TodayReferralBonus": "今日推薦獎金",
+		"NewPlayers": "新玩家數量",
+		"NewValidPlayers": "新有效玩家數量",
+		"TodayCommission": "今日佣金",
+		"BettingContribution": "直接佣金",
+		"AgentContribution": "間接佣金",
+		"Caption1": "邀請朋友獎勵",
+		"Explain1": "邀請朋友並滿足條件後，您將獲得 {dbhjlje} 邀請獎金。推薦越多，獎金越多。",
+		"Caption2": "投注貢獻及代理貢獻",
+		"Explain2": "當您的朋友進行遊戲時，您可以從他們的投注中獲得佣金，當您的朋友推薦其他朋友時，您也可以從該朋友的投注中獲得佣金。",
+		"CommissionRanking": "佣金排名",
+		"F&Q": "常見問題"
+	},
+	"PlayerPage": {
+		"title": "推薦玩家",
+		"EnterID": "輸入玩家ID或用戶名",
+		"Player": "玩家",
+		"totalbet": "總投注",
+		"myprofit": "我的收益",
+		"Referralbonus": "推薦獎金",
+		"BettingContribution": "直接佣金",
+		"AgentContribution": "間接佣金"
+	},
+	"VIPPage": {
+		"title": "VIP俱樂部",
+		"Explain1": "完成投注 {price1} / {price2}，升級至下一級並獲得促銷獎金。",
+		"XP": "等級進度",
+		"Explain2": "升級後您將獲得專屬獎勵及定制禮品！加入我們的精英玩家社區，享受最佳遊戲體驗。",
+		"DailyRebate": "每日返點",
+		"LevelUpBonus": "升級獎金",
+		"WeeklyCashback": "每週現金返還",
+		"MonthlyCashback": "每月現金返還",
+		"BirthdayBonus": "生日獎金",
+		"BonusStatus1": "可領取",
+		"BonusStatus2": "已領取",
+		"BonusStatus3": "已過期",
+		"BonusStatus4": "無效",
+		"History": "領取記錄",
+		"ViewBtn": "查看"
+	},
+	"RebatesPage": {
+		"title": "返點記錄",
+		"TodayWagered": "今日投注金額",
+		"RebatesAvailable": "可用返點",
+		"ClaimBtn": "領取",
+		"GameProvider": "遊戲提供者",
+		"Ratio": "比例",
+		"BetAmount": "投注金額",
+		"RebateAmount": "返點金額"
+	},
+	"opoupToast": {
+		"username": "請輸入帳號或郵箱",
+		"password": "請輸入密碼",
+		"confirmation": "請再次輸入密碼",
+		"NotheSame": "密碼不一致。",
+		"rememberMe": "記住我",
+		"Agreement": "請同意使用者條款。"
+	},
+	"VaultQ&A": {
+		"FrequentlyAskedQuestions": [{
+				"Q": "如何使用金庫？",
+				"A": "金庫是安全存放資金的地方。金庫中的資金不會受到交易費用或區塊鏈延遲的影響。"
+			},
+			{
+				"Q": "金庫是什麼？",
+				"A": "金庫是安全存放資金的地方。用戶可以像使用數位錢包一樣使用金庫來安全保護資金。"
+			},
+			{
+				"Q": "如何訪問金庫？",
+				"A": "訪問金庫非常簡單，您可以通過移動設備隨時隨地訪問金庫。"
+			},
+			{
+				"Q": "金庫是如何運作的？",
+				"A": "金庫的主要目的是安全存放資金。將資金轉入金庫後，將有額外的保護，確保資金的安全。"
+			},
+			{
+				"Q": "將資金存放在金庫中是否安全？",
+				"A": "是的，將資金存放在金庫中是100%安全的，並通過額外的資金密碼進行保護，以確保安全性。"
+			},
+			{
+				"Q": "可以將資金存放在金庫中多久？",
+				"A": "您可以將資金存放在金庫中任意長的時間，且資金不會有時間限制。"
+			}
+		]
+	},
+	"VIPQ&A": {
+		"FrequentlyAskedQuestions": [{
+				"Q": "什麼是升級獎金？",
+				"A": "當玩家達到新的等級時，將獲得升級獎金。"
+			},
+			{
+				"Q": "什麼是每日返點？",
+				"A": "玩家每天投注金額的一定比例將作為返點返還。"
+			},
+			{
+				"Q": "什麼是每週或每月獎金？",
+				"A": "為了獎勵玩家的忠誠度，每週或每月都會提供獎金。"
+			},
+			{
+				"Q": "什麼是生日獎金？",
+				"A": "根據帳戶註冊日期，每年都會提供的特殊獎金。"
+			}
+		]
+	},
+	"ReferQ&A": {
+		"FrequentlyAskedQuestions": [{
+				"Q": "推薦系統是如何運作的？",
+				"A": "通過推薦鏈接邀請朋友，並在朋友開始遊戲時獲得佣金。"
+			},
+			{
+				"Q": "通過推薦可以賺取多少收益？",
+				"A": "通過推薦可以賺取最高70%的收益，每推薦一次即可獲得額外收益。"
+			},
+			{
+				"Q": "我可以查看我的推薦數據嗎？",
+				"A": "可以，所有推薦數據都會透明地提供，您可以在儀表板中查看。"
+			}
+		]
+	},
+	"helpCenter": {
+		"Helpcenter": [{
+				"Q": "可以註冊該網站嗎？",
+				"A": "您必須年滿18歲，並且所在地法律允許進行線上遊戲。"
+			},
+			{
+				"Q": "如果忘記密碼該怎麼辦？",
+				"A": "您可以通過“忘記密碼”鏈接重設密碼。"
+			},
+			{
+				"Q": "如何成為VIP？",
+				"A": "VIP俱樂部僅對受邀用戶開放，當您達到一定等級時將會收到邀請。"
+			},
+			{
+				"Q": "存款方式有哪些？",
+				"A": "您可以在“我的錢包”頁面查看支付帳戶，然後進行存款。"
+			},
+			{
+				"Q": "提款方式有哪些？",
+				"A": "您可以進入“我的錢包”頁面的提款選項，輸入提款金額進行提款。"
+			},
+			{
+				"Q": "交易確認時間需要多久？",
+				"A": "交易時間根據第三方支付提供者的不同，可能需要10分鐘到數小時不等。"
+			},
+			{
+				"Q": "遊戲公平嗎？",
+				"A": "所有遊戲數據和邏輯都是透明公開的，並且無法被操縱，確保系統公平。"
+			},
+			{
+				"Q": "遊戲中出現問題時該怎麼辦？",
+				"A": "如果遊戲中出現問題，請刷新頁面。如果問題仍未解決，請聯繫客服。"
+			}
+		]
+	},
+	"Privacypolicy": {
+		"describe": "本隱私政策描述了如何在使用服務期間保護個人數據，並在法律規定的範圍內使用、存儲和披露這些數據。"
+	},
+	"LiCenses": {
+		"describe": "Dance是一家根據庫拉索法律註冊成立的公司，商業註冊號為158182，位於庫拉索Emancipatie Boulevard Dominico F. Don Martina 31，並持有主要遊戲許可證#5536/JAZ的附加許可證。"
+	},
+	"AML": {
+		"describe1": "洗錢是將非法收入轉化為看似合法收入的過程，通常分為三個階段：安置、分層和整合。",
+		"describe2": "AML政策：我們實施了多種內部控制措施和程序，以保護客戶的資金。",
+		"describe3": "根據反洗錢(AML)規定，所有存款都必須完成1倍的必要投注。"
+	},
+	"Responsiblegambling": {
+		"describe": "線上遊戲可能很有趣，但也可能成癮。我們支持負責任的遊戲，並幫助用戶了解自己的界限，讓他們能夠享受遊戲樂趣。"
+	},
+	"NewlyAdded": {
+		"Notyetup": "未達最低存款標準",
+		"InstallTIP": "安裝獎勵",
+		"QuickAT": "快速便捷",
+		"InstallBTN": "安裝",
+		"HowToInstall": "安裝方式",
+		"HideToday": "今日隱藏",
+		"iosGoogle1": "點擊Google Chrome地址欄右側的'更多'圖標。",
+		"iosGoogle2": "選擇'添加到主屏幕'。",
+		"iosSafari1": "在Safari中點擊'共享'圖標。",
+		"iosSafari2": "選擇'添加到主屏幕'。",
+		"AndGoogle1": "點擊Google Chrome地址欄右側的'更多'圖標。",
+		"AndGoogle2": "選擇'安裝應用'。",
+		"clearcache": "清除緩存",
+		"Install": "安裝應用",
+		"version": "版本號",
+		"PleaseSelect": "請選擇",
+		"Welcome": "歡迎禮包",
+		"content": "首次存款{max}%獎金，最高{MAX}",
+		"unlock": "更多好禮等待您來解鎖。",
+		"RegisterNow": "立即註冊",
+		"DepositNow": "立即存款",
+		"Referral": "推薦",
+		"Nickname": "暱稱",
+		"Bingo": "抽籤",
+		"Support": "如需修改，請聯繫客服",
+		"registered": "該手機號碼已被註冊。忘記密碼了嗎？點擊“下一步”找回密碼。",
+		"Next": "下一步",
+		"Successful": "註冊成功",
+		"TIP": "註冊成功，請確認帳戶資訊。",
+		"ToDeposito": "去存款",
+		"Photo1": "首次存款100%獎金",
+		"Photo2": "最高可獲RMB 20,000.00獎金",
+		"Photo3": "每次存款額外+3%",
+		"Optionphone": "手機號碼",
+		"Optionemail": "電子郵件",
+		"Send": "發送",
+		"Modifytips": "修改密碼後需重新登錄。",
+		"Successfullytips": "密碼修改成功，請重新登錄。",
+		"Disablereminder": "帳戶已被停用，請聯繫客服。",
+		"Signelsewhere": "帳戶在其他地方登錄，請重試。",
+		"Savebutton": "保存",
+		"Manageaccount": "管理帳戶",
+		"username": "用戶名",
+		"userID": "用戶ID",
+		"RebateRatio": "投注返點",
+		"Sortby": "排序方式",
+		"ValidPlayer": "有效玩家",
+		"RegistrationTime": "註冊時間",
+		"ContributionRanking": "貢獻排名",
+		"CommissionRate": "代理獎勵",
+		"Addhint": "確認後無法修改帳戶資訊。如有誤，請刪除並重新添加。",
+		"Notify": "通知",
+		"Set": "設置",
+		"Favorites": "收藏夾",
+		"Recent": "最近",
+		"Search": "搜索",
+		"Enter": "輸入遊戲名稱",
+		"Balance": "餘額",
+		"WebQuit": "您確定要離開此頁面嗎？",
+		"Confirm": "確認",
+		"Cancel": "取消",
+		"RebateAmount": "每日返點最高",
+		"UpgradeAmount": "升級獎勵",
+		"WeeklyAmount": "每週損失返還",
+		"MonthlyAmount": "每月損失返還",
+		"Annual": "年度生日獎金",
+		"Realname": "真實姓名",
+		"ReaferralQR": "推薦二維碼",
+		"Download": "下載",
+		"ResetPasswordtitle": "重置密碼",
+		"Verificationcode1": "正在接收驗證碼。",
+		"Verificationcode2": "驗證碼已發送。",
+		"Verificationcode3": "倒計時結束後可重新發送。",
+		"VIPClub": "VIP俱樂部",
+		"Refer&Earn": "推薦與賺錢",
+		"Promotions": "促銷活動",
+		"LearnMore": "了解更多",
+		"PromotionsDetails": "促銷活動詳情",
+		"Endat": "結束時間",
+		"Tip1": "連接中...",
+		"Tip2": "加載失敗",
+		"Tip3": "網絡錯誤",
+		"Tip4": "複製成功",
+		"Tip5": "暫無通知。",
+		"Tip6": "暫無數據。",
+		"GameType": "遊戲類型",
+		"PleaseLogin": "請登錄",
+		"Extra": "額外赠送",
+		"Depositrange": "存款金額範圍",
+		"Withdrawalrange": "提款金額範圍",
+		"chooseNetwork": "選擇網絡",
+		"WithdralAddress": "提款地址",
+		"TotalDeposits": "總存款次數",
+		"AccumulatedDeposits": "累計存款",
+		"AvailableFunds": "可用資金",
+		"TotalBets": "總投注次數",
+		"TotalWins": "總贏次數",
+		"TotalWagered": "總投注金額"
+	},
+	"SpecialBonuS": {
+		"title1": "存款獎金",
+		"prompt1": "新玩家首次存款即可參加。",
+		"MinimumDeposit": "最低存款",
+		"MaximumBonus": "最高獎金",
+		"ViewDetails": "查看詳情",
+		"Deposit": "存款",
+		"YourBonus": "您的獎金",
+		"Wagerx": "投注",
+		"Claim": "領取",
+		"Claimed": "已領取",
+		"title2": "推薦獎金",
+		"prompt2": "當邀請的玩家完成存款和投注後，您可獲得獎金。",
+		"Wager": "投注",
+		"ClaimbleBonus": "可領取的獎金",
+		"InviteNow": "立即邀請"
+	},
+	"BonusPopup": {
+		"title": "存款獎金",
+		"prompt": "首次存款時，您可獲得額外{rate}%的獎金。",
+		"title1": "詳情",
+		"MinimumDeposit": "最低存款",
+		"MaximumBonus": "最高獎金",
+		"title2": "要求",
+		"GameType": "遊戲類型",
+		"AllGame": "所有遊戲",
+		"Wager": "總投注",
+		"attention": "注意",
+		"prompt2": "獎金有效期為{expireDays}天，請在到期前完成投注。"
+	},
+	"termsofService": {
+		"describe": {
+			"1. 使用許可": [
+				"1.1. 根據本條款，您獲得非獨占、個人和不可轉讓的權利，用於在個人電腦或可連接互聯網的設備上使用服務和訪問遊戲。",
+				"1.2. 本服務不向未滿18歲、未達法定成年年齡的個人，或在其管轄區內非法使用本服務的個人提供。您有責任確認使用本服務的合法性。",
+				"1.3. 服務提供者及其授權方保留對服務、代碼、結構和組織的所有權利，這包括版權、商業機密、知識產權和其他權利。未經授權的使用將承擔法律責任。"
+			],
+			"2. 無保證": [
+				"2.1. 服務提供者不對服務提供任何明示或默示的保證，包括質量、特定用途的適用性、完整性或準確性。",
+				"2.2. 服務提供者不保證服務將不中斷，按時提供或無錯誤，也不保證任何缺陷會被修正。"
+			],
+			"3. 權利/服務條件": [
+				"3.1. 您需同意網站上描述的遊戲規則。服務提供者保留發佈、維護和終止服務的權利。",
+				"3.2. 服務提供者對服務的使用或任何爭議解決所做的決定為最終決定，並且不接受復議或上訴。"
+			],
+			"4. 使用者的義務": [
+				"4.1. 您聲明已年滿18歲，參與遊戲將以合法方式進行，並保證提供準確的資料且遵守規則。",
+				"4.2. 用戶帳戶不可轉讓、出售或提供給他人使用。",
+				"4.3. 您應保持禮貌，避免發表粗魯或淫穢言論。",
+				"4.4. 服務提供者保留取消含有錯誤的投注的權利。",
+				"4.5. 用戶不得濫用軟件中的錯誤，如發現錯誤應立即報告。",
+				"4.6. 若系統故障導致遊戲失敗，將退還投注金額。",
+				"4.7. 服務提供者保留在不超過用戶帳戶餘額的情況下，限制投注的權利。",
+				"4.8. 如果懷疑系統遭到操縱，服務提供者有權保留支付款項。",
+				"4.9. 如果發生可疑交易，服務提供者有權要求進行進一步的驗證。",
+				"4.10. 如果您與其他遊戲提供商簽訂了自我排除協議，必須立即通知服務提供者。"
+			],
+			"5. 禁止使用": [
+				"5.1. 服務僅供個人使用，濫用服務是不被允許的。",
+				"5.2. 禁止區域的個人不得使用此服務。"
+			],
+			"6. 知識你的客戶(KYC)": [
+				"服務提供者有權隨時要求用戶提供身份驗證文件，以確認用戶的身份和所在地。"
+			],
+			"7. 違規": [
+				"7.1. 如果用戶違反條款，服務提供者保留終止合同或採取法律行動的權利。",
+				"7.2. 用戶同意賠償因合同違反而導致的一切損失和費用。"
+			],
+			"8. 限制及責任": [
+				"8.1. 服務提供者在任何情況下均不對因使用服務而產生的損失負責。",
+				"8.2. 服務提供者不排除或限制因疏忽造成的死亡或人身傷害的責任。"
+			],
+			"9. 爭議": [
+				"用戶可通過客戶服務團隊提出投訴，如果問題未能滿意解決，用戶可在指定的法律管轄區尋求法律救濟。",
+				"即使合同的某些條款被認定為無效，其他條款的有效性也不受影響。"
+			],
+			"10. 修改": [
+				"服務提供者保留隨時更新或修改合同的權利，用戶需要同意新的條款。"
+			],
+			"11. 適用法律": [
+				"本合同受庫拉索法律管轄，所有爭議均在該法律管轄範圍內解決。"
+			],
+			"12. 權利轉讓": [
+				"服務提供者可以將合同中的權利全部或部分轉讓，而用戶不可轉讓自己的權利。"
+			],
+			"13. 獎金濫用": [
+				"濫用獎金的用戶將失去獎金並可能被封禁帳戶，服務提供者保留拒絕提款的權利。"
+			]
+		}
+	},
+	"ToastPrompt": {
+		"Toast1": "餘額不足",
+		"Toast2": "請輸入提款金額",
+		"Toast3": "提交完成",
+		"Toast4": "提款範圍",
+		"Toast5": "金額範圍",
+		"Toast6": "選擇或輸入存款金額",
+		"Toast7": "請輸入CPF",
+		"Toast8": "請輸入手機號碼",
+		"Toast9": "請輸入電子郵件地址",
+		"Toast10": "設置完成",
+		"Toast11": "修改完成",
+		"Toast12": "請輸入舊密碼",
+		"Toast13": "請輸入新密碼",
+		"Toast14": "請輸入6位數字和字母",
+		"Toast15": "請輸入8位數字和字母",
+		"Toast16": "請輸入姓名",
+		"Toast17": "請選擇生日",
+		"Toast18": "請輸入電子郵件",
+		"Toast19": "請輸入手機號碼",
+		"Toast20": "請輸入正確的電子郵件",
+		"Toast21": "請輸入玩家ID",
+		"Toast22": "連接中...",
+		"Toast23": "連接成功",
+		"Toast24": "網絡錯誤",
+		"Toast25": "複製完成"
+	},
+	"NewUserPopup": {
+		"Reward": "獎勵",
+		"NameV": "實名認證",
+		"EmailV": "電子郵件認證",
+		"PhoneV": "手機認證",
+		"KYCV": "KYC認證",
+		"Bind": "綁定帳戶",
+		"ADDHOME": "添加到主屏幕",
+		"Bonus": "獎金",
+		"ClaimBTN": "領取",
+		"StartBTN": "開始",
+		"Claimed": "已領取",
+		"WebDow": "下載網頁應用",
+		"APPDow": "從應用商店下載應用"
+	},
+	"NewVIPPage": {
+		"title": "豐富的",
+		"LevelSYS": "等級系統",
+		"BetterBonuses": "更好的獎金",
+		"TIP1": "享受無投注或提款限制的損失返還及額外獎金福利！",
+		"MassivePayouts": "巨額獎金",
+		"TIP2": "提高最大投注金額，贏取更多收益。VIP用戶無最大收益限制！",
+		"Priority": "優先提款",
+		"TIP3": "您的提款請求將被優先處理。",
+		"Exclusive": "獨家預覽",
+		"TIP4": "提前體驗新遊戲，領先於其他玩家。",
+		"Highest": "最高獎勵",
+		"TIP5": "享受每日損失返還和存款折扣的最高比例。",
+		"Howdoes": "等級系統如何運作？",
+		"TIP6": "作為新用戶，您將從遊戲開始，遊玩越多，等級提升越快。您的等級會隨著投注金額的增加而提升。",
+		"step1": "註冊並登錄",
+		"step1answer": "通過簡便的登錄系統，享受所有遊戲體驗",
+		"step2": "開始遊戲",
+		"step2answer": "享受最佳遊戲體驗和服務",
+		"step3": "升級等級",
+		"step3answer": "升級到下一等級，並獲取更多獎勵。",
+		"NowPlayBTN": "立即遊玩",
+		"MAXLEVEL": "最高等級",
+		"MAXLEVELS": "",
+		"TotalWager": "總投注要求金額",
+		"Rabate": "每日返點",
+		"LevelBonus": "等級獎金",
+		"Wbonus": "每週獎金",
+		"Mbonus": "每月獎金",
+		"BBonus": "生日獎金",
+		"MyLevelicon": "我的等級"
+	},
+	"NEWBonusPageA": {
+		"title1": "豐厚的",
+		"BonusSYS": "獎金系統",
+		"TIP1": "享受遊戲的樂趣，並使用各種獎勵進行賭場和體育投注。",
+		"regBtn": "立即註冊並領取獎勵",
+		"RegBonus": "註冊後立即領取6至666獎金",
+		"TIP2": "為新朋友準備了最佳禮物！提取獎金並參加遊戲，成為贏家！",
+		"regB": "立即註冊並領取獎勵",
+		"GetBonus": "領取獎金",
+		"MaxBonus": "最高獎金",
+		"1STDeposit": "首次存款",
+		"BONUS": "獎金",
+		"2ndDeposit": "第二次存款",
+		"3rdDeposit": "第三次存款",
+		"DepositBTN": "存款",
+		"completed": "已完成",
+		"title2": "定期獲得遊戲獎勵",
+		"Rabate": "每日返點",
+		"TIP3": "無論投注結果如何，您都可獲得現金返點，無最高限制。",
+		"Dcash": "每日損失返還",
+		"Dcashtitle": "在第二天獲得當天損失的存款返還。",
+		"Wcash": "每週損失返還",
+		"Wcashtitle": "在下一週獲得本週存款的損失返還。",
+		"Wbonus": "每週獎金",
+		"Wbonustitle": "根據每週存款金額領取獎金。",
+		"Mbonus": "每月獎金",
+		"Mbonustitle": "根據每月存款金額領取獎金。",
+		"TIP4": "註冊後即可開始領取豐厚獎勵。達到更高的等級，獲得雙倍獎勵。",
+		"title3": "通過獎勵日曆領取每日獎勵",
+		"TIP5": "每天三次兌換獎勵。每次兌換時，返點獎金將會被激活！通過每日獎勵獲得最大收益。",
+		"BBonus": "生日獎金",
+		"OTBonus": "其他獎金",
+		"LevelBonus": "等級獎金",
+		"BluePrompt": "等待中",
+		"BBonusTIP": "在帳戶生日時獲得獨家獎金",
+		"LevelBonusTIP": "每升一級都會獲得更多獎勵。"
+	},
+	"NEWBonusPageB": {
+		"wlecome": "歡迎",
+		"bonuses": "獎金系統",
+		"needWager": "距離下一等級所需投注",
+		"TotalBonusClaimed": "已領取總獎金",
+		"WelCome": "歡迎套餐",
+		"1STDeposit": "首次存款",
+		"BONUS": "獎金",
+		"2ndDeposit": "第二次存款",
+		"3rdDeposit": "第三次存款",
+		"DepositBTN": "存款",
+		"completed": "已完成",
+		"GeneralRewards": "定期獎勵",
+		"DailyRebate": "每日返點",
+		"DailyCashBack": "每日損失返還",
+		"WeeklyCashBack": "每週損失返還",
+		"WeeklyBonus": "每週獎金",
+		"MonthlyBonus": "每月獎金",
+		"ToBet": "開始投注以領取獎勵",
+		"ToDep": "開始存款以領取獎勵",
+		"ClaimIn": "領取時間",
+		"DepToUnlock": "存款以解鎖獎勵",
+		"Claim": "領取",
+		"BBonus": "生日獎金",
+		"OTBonus": "其他獎金",
+		"LevelBonus": "等級獎金",
+		"BluePrompt": "等待中",
+		"BBonusTIP": "在帳戶生日時獲得獨家獎金",
+		"LevelBonusTIP": "每升一級可獲得更多獎勵"
+	},
+	"DepositBonusPopup": {
+		"DepPlus": "存款獎金加碼",
+		"UPTO": "高達",
+		"Minute": "分鐘",
+		"Second": "秒",
+		"DEPNOW": "立即存款",
+		"TIPSS": "可獲得最高存款獎金並立即存入帳戶。",
+		"DepositTo": "存款至",
+		"DepositBonus": "存款獎金比例",
+		"MaxDepositBonus": "最高存款獎金",
+		"WageringRequirements": "投注要求",
+		"GameType": "遊戲類型",
+		"TotlaWager": "總投注要求金額"
+	},
+	"DailyRebatePopup": {
+		"title": "每日返點",
+		"prompt": "無論投注結果如何，您都可獲得獎勵。",
+		"Calculationcycle": "計算週期",
+		"Calculation1": "每天可領取一次",
+		"Claimtime": "領取時間：",
+		"slots": "老虎機",
+		"fishing": "捕魚",
+		"livecasino": "真人",
+		"bingo": "抽籤",
+		"mini": "迷你",
+		"sports": "體育",
+		"PVP": "PVP遊戲",
+		"Level": "等級",
+		"DailyRebate": "每日返點比例",
+		"Wager": "每日投注 × 1 ×"
+	},
+	"DailyCashBackPopup": {
+		"title": "每日損失返還",
+		"prompt": "將當日存款的損失於次日返還。",
+		"Calculationcycle": "計算週期",
+		"Calculation1": "每天可領取一次",
+		"Claimtime": "領取時間：",
+		"TIP": "每日損失返還是基於存款的損失提供。",
+		"DailyLoss": "每日損失金額",
+		"CashBack": "損失返還",
+		"MaxBonus": "最高獎金"
+	},
+	"WeeklyCashBackPopup": {
+		"title": "每週損失返還",
+		"prompt": "返還存款金額的最高20%損失。",
+		"Calculationcycle": "計算週期",
+		"Calculation": "每7天重置一次",
+		"Claimtime": "領取時間：",
+		"TIP": "每週損失返還是基於存款損失金額計算。",
+		"WeeklyLoss": "每週損失金額",
+		"CashBack": "損失返還",
+		"MaxBonus": "最高獎金"
+	},
+	"WeeklyBonusPopup": {
+		"title": "每週獎金",
+		"prompt": "若您的每週存款金額超過基準線，您將獲得獎金。",
+		"Calculationcycle": "計算週期",
+		"Calculation": "每7天重置一次",
+		"Claimtime": "領取時間：",
+		"TIP": "每週獎金是根據每週存款金額計算。",
+		"TIPS": "請存款以解鎖獎金。"
+	},
+	"MonthlyBonusPopup": {
+		"title": "每月獎金",
+		"prompt": "若您的每月存款金額超過基準線，您將獲得獎金。",
+		"Calculationcycle": "計算週期",
+		"Calculation": "每30天重置一次",
+		"Claimtime": "領取時間：",
+		"TIP": "每月獎金是根據每月存款金額計算。",
+		"TIPS": "請存款以解鎖獎金。"
+	},
+	"BonusFAQ": {
+		"FrequentlyAskedQuestions": [{
+				"Q": "領取獎勵有何限制嗎？",
+				"A": "領取獎勵沒有任何限制。"
+			},
+			{
+				"Q": "獎金會過期嗎？",
+				"A": "不會。損失返還、每週獎金和每月獎金會保存於帳戶中，直到您領取為止。"
+			},
+			{
+				"Q": "有關領取獎勵的限制條款嗎？",
+				"A": "獎勵僅適用於個人帳戶（單個帳戶和IP地址）。若使用者試圖通過多個帳戶獲取獎勵，獎勵將無效，帳戶可能被停用。"
+			},
+			{
+				"Q": "如何啟用獎勵？",
+				"A": "部分獎勵需通過存款啟用。請點擊獎勵卡片上的「存款」按鈕或在錢包彈窗中選擇獎勵。"
+			},
+			{
+				"Q": "存款獎金如何運作？",
+				"A": "存款獎金是根據您存款金額的比例額外提供的獎金。"
+			},
+			{
+				"Q": "存款獎金是什麼？",
+				"A": "當您選擇存款獎金時，您會根據存款金額的比例獲得額外的獎金，但不會超過獎金詳情中列出的最高獎金金額。"
+			}
+		]
+	},
+	"WelcomePackgePopup": {
+		"Packge": "歡迎套餐",
+		"prompt": "成功註冊帳戶後，即可獲得歡迎套餐。",
+		"RegBTN": "立即註冊"
+	},
+	"DepositPageBonus": {
+		"Packge": "歡迎套餐",
+		"More": "更多信息",
+		"EARNBonus": "領取獎金",
+		"DepBonusPlus": "存款獎金加碼",
+		"UPTO": "高達",
+		"depto": "儲值達到",
+		"andget": "可獲得",
+		"CLOSE": "存款成功處理前請勿更改獎金狀態。"
+	},
+	"LockFundsPop-ups": {
+		"title": "資金鎖定",
+		"prompt": "根據反洗錢政策，您需要完成投注才能提款。",
+		"prompt1": "每5分鐘進行一次統計。",
+		"Depositin": "存款金額",
+		"TotalWager": "總投注金額"
+	},
+	"OrderProgerss": {
+		"title": "訂單進度",
+		"status": "狀態",
+		"time": "時間",
+		"OrderID": "訂單ID",
+		"PayPe": "支付提供商",
+		"TOP1": "訂單生成",
+		"TOP2": "等待處理",
+		"tip1": "訂單會在5至10分鐘內完成。",
+		"TOP3": "交易完成",
+		"TOP3b": "交易失敗",
+		"support": "聯繫客服"
+	},
+	"RewardHistoryPopup": {
+		"title": "獎勵歷史記錄",
+		"TotalBonus": "總獎金",
+		"bonus1": "存款獎金",
+		"bonus2": "每日返點",
+		"bonus3": "每日損失返還",
+		"bonus4": "每週損失返還",
+		"bonus5": "等級獎金",
+		"bonus6": "其他獎金"
+	},
+	"ADDnew": {
+		"WithDea": "提款詳情",
+		"TIPS": "請確認提款信息並輸入資金密碼。",
+		"WithACC": "提款帳戶",
+		"WithAmo": "提款金額",
+		"AcPAY": "實際支付金額",
+		"VerifyFundPassword": "驗證資金密碼",
+		"ConfirmBTN": "確認",
+		"cashback": "損失返還",
+		"Promotions": "促銷活動",
+		"LevelUPCongra": "恭喜",
+		"NewLevel": "達到新等級",
+		"LevelBonus": "等級獎金",
+		"TIP1": "快速方便",
+		"ClaimBTN": "領取",
+		"BirthHappy": "生日快樂",
+		"CurrentLevel": "當前等級",
+		"BirthBonus": "生日獎金",
+		"TIP2": "安裝並領取獎勵",
+		"BirthB": "您的生日獎金 {BirthB} 已發送，請查收。",
+		"LevelB": "您達到了 {Level} 級，獲得了等級獎金 {LevelB}，請查收。",
+		"Bonus": "獎金",
+		"Reward": "獎勵",
+		"18TIP": "本網站提供具有風險的遊戲體驗。您必須年滿18歲才能使用我們的網站，我們不對任何違反您所在區域法律的行為負責。請負責任地享受遊戲。",
+		"all": "版權所有",
+		"priWith": "優先提款",
+		"excPrev": "獨家預覽",
+		"onlSupp": "專屬在線客服",
+		"excProm": "獨家促銷活動",
+		"register1": "必須輸入至少8個字符",
+		"register2": "必須包含數字",
+		"register3": "必須包含字母",
+		"register4": "必須包含大寫字母",
+		"register5": "必須包含小寫字母",
+		"Poker": "撲克",
+		"Lottery": "彩票",
+		"Arcade": "街機"
+	},
+	"DailySignIn": {
+		"Title": "每日簽到",
+		"Prompt": "完成連續簽到任務",
+		"NumberOfCheckins": "簽到次數",
+		"DailyRecharge": "每日充值",
+		"Todaybetting": "今日投注",
+		"CheckTheDetails": "查看詳情",
+		"SignInNow": "立即簽到",
+		"Day1": "第一天",
+		"Day2": "第二天",
+		"Day3": "第三天",
+		"Day4": "第四天",
+		"Day5": "第五天",
+		"Day6": "第六天",
+		"Day7": "第七天",
+		"SignedIn": "已簽到",
+		"NotSignedIn": "未簽到",
+		"SignInTask": "簽到任務",
+		"InProgress": "進行中",
+		"Earn": "獲取",
+		"TodayDeposit": "今日存款",
+		"Receive": "立即領取"
+	},
+	"ADDnew2": {
+		"DownloadTheApp": "下載應用",
+		"NoRewardsYet": "暫無獎勵",
+		"PleaseuseyourphonealbumtoscantheQRcodetodownload": "使用手機相冊掃描二維碼下載。",
+		"DirectDownload": "直接下載",
+		"Android": "安卓",
+		"Apple": "蘋果",
+		"CopyTheDownloadlink": "複製下載鏈接",
+		"Rewards": "熱門獎勵",
+		"Hint": "貨幣單位取決於第三方遊戲，無法更改。",
+		"PopUps": "為了保護資金，提款前請驗證您的電話號碼或電子郵件地址。",
+		"Security Verification": "已通過安全驗證。",
+		"How to use": "使用方法"
+	},
+	"Betting requirements": {
+		"title": "投注要求",
+		"register1": "需要額外投注以提取資金",
+		"register2": "",
+		"hint": "根據反洗錢政策，您需要完成投注才能提款。",
+		"register3": "每5分鐘進行一次統計",
+		"register4": "存款時",
+		"register5": "領取獎金時",
+		"register6": "總投注金額",
+		"register7": "複製成功"
+	},
+	"ADDnew3": {
+		"Tips": "提示",
+		"Complete the operation": "要繼續進行，您需要完成以下操作：",
+		"Complete information": "完善個人信息",
+		"Verify mobile phone": "驗證手機號",
+		"Verify email": "驗證電子郵件",
+		"Bind account": "綁定提款帳戶",
+		"Start": "開始",
+		"Confirm": "確認"
+	}
+}

@@ -1,0 +1,43 @@
+// 引入公共基础类
+@import "./libs/scss/common.scss";
+@import "./libs/scss/color.scss";
+
+// 非nvue的样式
+/* #ifndef APP-NVUE */
+@import "./libs/scss/style.vue.scss";
+/* #endif */
+
+// nvue的特有样式
+/* #ifdef APP-NVUE */
+@import "./libs/scss/style.nvue.scss";
+/* #endif */
+
+// 小程序特有的样式
+/* #ifdef MP */
+@import "./libs/scss/style.mp.scss";
+/* #endif */
+
+// H5特有的样式
+/* #ifdef H5 */
+@import "./libs/scss/style.h5.scss";
+/* #endif */
+
+// Qiaozhi SCSS
+// Mixins & Variables
+@import "./libs/scss/abstracts/mixins.scss";
+@import "./libs/scss/abstracts/variables.scss";
+
+// Base
+@import "./libs/scss/base/base.scss";
+
+// Components
+@import "./libs/scss/components/header.scss";
+@import "./libs/scss/components/menu.scss";
+@import "./libs/scss/components/navigation.scss";
+@import "./libs/scss/components/PromotionSwiper.scss";
+@import "./libs/scss/components/sections.scss";
+@import "./libs/scss/components/footer.scss";
+
+// UI Elements
+@import "./libs/scss/elements/images.scss";
+@import "./libs/scss/elements/buttons.scss";

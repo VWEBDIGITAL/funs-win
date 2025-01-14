@@ -1,0 +1,150 @@
+/*
+ * @package	     VWEB.DIGITAL
+ * @subpackage	 Qiaozhi Mixins
+ * @author       <VWEB.DIGITAL>
+ * @website      <https://vweb.digital>
+ * @copyright    Copyright © 2025 VWEB.DIGITAL. All Rights Reserved.<https://vweb.digital>
+ * @license      GNU General Public License Version 2; See License.txt
+ */
+
+ // Mixins & Functions
+ @mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin transform-center {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+@mixin after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+@mixin before-after {
+    &:before, &:after {
+      @content;
+    }
+}
+
+@mixin text-wrap {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+@mixin transition {
+    -webkit-transition: 0.4s all ease-out;
+    -moz-transition: 0.4s all ease-out;
+    -ms-transition: 0.4s all ease-out;
+    -o-transition: 0.4s all ease-out;
+    transition: 0.4s all ease-out;
+}
+
+@mixin no-transition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin object-fit {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+// Responsive Breakpoints
+@mixin breakpoint($point) {
+    @if $point==xs {
+        @media (min-width: 320px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xs {
+        @media (max-width: 450px) {
+            @content ;
+        }
+    }
+    @if $point==sm {
+        @media (min-width: 576px) {
+            @content ;
+        }
+    }
+    @else if $point==max-sm {
+        @media (max-width: 575px) {
+            @content ;
+        }
+    }
+    @else if $point==md {
+        @media (min-width: 768px) {
+            @content ;
+        }
+    }
+    @else if $point==max-md {
+        @media (max-width: 767px) {
+            @content ;
+        }
+    }
+    @else if $point==lg {
+        @media (min-width: 992px) {
+            @content ;
+        }
+    }
+    @else if $point==max-lg {
+        @media (max-width: 991px) {
+            @content ;
+        }
+    }
+    @else if $point==xl {
+        @media (min-width: 1200px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xl {
+        @media (max-width: 1199px) {
+            @content ;
+        }
+    }
+    @else if $point==xxl {
+        @media (min-width: 1400px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xxl {
+        @media (max-width: 1399px) {
+            @content ;
+        }
+    }
+}

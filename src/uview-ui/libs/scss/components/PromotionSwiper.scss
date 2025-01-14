@@ -1,0 +1,131 @@
+uni-page-body {
+	.hero-swiper {
+	  display: block;
+	  position: relative;
+	  @include breakpoint(lg) {
+		padding: 3rem 2rem 0 2rem;
+	  }
+	  margin: 0;
+	  overflow: hidden;
+  
+	  &::before,
+	  &::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 5rem;
+		height: 100%;
+		z-index: 10;
+		pointer-events: none;
+	  }
+  
+	  &::before {
+		left: 0;
+		background: linear-gradient(to right, $bg, transparent);
+	  }
+  
+	  &::after {
+		right: 0;
+		background: linear-gradient(to left, $bg, transparent);
+	  }
+	}
+  
+	& .swpier_skeleton_loading {
+	  height: 200px;
+	  border-radius: 7px;
+	  background: -webkit-linear-gradient(
+		left,
+		$loading-secondary 25%,
+		$loading 40%,
+		$loading-secondary 50%
+	  );
+	  background: linear-gradient(
+		90deg,
+		$loading-secondary 25%,
+		$loading 40%,
+		$loading-secondary 50%
+	  );
+	  background-size: 400% 100%;
+	  -webkit-animation: loading 1.4s ease infinite;
+	  animation: loading 1.4s ease infinite;
+	}
+	.skeleton_loading {
+	  -webkit-box-flex: 1;
+	  -webkit-flex: 1;
+	  flex: 1;
+	  margin: 0 9px 4px 0;
+	  height: 32px;
+	  border-radius: 8px;
+	  background: -webkit-linear-gradient(
+		left,
+		$loading-secondary 25%,
+		$loading 40%,
+		$loading-secondary 50%
+	  );
+	  background: linear-gradient(
+		90deg,
+		$loading-secondary 25%,
+		$loading 40%,
+		$loading-secondary 50%
+	  );
+	  background-size: 400% 100%;
+	  -webkit-animation: loading 1.4s ease infinite;
+	  animation: loading 1.4s ease infinite;
+	}
+	@keyframes loading {
+	  0% {
+		background-position: 100% 50%;
+	  }
+	  100% {
+		background-position: 0 50%;
+	  }
+	}
+  
+	.swiper-navigation-wrapper {
+	  display: flex;
+	  position: relative;
+	  padding: 1.5rem 2rem 1rem 0rem;
+	  justify-content: center;
+	  align-items: center;
+	  overflow: hidden;
+  
+	  .swiper-button-next,
+	  .swiper-button-prev {
+		position: relative;
+		color: #fff;
+		z-index: 110;
+		display: block;
+		text-align: center;
+		line-height: 0;
+		height: auto;
+		left: unset;
+		right: unset;
+		top: unset;
+		margin: 0;
+		width: auto;
+		color: $color;
+		font-weight: bolder;
+  
+		&.swiper-button-prev:after,
+		&.swiper-button-next:after {
+		  font-size: 14px;
+		  padding: 0.5rem;
+		}
+	  }
+	  .swiper-pagination {
+		position: relative;
+		width: auto;
+		top: 0;
+		margin: 0rem 1rem;
+		& span.swiper-pagination-bullet {
+		  position: relative;
+		  width: 1rem;
+		  background: $color-primary;
+		  border-radius: 300px;
+		  &.swiper-pagination-bullet-active {
+			width: 3.45rem;
+		  }
+		}
+	  }
+	}
+  }  

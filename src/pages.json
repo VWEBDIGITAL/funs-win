@@ -1,0 +1,364 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"backgroundColor": "$all-secondary-colorb",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/Bonus/Bonus",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Wallet/Wallet",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Account/Account",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Webview/Webview",
+			"style": {
+				"navigationStyle": "custom",
+
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"disableSwipeBack": true
+			}
+		},
+		{
+			"path": "pages/ProfileInfo/ProfileInfo",
+			"style": {
+				"navigationStyle": "custom",
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Settings/Settings",
+			"style": {
+				"navigationStyle": "custom",
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/GamingHistory/GamingHistory",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Transaction/Transaction",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/ManageAccount/ManageAccount",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/BonusOffer/BonusOffer",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/VaultPro/VaultPro",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/myPageDetails/myPageDetails",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/FrequentlyAskedQuestions/FrequentlyAskedQuestions",
+			"style": {
+				"navigationBarTitleText": "Frequently Asked Questions",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Notification/Notification",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/BonusDetails/BonusDetails",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Referandearn/Referandearn",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/vipClub/vipClub",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Bettingrebates/Bettingrebates",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/ReferredPlayers/ReferredPlayers",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/QuestHub/QuestHub",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Spin/Spin",
+			"style": {
+				"navigationBarTitleText": "SPIN",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/ForgotPassword/ForgotPassword",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/myfavoriteList/myfavoriteList",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/MyhistoryList/MyhistoryList",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/searchFor/searchFor",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/chatWebview/chatWebview",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/AboutUs/AboutUs",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/venDorsAll/venDorsAll",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/supplierGameList/supplierGameList",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/recommend/recommend",
+			"style": {
+
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/bonus-cabinet/bonus-cabinet",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/Bonus-Logoin/Bonus-Logoin",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/VipClubsNew/VipClubsNew",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/classify/classify",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/classifycopy/classify",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/homeNew/homeNew",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/GoogleLogin/GoogleLogin",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/SystemMaintenance/SystemMaintenance",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/ApplicationActivitiesList/ApplicationActivitiesList",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/Withdrawals/Withdrawals",
+			"style": {
+
+				"enablePullDownRefresh": true
+			}
+		}
+	],
+	"globalStyle": {
+		"//maxWidth": 430,
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"//navigationBarBackgroundColor": "#ffffff",
+		"//backgroundColor": "#0d131c",
+		"navigationStyle": "custom",
+		"app-plus": {
+			"bounce": "none",
+			"animationType": "pop-in",
+			"animationDuration": 300
+		},
+		"rpxCalcMaxDeviceWidth": 768, 
+		"rpxCalcBaseDeviceWidth": 375,
+		"rpxCalcIncludeWidth": 750 
+	},
+	"topWindow": {
+		"path": "responsive/top-window.vue",
+		"style": {
+			"height": "64px"
+		}
+	},
+	"leftWindow": {
+		"path": "responsive/left-window.vue", 
+		"style": {
+			"width": "232px" 
+		},
+		"matchMedia": {
+			"minWidth": 800 
+		}
+	},
+
+
+
+	"tabBar": {
+		"borderStyle": "$all-secondary-color",
+		"backgroundColor": "#1D262D",
+		"color": "#B1BAD3",
+		"selectedColor": "#ffffff",
+		"height": "0px",
+		"fontSize": "12px",
+		"iconWidth": "22px",
+		"list": [{
+
+				"pagePath": "pages/index/index",
+				"//iconPath": "static/tabbar/tabbar1.png",
+				"//selectedIconPath": "static/tabbar/tabbar11.png",
+				"//text": "Home"
+			}, {
+				"//pagePath": "pages/Bonus/Bonus",
+				"//iconPath": "static/tabbar/tabbar2.png",
+				"//selectedIconPath": "static/tabbar/tabbar22.png",
+				"//text": "Bonus"
+			}, {
+				"pagePath": "pages/Wallet/Wallet",
+				"//iconPath": "static/tabbar/tabbar2.png",
+				"//selectedIconPath": "static/tabbar/tabbar22.png",
+				"//text": "Bonus"
+			}, {
+				"pagePath": "pages/Referandearn/Referandearn",
+				"//iconPath": "static/tabbar/tabbar3.png",
+				"//selectedIconPath": "static/tabbar/tabbar33.png",
+				"//text": "Wallet"
+			},
+			{
+				"pagePath": "pages/Account/Account",
+				"//iconPath": "static/tabbar/tabbar4.png",
+				"//selectedIconPath": "static/tabbar/tabbar44.png",
+				"//text": "Account"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

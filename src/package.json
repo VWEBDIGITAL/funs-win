@@ -1,0 +1,22 @@
+{
+	"id": "",
+	"name": "",
+	"version": "1.1.0",
+	"description": "",
+	"keywords": [
+		""
+	],
+	"dcloudext": {
+		"category": []
+	},
+	"dependencies": {
+		"@fingerprintjs/fingerprintjs": "^4.5.0",
+		"fingerprintjs2": "^2.1.4",
+		"libphonenumber-js": "^1.11.8",
+		"linq": "^4.0.2",
+		"nativeshare": "^2.1.5",
+		"swiper": "^11.1.15",
+		"vue-seamless-scroll": "^1.1.23",
+		"vuex-persistedstate": "^4.1.0"
+	}
+}

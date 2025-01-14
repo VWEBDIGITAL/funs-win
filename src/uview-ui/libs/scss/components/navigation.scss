@@ -1,0 +1,45 @@
+.uv-sticky {
+	z-index: 120 !important;
+  }
+
+uni-main {
+	& .list_wrap_box {
+	  position: relative;
+	  & .lobby_nav {
+		display: block;
+		padding: 0.25rem 0.25rem;
+		border: 1px solid $border-color-dark;
+		border-radius: 3.125rem;
+		box-sizing: border-box;
+		& .u-tab-item {
+		  position: relative;
+		  padding: 0.75rem 1rem;
+		  height: auto !important;
+		  line-height: $line-height !important;
+		  background-color: transparent;
+		  border-radius: inherit;
+		  &.bg_color {
+			padding: 0.75rem 1rem;
+			background-image: none !important;
+			background-color: $color-primary;
+			height: auto !important;
+			line-height: $line-height !important;
+			border-radius: 5rem;
+		  }
+		  & .tabs_icon .moren {
+			margin-right: 0.6rem;
+		  }
+		}
+	  }
+	  & .souso_cion {
+		display: flex;
+		position: relative;
+		padding: 1rem 0.75rem;
+		margin: 0 2rem 0rem 1rem;
+		justify-content: start;
+		align-items: center;
+		background-color: $color-secondary;
+		border-radius: 12px;
+	  }
+	}
+  }

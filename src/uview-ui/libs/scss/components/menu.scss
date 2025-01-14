@@ -1,0 +1,195 @@
+uni-left-window {
+	// Left Window
+	& .uni-left-window {
+	  & .menu_wrap {
+		border-right: 1px solid $border-color;
+		& .menu_wrap_box2 {
+		  padding: 4.7rem 1.25rem 1rem 1rem;
+		}
+		& .cell_box {
+		  margin-bottom: 1rem;
+		  & .u-cell-item-box {
+			border-radius: 0;
+			background-color: transparent !important;
+		  }
+		  & .u-cell {
+			padding: 8px 5px !important;
+			transition: 0.2s all;
+			&:hover {
+			  border-radius: 8px;
+			  background-color: $color-secondary-all !important;
+			  & .u-cell_title {
+				color: white;
+			  }
+			}
+			&.active {
+			  &::before {
+				position: absolute;
+				content: "";
+				height: 2rem;
+				width: 3px;
+				margin-left: -20px;
+				background-color: $color-primary;
+				box-shadow: 4px 0px 12.5px 1.5px $color-primary;
+				border-radius: 0 200px 200px 0;
+			  }
+			}
+		  }
+		  & .u-cell_title {
+			color: $white;
+			font-weight: normal;
+			padding-left: 0.75rem;
+			& span.slug {
+			  color: $color-yellow;
+			  margin-right: 0.2rem;
+			}
+		  }
+		  &._default {
+			& .u-cell_title {
+			  color: $u-menu-item-color;
+			}
+		  }
+  
+		  & uni-image.arrow_right {
+			width: 14px !important;
+			height: 14px !important;
+		  }
+		}
+		& .cell_box_title {
+		  padding: 0;
+		  margin: 0 0 10px 10px;
+		  color: $color;
+		  font-size: 12px;
+		  font-style: normal;
+		  font-weight: 700;
+		  letter-spacing: $letter-spacing;
+		  line-height: 18px;
+		  text-transform: uppercase;
+		  &._no-item {
+			margin-bottom: 0;
+		  }
+		}
+	  }
+	  & .souso_cion {
+		display: flex;
+		position: relative;
+		padding: 1rem 0.75rem;
+		margin: 0 0 1rem 0;
+		justify-content: start;
+		align-items: center;
+		color: $color-dark;
+		font-size: 14px;
+		font-weight: normal;
+		background-color: $color-secondary;
+		border-radius: 12px;
+
+		& .u-icon {
+		  margin-right: 0.5rem;
+		}
+	  }
+  
+	  @media only screen and (orientation: landscape) {
+		.u-cell-item-box uni-image {
+		  width: 20px !important;
+		  height: 20px !important;
+		}
+	  }
+  
+	  // Menu Item Buttons
+	  .sevae_btn_wrap {
+		& .sevae_btn {
+		  width: auto !important;
+		  margin: 0 auto !important;
+		  &.buy_btn {
+			& .u-btn {
+			  padding: 0.65625rem 1rem;
+			}
+		  }
+		}
+		&._no_fixed {
+		  position: relative;
+		  padding: 0;
+		  margin: 0 auto;
+		  background-color: transparent;
+		  width: auto;
+		}
+		& .u-btn.u-btn--secondary {
+		  padding: 0.5rem 1rem;
+		  background: $btn-secondary-bg !important;
+		  box-shadow: none;
+		  height: auto !important;
+		  width: auto !important;
+		  line-height: 1 !important;
+		  font-weight: normal;
+		  font-size: 12px;
+		  letter-spacing: -0.24px;
+		  box-sizing: border-box;
+		  &::after {
+			border: 0;
+		  }
+		}
+	  }
+  
+	  // Payment Methods
+	  .payment_methods {
+		display: flex;
+		position: relative;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 1rem;
+		cursor: pointer;
+		overflow: hidden;
+		&._line {
+		  display: block;
+		  position: relative;
+		  height: 1px;
+		  width: 100%;
+		  background: $gradient;
+		  margin-bottom: 0.75rem;
+		}
+		& ._item {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  width: auto;
+		  height: auto;
+		  & div {
+			display: none;
+		  }
+		  & img {
+			position: relative;
+			opacity: 1;
+			width: 100%;
+			height: auto;
+		  }
+		}
+	  }
+  
+	  // Apps
+	  .cell_box_wrapper {
+		display: flex;
+		position: relative;
+		margin-bottom: 1.25rem;
+		justify-content: space-between;
+		align-items: center;
+		width: auto;
+		overflow: hidden;
+	  }
+  
+	  ._apps {
+		display: flex;
+		position: relative;
+		gap: 3px;
+		align-items: center;
+		& ._item {
+		  position: relative;
+		  height: auto;
+		  width: auto;
+		  & svg {
+			width: 14px;
+			height: 14px;
+		  }
+		}
+	  }
+	}
+  }

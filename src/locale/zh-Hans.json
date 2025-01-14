@@ -1,0 +1,1253 @@
+{
+	"tgwqj": "待领取",
+	"njy": "您将用",
+	"jxyx": "进行游戏",
+	"qtxsywt": "请填写所有问题",
+	"sqcj": "申请彩金",
+	"jjsq": "拒绝申请",
+	"tsjl": "特殊奖金",
+	"hdsq": "活动申请",
+	
+	"qsrndxf": "请输入你的想法...",
+
+	"whtext1": "由于目前系统停机升级中，请待更新后再进行登录",
+	"whtext2": "造成不便，敬请谅解！",
+	"whtext3": "维护时间:",
+	"whtext4": "结束时间:",
+	
+	"DiSanFangdl": "使用第三方登录",
+	"aqyz": "安全验证",
+	"hdhkpintu": "拖动已完成验证",
+	"shuaxin": "刷新",
+	
+	"HotGames": "热门游戏",
+	"jmhb": "虚拟币",
+	"fbck": "法币",
+	"bizhong": "币种",
+	"xianedu": "限额",
+	"njhde": "您将获得",
+	"tongguo": "于",
+	"yujidaozhang": "预计到账",
+	"xuanzejine": "选择金额",
+	"Wtopis1": "注意：您的存款奖金需要 {l} 倍的投注额才能提现",
+	"Wtopis2": "您可以在提现页面查看进度",
+	
+	
+	
+	
+	
+	
+	
+	"btnTextiOS": "立即前往更新",
+	"btnTextDownLoad": "立即下载更新",
+	"downLoadingText": "正在下载安装文件，请稍后。",
+	"btnTextInstall": "下载完成，立即安装",
+	"installText": "正在安装...",
+	"btnTextRestart": "安装完成，点击重新启动",
+	
+	"yjhsBtn": "请通过“全部回收”按钮取回游戏中的余额。",
+	"yjhs": "全部回收",
+	"dqye": "当前余额",
+	
+	"inputPhoneNumErr": "请输入正确的电话号码",
+	"XuanZeQianBao": "选额钱包",
+	"QianBaoDiZhi": "钱包地址",
+	"KaHaoNum": "卡号",
+	"huMingWuXiao": "户名无效",
+	"TianAllInfo": "请输入完整的信息",
+	"DiZhiWuXiao": "地址无效",
+	"nameWuXiao": "名称无效",
+	"getZhenshiName": "请输入真实姓名",
+	"getPhoneCode": "请输入手机验证码",
+	"getYouXiangCode": "请输入邮箱验证码",
+	
+	
+	
+	
+	
+	
+	
+	
+	"emailGeShi": "邮箱格式不正确",
+	"xuanTian": "选填",
+	"hbqian": "很抱歉,您当前无法",
+	"RenZhengSuc": "恭喜你！认证成功",
+	"RenZhengSucSub": "你可以享受游戏乐趣啦。",
+	"BiTian": "必填",
+	"Needtopay": "需支付",
+	"ViewAll": "查看全部",
+	"addactishi": "确认后不能修改账户信息。如果添加错误，请删除然后再次添加。",
+	"tabBar.home": "首页",
+	"Lobby": "娱乐城",
+	"Slots": "电子游戏",
+	"LiveCasino": "真人视讯",
+	"PlayS": "开始",
+	"Fishing": "捕鱼游戏",
+	"Sports": "体育电竞",
+	"MiniGames": "迷你游戏",
+	"Cards": "棋牌游戏",
+	"Providers": "游戏厂商",
+	"Popular": "受欢迎的",
+	"GameProviders": "游戏提供商",
+	"prompt": "正在显示{c}款游戏中的{l}款",
+	"LoadMore": "加载更多",
+	"LatestBets": "最新投注",
+	"InputGamesName": "请输入游戏名称",
+	"WagerRanking": "投注排行",
+	"AboutUs": "关于我们",
+	"PrivacyPolicy": "隐私许可",
+	"Licenses": "许可证",
+	"AMLPolicy": "反洗钱政策",
+	"TermsofService": "服务条款",
+	"ResponsibleGambling": "负责任博彩",
+	"Support": "支持",
+	"Fairness": "公平性",
+	"VIPClub": "VIP俱乐部",
+	"Refer&Earn": "推荐&返佣",
+	"Promotions": "活动",
+	"LiveSupport": "在线客服",
+	"HelpCenter": "帮助中心",
+	"Community": "社区",
+	"tabBar.bonus": "奖金",
+	"SpecialBonus": "欢迎礼包",
+	"tabBar.wallet": "钱包",
+	"DEPBtn": "存款",
+	"WDBtn": "提款",
+	"PayMethod": "支付方式",
+	"PayProvider": "支付提供商",
+	"ChooseM": "输入金额",
+	"DEP": "存款",
+	"WDMethod": "提款方式",
+	"WDAccount": "提款账号",
+	"WDM": "提款金额",
+	"Available": "可用资金",
+	"LockFunds": "锁定资金",
+	"GameBalance": "游戏余额",
+	"Recycle": "收回",
+	"Fee": "手续费",
+	"ActualPayment": "实际付款",
+	"NotSet": "尚未设置资金密码",
+	"NotAdded": "尚未添加提款账户",
+	"popupbtn": "确认",
+	"tabBar.profile": "个人",
+	"XP": "升级进度",
+	"QUEST": "任务",
+	"SPIN": "转盘",
+	"Deposit": "存款",
+	"Withdraw": "提款",
+	"Vault Pro": "保险箱",
+	"Details": "详细",
+	"GameHistory": "游戏历史",
+	"Transaction": "交易历史",
+	"ManageAccount": "账户管理",
+	"Bonus Offer": "奖金优惠",
+	"Music": "音乐",
+	"Set": "设置",
+	"regiserPopup": {
+		"title": "注册账号",
+		"username": "用户名",
+		"password": "密码",
+		"secondConfirmation": "再次输入密码",
+		"lagree": "我同意用户协议并确认我已满18岁",
+		"Unselected": "请同意我们的用户协议",
+		"regBtn": "立即注册",
+		"signIn": "登录"
+	},
+	"signInPopup": {
+		"title": "登录",
+		"username": "手机",
+		"password": "密码",
+		"RememberMe": "记住",
+		"ForgotPassword": "忘记密码",
+		"signBtn": "立即登录",
+		"regtoIn": "去创建账号"
+	},
+	"ResetPopup": {
+		"title": "重置密码",
+		"VerificationType": "验证类型",
+		"Phone": "手机",
+		"Email": "邮箱",
+		"VCode": "验证码",
+		"Sent": "发送",
+		"Resent": "重新发送",
+		"NewPassword": "新密码",
+		"popupbtn": "确定",
+		"signIn": "去登录"
+	},
+	"SignoutPopup": {
+		"title": "退出登录",
+		"prompt": "离开前别忘了查看我们精选的赌场和体育促销活动!",
+		"outBtn": "确定退出"
+	},
+	"emailPopup": {
+		"title": "邮箱",
+		"emailverification": "电子邮箱验证",
+		"HaSent": "我们已发送验证码，请输入：",
+		"VCode": "验证码",
+		"verifyBtn": "验证"
+	},
+	"phonePopup": {
+		"title": "手机",
+		"emailverification": "手机号码验证",
+		"HaSent": "我们已发送验证码，请输入：",
+		"VCode": "验证码",
+		"verifyBtn": "验证"
+	},
+	"loginPasswordPopup": {
+		"title": "登录密码",
+		"changeLoginPassword": "修改登录密码",
+		"OldPassword": "原始密码",
+		"Newpassword": "修改密码",
+		"Confirmpassword": "确认密码",
+		"prompt": "修改密码后需要重新登录。",
+		"popupbtn": "确定"
+	},
+	"fundPasswordPopup": {
+		"title": "资金密码",
+		"changeFundPassword": "修改资金密码",
+		"OldPassword": "原始密码",
+		"Newpassword": "修改密码",
+		"Confirmpassword": "确认密码",
+		"popupbtn": "确定"
+	},
+	"languagePopup": {
+		"title": "选择语言",
+		"popupbtn": "确定"
+	},
+	"avatarPopup": {
+		"title": "选择头像",
+		"popupbtn": "确定"
+	},
+	"PerStatisticsPopup": {
+		"title": "个人统计",
+		"Joinedon": "加入于",
+		"Statistics": "统计",
+		"TotalDeposits": "存款次数",
+		"AccumulatedDeposits": "累计存款",
+		"AvailableFunds": "可用资金",
+		"TotalBets": "投注次数",
+		"TotalWins": "获胜次数",
+		"TotalWagered": "投注金额",
+		"ViewGameDetailsBtn": "查看更多游戏详情"
+	},
+	"musicPopup": {
+		"title": "音乐",
+		"Message": "已下载",
+		"Download": "下载中%"
+	},
+	"PlayStatisticsPopup": {
+		"title": "玩家统计",
+		"Joinedon": "加入于",
+		"Statistics": "统计",
+		"TotalDeposits": "存款次数",
+		"AccumulatedDeposits": "累计存款",
+		"AvailableFunds": "可用资金",
+		"TotalBets": "获胜次数",
+		"TotalWins": "投注金额",
+		"TotalWagered": "投注金额",
+		"Contribute": "我的利润",
+		"BettingContribution": "直接佣金",
+		"AgentContribution": "间接佣金",
+		"TotalContribution": "佣金合计",
+		"Referralbonus": "推荐奖金",
+		"ViewGameDetailsBtn": "查看更多游戏详情"
+	},
+	"CommissionRatePopup": {
+		"title": "佣金比例",
+		"Slots": "电游",
+		"Live Casino": "真人",
+		"Fishing": "捕鱼",
+		"Sports": "体育电竞",
+		"Mini Games": "迷你游戏",
+		"Cards": "棋牌",
+		"Level": "代理等级",
+		"ValidBets": "有效投注",
+		"Commission": "佣金"
+	},
+	"RebateRatePopup": {
+		"title": "返水比例",
+		"Slots": "电游",
+		"Live Casino": "真人",
+		"Fishing": "捕鱼",
+		"Sports": "体育电竞",
+		"Mini Games": "迷你游戏",
+		"Cards": "棋牌",
+		"VIP": "VIP等级",
+		"ValidBets": "有效投注",
+		"RebateRate": "返水比例"
+	},
+	"AddAccoundPopup": {
+		"title": "添加账户",
+		"AccoundType": "账户类型",
+		"Accound": "账户",
+		"AccoundName": "户名",
+		"SaveBtn": "保存"
+	},
+	"DeleteAccoundPopup": {
+		"title": "删除账户",
+		"prompt": "账户信息确认后不可修改。如果添加错误，请删除并重新添加！",
+		"DeleteBtn": "删除"
+	},
+	"navBar": {
+		"rtitle1": "登录",
+		"rtitle2": "注册"
+	},
+	"navBarTitle": {
+		"ProfileInfo": "个人信息",
+		"Name": "姓名",
+		"Birthday": "生日",
+		"Email": "邮箱",
+		"Phone": "手机",
+		"Verify": "验证",
+		"SaveBtn": "保存"
+	},
+	"sidebar": {
+		"title1": "个人中心",
+		"title2": "促销活动",
+		"title3": "音乐",
+		"title4": "赌场",
+		"title5": "体育",
+		"title6": "收藏",
+		"title7": "最近",
+		"title8": "推荐&返佣",
+		"title9": "VIP俱乐部",
+		"title10": "在线客服",
+		"title11": "语言"
+	},
+	"VaultPage": {
+		"title": "保险箱",
+		"TransferIn": "转入",
+		"TransferOut": "转出",
+		"Amount": "金额",
+		"Max": "最大",
+		"Available": "可用资金",
+		"LockFunds": "锁定资金",
+		"TransferVault": "转入保险箱",
+		"VaultBalance": "保险箱余额",
+		"WithdrawWallet": "提款到钱包",
+		"Details": "详情",
+		"F&Q": "常见问题"
+	},
+	"NotificationPage": {
+		"title": "通知",
+		"SystemNotice": "系统通知",
+		"PersonalNotice": "个人通知",
+		"ShowAll": "展示全部",
+		"Hide": "隐藏",
+		"Blankprompt1": "暂无任何通知"
+	},
+	"DetailsPage": {
+		"title": "充提详情",
+		"DownOption1": "存款",
+		"DownOption2": "提款",
+		"DateOption1": "今日",
+		"DateOption2": "昨日",
+		"DateOption3": "最近7日",
+		"DateOption4": "最近30日",
+		"Status0": "全部状态",
+		"Status1": "待支付",
+		"Status2": "支付失败",
+		"Status3": "已完成",
+		"Status4": "待审核",
+		"Status5": "审核通过",
+		"Status6": "已驳回",
+		"Status7": "提款拒绝"
+	},
+	"GamingHistoryPage": {
+		"title": "游戏历史",
+		"DownOption3": "已结算投注",
+		"DownOption4": "未结算投注",
+		"Providers": "供应商",
+		"Bet": "投注",
+		"W/L": "输赢",
+		"Blankprompt2": "暂无任何数据"
+	},
+	"TransactionPage": {
+		"title": "交易明细",
+		"TraOption0": "所有类型",
+		"FundingCorrection": "资金修正",
+		"Commission": "佣金",
+		"RebateRewards": "返水奖励",
+		"Deposit": "存款",
+		"DepositBonus": "存款奖金",
+		"LevelUpBonus": "升级奖金",
+		"BirthdayBonus": "生日奖金",
+		"WeeklyBonus": "每周奖金",
+		"MonthlyBonus": "每月奖金",
+		"ReferralRewards": "推荐奖励",
+		"SpinBonus": "旋转奖金",
+		"QuestBonus": "任务奖励",
+		"OtherBonuses": "其他奖励",
+		"Withdraw": "提款",
+		"WithdrawFee": "手续费",
+		"Refunded": "已退款",
+		"Vault": "保险库",
+		"GamePoints": "游戏上分",
+		"GameScores": "游戏下分"
+	},
+	"ManageAccountPage": {
+		"title": "管理账户",
+		"WDAccount": "提款账户",
+		"AddAccound": "添加账户"
+	},
+	"BonusOfferPage": {
+		"title": "奖金优惠",
+		"BonusOption0": "奖金类型",
+		"BonusOption1": "存款优惠",
+		"BonusOption2": "返水奖励",
+		"BonusOption3": "升级奖励",
+		"BonusOption4": "生日礼金",
+		"BonusOption5": "每周礼金",
+		"BonusOption6": "每月礼金",
+		"BonusOption7": "推荐奖励",
+		"BonusOption8": "任务奖励",
+		"BonusOption9": "转盘奖励",
+		"BonusOption10": "代理佣金",
+		"BonusOption11": "其他奖励"
+	},
+	"SetPage": {
+		"title": "设置",
+		"LoginPassword": "登录密码",
+		"FundPassword": "资金密码",
+		"ProfileInfo": "个人信息",
+		"Language": "语言",
+		"Theme": "主题",
+		"SignOut": "退出登录"
+	},
+	"NEWReferpageA": {
+		"title": "每次推荐玩家获得奖金{MAX} & 获得高达{max}%返佣",
+		"subtitle": "朋友分享给朋友以获得更多间接佣金",
+		"InBTN": "开始邀请推荐人",
+		"TotalReferrlas": "推荐总计",
+		"TotalRewards": "奖励总计",
+		"LiveRewards": "实时奖励",
+		"title1": "每次推荐皆可享受{MAX}奖励",
+		"subtitle1": "每位您邀请的玩家都会为您带来{MAX}奖励！",
+		"title2": "赚取高达{max}%返佣",
+		"subtitle2": "邀请您的朋友可从他们的游戏中得到高达{max}%的返佣。",
+		"title3": "间接推荐返佣",
+		"title4": "您的团队玩得越多，您获得的利润就越多",
+		"subtitle4": "发展您的团队并鼓励他们一起玩更多游戏并赚更多钱。 累积投注金额越大，您的返佣比例就越高！",
+		"InBTN": "开始邀请推荐人",
+		"Exclusive": "独家 联盟计划",
+		"subtitle5": "你有大量的观众和追随者吗？成为我们的合作伙伴，推荐利润高达85%。从推荐的玩家身上赚取一定比例的净收入。加入让我们一起享受成功",
+		"title5": "特别优惠",
+		"BecomeBTN": "成为合作伙伴"
+	},
+	"NEWReferpageB": {
+		"title": "推荐计划",
+		"ReferralBTN": "推荐系统",
+		"Dashboard": "仪表盘",
+		"Referrals": "推荐人",
+		"Mytotalprofit": "我的总利润",
+		"Totalreferrals": "总推荐人",
+		"invite1": "邀请新用户即可获得：",
+		"invite2": "每次推荐成功皆可获得奖励达{MAX}",
+		"invite3": "自活跃帐户领取高达{max}%返佣",
+		"Yourreferrallink": "您的推荐链接",
+		"QRBTN": "查看二维码",
+		"ShareviasocialsBTN": "通过社交软件分享",
+		"Mybalance": "我的余额",
+		"ReferralBonus": "推荐奖励",
+		"LockedBalance": "已锁定余额",
+		"CommissionRewards": "返佣奖励",
+		"Available": "可用",
+		"Details": "详情",
+		"ViewCommission": "查看返佣明细",
+		"ClaimAvailableBonus": "提取奖金",
+		"MyReferrals": "我的推荐人",
+		"MyProfit": "我的收益",
+		"Last7days": "最近7天",
+		"Last30days": "最近30天",
+		"TotalReferrals": "推荐人数",
+		"TotalDeposits": "存款人数",
+		"MyTotalProfit": "我的总收益",
+		"MyRewardsHistory": "我的奖励历史",
+		"REWARDTYPE": "奖励类型",
+		"REWARDTYPE1": "推荐奖金",
+		"REWARDTYPE2": "佣金奖励",
+		"DATE": "时间",
+		"AMOUNT": "数量",
+		"LiveRewards": "实时奖励",
+		"TotalRewards": "奖励总计",
+		"Leaderboard": "排行榜",
+		"ComingSoon": "即将推出",
+		"GoToLeaderboard": "前往排行榜"
+	},
+	"CommissionPopup": {
+		"title": "佣金比例",
+		"Slots": "电游",
+		"LiveCasino": "真人",
+		"Fishing": "捕鱼",
+		"Sports": "体育电竞",
+		"Mini Games": "迷你游戏",
+		"Cards": "棋牌",
+		"Bingo": "彩票游戏",
+		"Level": "代理等级",
+		"ValidBets": "有效投注",
+		"Commission": "佣金比例",
+		"title1": "直接佣金计算公式：所有推荐人电游(投注×佣金比例)+捕鱼(投注×佣金比例)+真人(投注×佣金比例)....",
+		"title2": "间接佣金计算公式：所有推荐人电游(投注×(我的佣金比例-下级佣金比例))+捕鱼(投注×(我的佣金比例-下级佣金比例))+真人(投注×(我的佣金比例-下级佣金比例))...."
+	},
+	"RecommendPopup": {
+		"title1": "分享给朋友",
+		"title2": "分享您的推荐链接或二维码给您的朋友们。",
+		"title3": "得到{max}",
+		"title4": "您的推荐奖金将暂时锁定。",
+		"title5": "解锁您的奖金",
+		"title6": "奖金将根据总投注金额逐步解锁。",
+		"title7": "解锁规则",
+		"title8": "随着推荐人总押注的增加，您的推荐奖金也会逐步解锁。解锁的奖励部分可认领。您将可以使用他们玩游戏或提款。",
+		"title9": "玩家总投注",
+		"title0": "解锁金额"
+	},
+	"ReferPage": {
+		"title": "推荐返佣",
+		"RecommendedLink": "推荐链接",
+		"ReferralBonus": "推荐奖金",
+		"Commission": "佣金",
+		"TodayReferralBonus": "今日推荐奖金",
+		"NewPlayers": "新玩家数",
+		"NewValidPlayers": "新有效玩家数",
+		"TodayCommission": "今日佣金",
+		"BettingContribution": "直接佣金",
+		"AgentContribution": "间接佣金",
+		"Caption1": "邀请好友奖励",
+		"Explain1": "每次邀请好友注册并满足激活条件，您将获得{dbhjlje}的邀请奖金。您收到的邀请越多，奖励就越高",
+		"Caption2": "投注贡献和代理贡献",
+		"Explain2": "当您邀请好友玩游戏时，您将从他们的投注中获得佣金；同时，您的好友会邀请好友注册并玩游戏，产生投注作为佣金，您也会收到好友代理佣金的一部分",
+		"CommissionRanking": "佣金排行",
+		"F&Q": "常见问答"
+	},
+	"PlayerPage": {
+		"title": "推荐玩家",
+		"EnterID": "输入玩家ID或用户名",
+		"Player": "玩家",
+		"totalbet": "总投注",
+		"myprofit": "我的利润",
+		"Referralbonus": "推荐奖金",
+		"BettingContribution": "直接佣金",
+		"AgentContribution": "间接佣金"
+	},
+	"VIPPage": {
+		"title": "VIP俱乐部",
+		"Explain1": "下注 {price1} / {price2} 可晋升下一级别并获得促销奖金",
+		"XP": "升级进度",
+		"Explain2": "升级即可独家获得丰厚奖励和个性化礼物！加入我们的精英玩家社区，享受在线游戏所提供的最佳体验",
+		"DailyRebate": "每日返水",
+		"LevelUpBonus": "升级奖金",
+		"WeeklyCashback": "每周礼金",
+		"MonthlyCashback": "每月礼金",
+		"BirthdayBonus": "生日礼金",
+		"BonusStatus1": "领取",
+		"BonusStatus2": "已领取",
+		"BonusStatus3": "已过期",
+		"BonusStatus4": "无效的",
+		"History": "领取记录",
+		"ViewBtn": "查看"
+	},
+	"RebatesPage": {
+		"title": "返水详情",
+		"TodayWagered": "今日投注",
+		"RebatesAvailable": "可返水",
+		"ClaimBtn": "领取",
+		"GameProvider": "游戏提供商",
+		"Ratio": "比例",
+		"BetAmount": "投注金额",
+		"RebateAmount": "返水金额"
+	},
+	"opoupToast": {
+		"username": "请输入账户或邮箱",
+		"password": "请输入密码",
+		"confirmation": "请再次输入密码",
+		"NotheSame": "两次密码不一致",
+		"rememberMe": "记住我",
+		"Agreement": "请勾选用户协议"
+	},
+	"VaultQ&A": {
+		"FrequentlyAskedQuestions": [{
+				"Q": "如何使用我们的保险箱来存储货币？",
+				"A": "尽管进行投注非常安全，但保险箱为您的资金提供了额外的保护。每个用户都可以访问保险箱，无论您是否玩游戏赌场游戏或对您最喜欢的投注运动的。"
+			},
+			{
+				"Q": "保险箱是什么？",
+				"A": "保险箱是存储资金的安全场所，无需担心交易费用或区块链延迟。保险箱就像您自己的数字钱包，甚至就像您在银行拥有的储蓄账户。得益于资金密码，它非常安全，您可以实施增强的安全措施来保护内部的货币。"
+			},
+			{
+				"Q": "如何访问保险箱？",
+				"A": "访问保险箱非常简单，可以通过任何移动设备完成。以下是访问您的保险箱的步骤：\n1. 登录您的帐户。\n2. 导航至主用户菜单。\n3. 转到帐户 > 保险箱。\n4. 访问您的保险箱并设置您的安全功能。\n5. 将货币存入您的保险箱。"
+			},
+			{
+				"Q": "您如何使用保险箱？",
+				"A": "保险箱的主要用途是保证您的资金安全。当您完成货币存款时，您可以将您的货币添加到保险库中，以增加一层保护，以确保您的资金安全。\n保险箱确保数字支付的安全传输，并且易于使用的界面意味着当您想使用您的货币时，无论您是在玩游戏，都可以轻松访问，或将投注押在最大的即将到来的体育事件。"
+			},
+			{
+				"Q": "将资金存放在保险箱安全吗？",
+				"A": "是的，将资金存储在保险箱中是 100% 安全的。除了我们实施的全站点安全措施来保护您余额中的资金外，保险库还得到资金密码的支持，提供额外的保护和安全性。\n您可以在需要时轻松访问您的资金 - 只需登录并通过密码即可获取您的货币。"
+			},
+			{
+				"Q": "可以在保险箱中存储资金多长时间？",
+				"A": "只要您拥有帐户，您就可以将货币存储在您的保险库中。我们没有对金库设置任何时间限制，只要您希望保证您的货币安全，您就可以随意使用它。"
+			}
+		]
+	},
+	"VIPQ&A": {
+		"FrequentlyAskedQuestions": [{
+				"Q": "什么是“升级奖励”？",
+				"A": "为了表达我们对玩家的感激之情，我们会在他们达到下一级别时奖励他们升级奖励。一旦玩家注册账号并投注，我们就会将升级奖励提高到高于较低级别的常规升级奖励。"
+			},
+			{
+				"Q": "什么是“每日返水”？",
+				"A": "我们将退还玩家每天在玩游戏时所下注的一定比例。例如，某玩家今天下注10000。我们最多会返水100，您可以在详细信息中查看。"
+			},
+			{
+				"Q": "什么是“每周”或者“每月”奖金？",
+				"A": "为了感谢玩家的忠诚，“每周”或“每月”奖金将在每周一或每月1日发放，但可能有一些条件，例如您可以进行存款才能获得它们。"
+			},
+			{
+				"Q": "什么是“生日奖金”？",
+				"A": "顾名思义，生日奖励是指从您的账户注册之日起，每年的注册日您都可以获得一份价值不菲的奖励。来年的今天，我们等你。"
+			}
+		]
+	},
+	"ReferQ&A": {
+		"FrequentlyAskedQuestions": [{
+				"Q": "推荐系统如何运作？",
+				"A": "当您与任何朋友、家人分享您的推荐链接或在我们的网站上宣传该链接和玩家注册时，该玩家将成为您的推荐人，他们将通过玩游戏为您赚取佣金和额外奖励。"
+			},
+			{
+				"Q": "我可以从我的推荐中赚取多少收入？",
+				"A": "您可以赚取他们所有投注的最高70%，每次推荐好友都有一份额外收入。"
+			},
+			{
+				"Q": "我可以查看我的推荐数据吗？",
+				"A": "是的，相信我们的数据是完全透明，并向用户提供所有数据，例如用户名、他们进行的投注、您赚取的佣金、他们注册的时间。一切都在您的仪表板中。"
+			}
+		]
+	},
+	"helpCenter": {
+		"Helpcenter": [{
+				"Q": "我可以在你们的网站上注册吗？",
+				"A": "您必须年满 18 岁或达到您管辖范围内的成年年龄。适用于您的法律必须允许您玩在线游戏。欲了解更多信息，请阅读我们的条款和条件。游戏可能会让人上瘾，建议玩家自我控制。"
+			},
+			{
+				"Q": "如果我忘记了密码怎么办？",
+				"A": "如果您忘记密码，您可以在 15 秒内通过我们的“忘记密码”链接重置密码。申请密码重置后，请按照我们发送给您的电子邮件中的说明重置您的密码。"
+			},
+			{
+				"Q": "如何成为VIP？",
+				"A": "专属 VIP 俱乐部仅限受邀人士参加。当您踏上游戏之旅后，您将很快通过电子邮件收到您的 VIP 状态通知。"
+			},
+			{
+				"Q": "如何存款",
+				"A": "找到『我的钱包』页面，点击存款页面，复制收款账号或扫描二维码进行支付。"
+			},
+			{
+				"Q": "如何兑换",
+				"A": "找到『我的钱包』页面，打开提款页面，输入您需要提款金币数量（注意手续费）。"
+			},
+			{
+				"Q": "确认交易需要多长时间？",
+				"A": "这取决于第三方和您的转账速度。可能需要 10 分钟或几个小时。"
+			},
+			{
+				"Q": "你的游戏公平公正吗？",
+				"A": "我们基于以太坊智能合约。区块链上的所有数据和核心逻辑都是透明的，不可能被操纵。区块链上的每一笔交易都可以追踪。我们游戏平台的公平、公开、公正是有保证的。"
+			},
+			{
+				"Q": "如果我的游戏挂起或出现问题，我该怎么办？",
+				"A": "如果您在玩我们的游戏时遇到任何技术问题，请尝试刷新游戏。一般刷新后就可以了。如果问题仍然存在，请联系我们。"
+			}
+		]
+	},
+	"Privacypolicy": {
+		"describe": "隐私政策旨在描述服务（如使用条款中所定义）以及我们显示或引用这些原则的隐私实践。\n\n本隐私政策规定了将如何管理我们的会员、使用我们位于任何页面或网站而收集的个人数据。包括我们拥有和/或运营的或我们以其他方式与您打交道的任何手机或平板电脑应用程序。我们致力于确保我们收集的有关您的个人信息受到保护，并根据适用的隐私法和本隐私政策使用、存储和披露。\n\n向您收集的个人数据\n当您申请商业信用、激活我们的服务、在网站上注册服务、连接到我们的服务、联系我们（包括通过社交媒体）、参与在线调查或以其他方式与我们互动时，我们可能会收集各种信息，包括：\n\n1. 账户信息。您的 ID 和相关帐户详细信息，包括电子邮件地址、注册的设备、帐户状态和年龄。\n\n2. 设备信息。可识别您的设备的数据，例如设备序列号，或有关您的设备的数据，例如浏览器类型。\n\n3. 联系信息。姓名、电子邮件地址、实际地址、电话号码或其他联系信息等数据。\n\n4. 付款信息。有关您的帐单地址和付款方式的数据，例如银行详细信息、信用卡、借记卡或其他支付卡信息。\n\n5. 欺诈预防信息。用于帮助识别和防止欺诈的数据，包括设备信任评分和 KYC 信息。\n\n6. 使用数据。有关您在我们的产品上的活动和使用情况的数据，例如服务启动，包括浏览历史记录；产品交互；碰撞数据、性能和其他诊断数据；和其他使用数据。\n\n7. 政府身份数据。在某些司法管辖区，我们可能会在有限的情况下要求您提供政府颁发的身份证件，包括在为您激活我们的服务时、出于提供商业信贷、管理预订的目的或根据法律要求。\n\n8. 您向我们提供的其他信息。详细信息，例如您与 Apple 的沟通内容，包括与客户支持的互动以及通过社交媒体渠道的联系。\n\n在某些情况下，可能会收集“敏感”个人信息。（包括有关种族和国籍、政治观点、宗教信仰和其他类似性质的信仰、工会的信息。\n\n会员资格以及有关性生活或性取向的信息或健康信息，以及在法律允许的情况下有关指控或证实的犯罪信息。"
+	},
+	"LiCenses": {
+		"describe": "Dance（以下简称'我们'），是一家根据库拉索岛法律注册成立的公司，商业登记号为158182，位于库拉索岛Emancipatie Boulevard Dominico F. Don Martina 31，根据主游戏许可证#5536/JAZ获得从属许可证CIL。"
+	},
+	"AML": {
+		"describe1": "洗钱定义：使非法所得收益看似合法的过程。这个过程一般分为三个步骤：放置、分层和集成。安置：通过存款或其他途径将非法收益存入传统金融机构的过程。分层：通过复杂的金融交易层将犯罪活动收益与其来源分离的过程，例如将现金转换为旅行支票、汇票、电汇、信用证、股票、债券或购买资产。整合：利用合法交易掩盖非法收益，使洗钱资金重新返还给犯罪分子；将现在清洁的资金重新投入正常使用。",
+		"describe2": "AML政策：我们能意识到提供与在线游戏相关的服务会带来洗钱和恐怖主义融资风险。识别、预防和限制洗钱和恐怖主义融资的风险。我们在其日常业务运营中实施了措施、流程和内部控制，这些措施、流程和内部控制考虑了客户和我们提供的服务的性质。有了这些措施、流程和内部控制，我们满足相关的所有法律要求。根据适用的库拉索立法的要求，采取措施防止洗钱和恐怖主义融资。我们已制定有关防止洗钱的反洗钱政策，以证明其致力于检测、预防并向国家当局报告所有使用我们服务进行任何符合洗钱法定定义的交易的尝试和/或恐怖主义融资，或任何其他形式的非法金融交易。通过改变行业立法和良好实践，对反洗钱政策进行修改和升级。",
+		"describe3": "为了遵守反洗钱 (AML) 程序，我们要求在发起提款请求之前对所有存款进行 1 倍的强制投注。未能满足此要求可能会导致提款受到限制或被拒绝，直至满足为止。一旦满足一次性流水要求，用户可以根据存款赚取的利润请求提款。例如，如果用户 A 存入 100 元，他们必须进行价值 100 元的投注才能发起提款。如果用户 A 随后从该 1 倍投注活动中获得 58 元的利润，则用户 A 的准确提款金额为 158 元。用户可以参与额外的投注活动来积累更多的奖励。"
+	},
+	"Responsiblegambling": {
+		"describe": "我们严格禁止 18 岁以下人士玩。\n\n在线赌博是一种有趣且可能有益的消磨时间的方式。然而，我们始终将玩家的最大利益放在心上。我们支持负责任的赌博。\n\n随着过去十年在线赌博的发展，只需按一下按钮即可轻松访问赌场、体育、彩票和其他游戏的在线赌博网站。任何时间，任何地点。这使得玩家更难设定界限。\n\n我们 赌场和体育博彩部分旨在提供一个最大化的娱乐门户，专为纯粹的享受而设计。然而，我们希望我们的赌徒量力而行。\n\n始终牢记：\n- 赌博的目的是为了好玩和娱乐，而不是为了赚钱的手段\n- 赌博不是解决经济困难的方法。\n- 确定赌博预算并坚持下去。跟踪您的支出并只使用最初决定的金额。\n- 不要追逐损失或使用分配给预算其他领域的资金。\n- 检查您是否只在分配给兴趣爱好的空闲时间里玩游戏。赌博不应妨碍您的日常活动。监控您赌博的时间。\n\n你是一个强迫性赌徒吗\n根据匿名赌徒协会的说法，如果您对其中 7 个或更多问题的回答是“是”，则您应该为赌博成瘾寻求帮助。\n\n- 你在赌博中浪费了时间吗？\n- 赌博对您的家庭生活产生了负面影响吗？\n- 您的名誉是否因赌博而受损？\n- 赌博后您是否曾感到悔恨？\n- 您是否曾经通过赌博来解决经济困难？\n- 赌博是否导致您的野心或效率下降？\n- 您是否曾经赌博或继续赌博以赢回损失？\n- 赢得胜利后，您是否有想返回并赢得更多胜利的冲动？\n- 你是否经常赌博直到耗尽最后的钱？\n- 您曾经借钱来资助赌博吗？\n- 您曾经出售过任何东西来资助赌博吗？\n- 您是否不愿意将“赌钱”用于正常支出？\n- 赌博是否会让您不顾自己或家人的福祉？\n- 您是否曾经赌博时间比计划的时间长？\n- 你是否曾经为了逃避烦恼而赌博？\n- 您是否曾实施或考虑实施资助赌博的非法行为？\n- 赌博会导致您睡眠困难吗？\n- 当你情绪低落时，你会产生赌博的冲动吗？\n- 您是否有想通过赌博来庆祝生活中的好运的冲动？\n- 您是否曾因赌博而考虑过自残或自杀？\n\n未成年赌博\n严格禁止 18 岁以下人士在 我们 赌博。我们通过用于存款的支付门户进行随机检查。如果发现玩家未满 18 岁，则所有奖金将被没收、账户被关闭，并且将联系儿童居住国的警方。\n\n我们强烈建议家长充分了解并参与孩子在游戏设备上进行的活动。\n\n保护自己并负责任地赌博\n如果您不能负责任地赌博，唯一的选择就是根本不赌博。这样，您将避免将自己和您所爱的人置于危险之中。许多人因为不遵守不负责任赌博的迹象而毁了自己的生活。\n\n所有赌场和游戏都有内置的 RTP 或玩家回报以及固定赌场优势，这对赌场有有利的长期结果。总之，重要的是要记住，您投注的钱只能是可支配收入，因为赌博是为了最大限度地享受和享受乐趣。这些都是机会游戏，你可能会赢，但你同样可能会输。\n\n加入我们，享受游戏乐趣并获得保持正轨的支持。"
+	},
+	"NewlyAdded": {
+		"Notyetup": "尚未达标最低存款",
+		"InstallTIP": "安装奖励",
+		"QuickAT": "快捷又方便",
+		"InstallBTN": "安装",
+		"HowToInstall": "如何安装",
+		"HideToday": "今日隐藏",
+		"iosGoogle1": "点击 ＂更多＂图标于 Google Chrome 网址栏的右侧边缘。",
+		"iosGoogle2": "选择＂添加到主屏幕＂于下拉菜单。",
+		"iosSafari1": "点击＂共享＂图标于 Safari 的下方栏。",
+		"iosSafari2": "选择＂添加到主屏幕＂于下拉菜单。",
+		"AndGoogle1": "点击 ＂更多＂图标于 Google Chrome 网址栏的右侧边缘。",
+		"AndGoogle2": "选择＂安装应用程序＂于下拉菜单。",
+		"clearcache": "清除缓存",
+		"Install": "安装APP",
+		"version": "版本号",
+		"PleaseSelect": "请选择...",
+		"Welcome": "欢迎礼包",
+		"content": "首次存款{max}%奖金，最高{MAX}",
+		"unlock": "还有更多好礼等您解锁",
+		"RegisterNow": "立即注册",
+		"DepositNow": "立即存款",
+		"Referral": "推荐",
+		"Nickname": "昵称",
+		"Bingo": "彩票游戏",
+		"Support": "如需修改，请联系客服",
+		"registered": "手机号已注册，忘记密码？点击“下一步”找回。",
+		"Next": "下一步",
+		"Successful": "注册成功",
+		"TIP": "注册成功，请验证您账户的信息。",
+		"ToDeposito": "前往存款",
+		"Photo1": "首次存款可获得100%奖金",
+		"Photo2": "现金奖励高达 RMB 20,000.00",
+		"Photo3": "每笔存款额外+3%",
+		"Optionphone": "手机号码",
+		"Optionemail": "邮箱号",
+		"Send": "发送",
+		"Modifytips": "修改密码后需要重新登录",
+		"Successfullytips": "密码修改成功，请重新登录",
+		"Disablereminder": "您的账号已被禁止，请联系客服",
+		"Signelsewhere": "您的账户已在其他地方登录，请尝试重新登录",
+		"Savebutton": "保存",
+		"Manageaccount": "管理账号",
+		"username": "用户名",
+		"userID": "用户ID",
+		"RebateRatio": "投注返水",
+		"Sortby": "排序方式",
+		"ValidPlayer": "有效玩家",
+		"RegistrationTime": "注册时间",
+		"ContributionRanking": "贡献",
+		"CommissionRate": "代理奖励",
+		"Addhint": "账户信息确认后不可修改，如果添加错误，请将其删除并重新添加。",
+		"Notify": "通知",
+		"Set": "设置",
+		"Favorites": "收藏",
+		"Recent": "最近",
+		"Search": "搜索",
+		"Enter": "输入游戏名称",
+		"Balance": "余额",
+		"WebQuit": "您确定要退出此页面吗？",
+		"Confirm": "确认",
+		"Cancel": "取消",
+		"RebateAmount": "每日返水最高",
+		"UpgradeAmount": "升级奖励",
+		"WeeklyAmount": "每周亏损返还",
+		"MonthlyAmount": "每月亏损返还",
+		"Annual": "年度生日奖励",
+		"Realname": "真实姓名",
+		"ReaferralQR": "推荐码",
+		"Download": "下载",
+		"ResetPasswordtitle": "重置密码",
+		"Verificationcode1": "正在获取验证码",
+		"Verificationcode2": "验证码已发送",
+		"Verificationcode3": "倒计时结束后再次发送",
+		"VIPClub": "贵宾俱乐部",
+		"Refer&Earn": "推荐&赚取",
+		"Promotions": "促销活动",
+		"LearnMore": "了解更多",
+		"PromotionsDetails": "促销详情",
+		"Endat": "结束于",
+		"Tip1": "正在连接...",
+		"Tip2": "加载错误",
+		"Tip3": "网络异常",
+		"Tip4": "复制成功",
+		"Tip5": "暂无通知",
+		"Tip6": "暂无数据",
+		"GameType": "游戏类型",
+		"PleaseLogin": "请登录",
+		"Extra": "额外赠送",
+		"Depositrange": "存款金额范围",
+		"Withdrawalrange": "提款金额范围",
+		"chooseNetwork": "选择网络",
+		"WithdralAddress": "提款地址",
+		"TotalDeposits": "存款次数",
+		"AccumulatedDeposits": "累计存款",
+		"AvailableFunds": "可用资金",
+		"TotalBets": "投注次数",
+		"TotalWins": "获胜次数",
+		"TotalWagered": "总投注额"
+	},
+	"SpecialBonuS": {
+		"title1": "存款奖金",
+		"prompt1": "新玩家存款即可参与。",
+		"MinimumDeposit": "最低存款",
+		"MaximumBonus": "最高奖金",
+		"ViewDetails": "查看详情",
+		"Deposit": "存款",
+		"YourBonus": "您的奖金",
+		"Wagerx": "投注",
+		"Claim": "领取",
+		"Claimed": "已领取",
+		"title2": "推荐奖金",
+		"prompt2": "受邀玩家完成存款和投注。",
+		"Wager": "投注",
+		"ClaimbleBonus": "可领奖金",
+		"InviteNow": "现在邀请"
+	},
+	"BonusPopup": {
+		"title": "存款奖金",
+		"prompt": "首次存款金额可获得额外{rate}%的存款奖金。",
+		"title1": "详情",
+		"MinimumDeposit": "最低存款",
+		"MaximumBonus": "最高奖金",
+		"title2": "要求",
+		"GameType": "游戏类型",
+		"AllGame": "全部游戏",
+		"Wager": "总投注",
+		"attention": "注意",
+		"prompt2": "奖金将保留{expireDays}天，请在到期前完成投注，否则将无法再次参与"
+	},
+	"termsofService": {
+		"describe": {
+			"1. 许可的授予": [
+				"1.1. 根据此处包含的条款和条件，授予用户非排他性的、个人的、不可转让的权利，在您的个人计算机或其他接入互联网的设备上使用服务，以便访问游戏。",
+				"1.2. 本服务不适用于未满 18 岁的个人，未达到其司法管辖区法定成年年龄的个人，以及从非法访问本服务的司法管辖区访问本服务的个人。用户有责任确保其对服务的使用合法。",
+				"1.3. 及其许可方是服务、代码、结构和组织的所有权利的唯一持有者，包括版权、商业秘密、知识产权和其他权利。未经授权的使用将导致相应法律责任。"
+			],
+			"2. 无保证": [
+				"2.1. 不承担与服务相关的任何明示或暗示的保证，并且不提供关于其质量、目的适用性、完整性或准确性的任何保证。",
+				"2.2. 不保证服务将不间断、及时或无错误，也不保证缺陷将得到纠正。"
+			],
+			"3. 权限/服务条款": [
+				"3.1. 您同意网站上描述的游戏规则。保留对服务的发布、维护和关闭的权力。",
+				"3.2. 管理层对服务的任何使用或争议解决的决定是最终决定，不得进行审查或上诉。"
+			],
+			"4. 您作为玩家的义务": [
+				"4.1. 您特此声明并保证年满 18 岁，以合法方式参与游戏，提供真实信息，遵守规则。",
+				"4.2. 不得转让、出售和/或获取用户帐户。",
+				"4.3. 玩家应该互相礼貌，避免粗鲁或淫秽的评论。",
+				"4.4. 保留取消接受包含错误的投注的权利。",
+				"4.5. 用户需避免利用软件中的错误，如有发现，应立即报告。",
+				"4.6. 如果游戏因系统故障失败，将退还下注金额。",
+				"4.7. 保留拒绝或限制投注的权利，不得下注超过个人账户金额。",
+				"4.8. 对于怀疑或有证据表明系统被操纵的情况，保留保留付款的权利。",
+				"4.9. 如果出现可疑或欺诈交易，保留要求验证的权利。",
+				"4.10. 若与其他游戏供应商签署自我排除协议，需立即通知。"
+			],
+			"5. 禁止用途": [
+				"5.1. 服务仅供用户个人使用，不得滥用服务。",
+				"5.2. 位于禁止管辖区的个人不得使用本服务。"
+			],
+			"6. 了解您的客户（KYC）": [
+				"保留随时要求提供身份验证文件的权利，以确定用户身份和位置。"
+			],
+			"7. 违规": [
+				"7.1. 保留采取适当行动的权利，包括终止协议或对用户采取法律行动，如果用户违反协议中的任何条款。",
+				"7.2. 用户同意全额赔偿因其违反协议而导致的损害和费用。"
+			],
+			"8. 限制和责任": [
+				"8.1. 在任何情况下，不对因使用服务而导致的任何损害负责，即使事先知道可能发生此类损害。",
+				"8.2. 不排除或限制因疏忽造成的死亡或人身伤害的责任。"
+			],
+			"9. 争议": [
+				"用户可通过客户服务团队提出投诉，如果解决不满意，可在指定法律管辖区寻求补救。",
+				"协议中的任何无效条款不影响其他条款的有效性。"
+			],
+			"10. 修改": [
+				"保留随时更新或修改协议的权利，您将受新协议的约束。"
+			],
+			"11. 适用法律": [
+				"协议受库拉索法律管辖，任何争议应在该法律管辖区解决。"
+			],
+			"12. 作业": [
+				"保留全部或部分转让协议权利的权利，用户不得转让其权利。"
+			],
+			"13. 优势发挥": [
+				"发现滥用奖金的用户将被没收奖金并关闭账户，保留扣留提款的权利。"
+			]
+		}
+	},
+	"ToastPrompt": {
+		"Toast1": "余额不足",
+		"Toast2": "请输入兑换金额",
+		"Toast3": "提交成功",
+		"Toast4": "兑换范围",
+		"Toast5": "金额范围",
+		"Toast6": "请选择或输入存款金额",
+		"Toast7": "请输入您的 CPF",
+		"Toast8": "请输入您的手机号码",
+		"Toast9": "请输入您的电子邮件地址",
+		"Toast10": "设置成功",
+		"Toast11": "修改成功",
+		"Toast12": "请输入原密码",
+		"Toast13": "请输入新密码",
+		"Toast14": "6 位字母和数字",
+		"Toast15": "8 位字母和数字",
+		"Toast16": "请输入您的姓名",
+		"Toast17": "请选择您的生日",
+		"Toast18": "请输入您的电子邮件",
+		"Toast19": "请输入您的手机号码",
+		"Toast20": "请输入正确的电子邮件",
+		"Toast21": "输入玩家ID",
+		"Toast22": "正在连接...",
+		"Toast23": "连接成功",
+		"Toast24": "网络异常",
+		"Toast25": "复制成功"
+	},
+	"NewUserPopup": {
+		"Reward": "奖励",
+		"NameV": "姓名认证",
+		"EmailV": "验证邮箱",
+		"PhoneV": "验证手机",
+		"KYCV": "验证KYC",
+		"Bind": "绑定账户",
+		"ADDHOME": "添加到主屏幕",
+		"Bonus": "奖金",
+		"ClaimBTN": "认领",
+		"StartBTN": "开始",
+		"Claimed": "已领取",
+		"WebDow": "下载WebAPP",
+		"APPDow": "下载商城APP"
+	},
+	"NewVIPPage": {
+		"title": "带来很多好处的",
+		"LevelSYS": "等级系统",
+		"BetterBonuses": "更好的奖金",
+		"TIP1": "享受无投注或提款限制的亏损返还，以及额外的惊喜优惠和重新加载奖金等等！",
+		"MassivePayouts": "巨额赔付",
+		"TIP2": "增加您的最大投注，赢取更多。对于我们的 VIP 用户，最大赢利没有上限！",
+		"Priority": "优先提款",
+		"TIP3": "您的提款将优先执行，无需再等待。",
+		"Exclusive": "独家预览",
+		"TIP4": "在其他玩家之前体验全新的游戏。",
+		"Highest": "最高奖励",
+		"TIP5": "享受最高比例的每日亏损返还和存款折扣。",
+		"Howdoes": "他是如何工作的",
+		"TIP6": "您以新用户身份开始游戏。玩得越多，您的级别就越高。根据总投注金额升级。",
+		"step1": "注册并登录",
+		"step1answer": "通过简化的登录系统享受所有游戏体验",
+		"step2": "开始玩游戏",
+		"step2answer": "享受游戏并获得最佳的游戏体验和高品质的服务。",
+		"step3": "提高你的等级",
+		"step3answer": "晋级到下一级别，每个级别都会获得更多奖励。",
+		"NowPlayBTN": "立即玩",
+		"MAXLEVEL": "你的等级可高达",
+		"MAXLEVELS": "",
+		"TotalWager": "总需押注",
+		"Rabate": "每日返水",
+		"LevelBonus": "等级奖励",
+		"Wbonus": "每周奖金",
+		"Mbonus": "每月奖金",
+		"BBonus": "生日奖金",
+		"MyLevelicon": "我的等级"
+	},
+	"NEWBonusPageA": {
+		"title1": "充满福利的",
+		"BonusSYS": "奖金系统",
+		"TIP1": "玩得开心并享受多样的奖励可用于赌场和体育博彩。",
+		"regBtn": "立即注册&获得奖励",
+		"RegBonus": "注册后立刻享有6~666的注册奖金",
+		"TIP2": "我们为所有新朋友准备了最好的礼物！您可以用注册奖金免费提款，马上加入开始游戏并成为赢家！",
+		"regB": "立即注册&启用奖励",
+		"GetBonus": "获得奖金",
+		"MaxBonus": "最高奖励",
+		"1STDeposit": "首次存款",
+		"BONUS": "奖金",
+		"2ndDeposit": "二次存款",
+		"3rdDeposit": "三次存款",
+		"DepositBTN": "存款",
+		"completed": "已完成",
+		"title2": "从游戏中可获得常规奖励",
+		"Rabate": "每日返水",
+		"TIP3": "从您的下注中得到现金返水无论输赢、没有最大限制",
+		"Dcash": "每日亏损返还",
+		"Dcashtitle": "次日获得您今日存款硬币的损失返还",
+		"Wcash": "每周亏损返还",
+		"Wcashtitle": "下周您可以获得本周存款硬币的损失返还",
+		"Wbonus": "每周奖金",
+		"Wbonustitle": "根据您每周的存款额产生奖金",
+		"Mbonus": "每月奖金",
+		"Mbonustitle": "根据您每月的存款额产生奖金",
+		"TIP4": "注册后即开始获得丰厚的奖励。达成更高的等级以加倍您的奖励。",
+		"regBtn": "立即注册&获得奖励",
+		"title3": "获得每日奖赏于奖励日历",
+		"TIP5": "兑换日历奖励每天三次。每次兑现皆会启用一次返利加成！获取最大利润通过每日获得奖励。",
+		"regBtn": "立即注册&获得奖励",
+		"BBonus": "生日奖励",
+		"OTBonus": "其他奖励",
+		"LevelBonus": "等级奖励",
+		"BluePrompt": "等待中",
+		"BBonusTIP": "获得独家奖励于您的账号生日",
+		"LevelBonusTIP": "提升您的等级，每个级别都会获得更多奖励。"
+	},
+	"NEWBonusPageB": {
+		"wlecome": "欢迎来到",
+		"bonuses": "奖金系统",
+		"needWager": "投注达到下一级别",
+		"TotalBonusClaimed": "合计已领取奖金",
+		"WelCome": "欢迎礼包",
+		"1STDeposit": "首次存款",
+		"BONUS": "奖金",
+		"2ndDeposit": "二次存款",
+		"3rdDeposit": "三次存款",
+		"DepositBTN": "存款",
+		"completed": "已完成",
+		"GeneralRewards": "常规奖励",
+		"DailyRebate": "每日返水",
+		"DailyCashBack": "每日亏损返还",
+		"WeeklyCashBack": "每周亏损返还",
+		"WeeklyBonus": "每周奖金",
+		"MonthlyBonus": "每月奖金",
+		"ToBet": "开始投注以获得奖励",
+		"ToDep": "开始存款以获得奖励",
+		"ClaimIn": "领取时间",
+		"DepToUnlock": "存款以解锁",
+		"Claim": "领取",
+		"BBonus": "生日奖励",
+		"OTBonus": "其他奖励",
+		"LevelBonus": "等级奖励",
+		"BluePrompt": "等待中",
+		"BBonusTIP": "获得独家奖励于您的账号生日",
+		"LevelBonusTIP": "提升您的等级，每个级别都会获得更多奖励。"
+	},
+	"DepositBonusPopup": {
+		"DepPlus": "存款奖金加成",
+		"UPTO": "高达",
+		"Minute": "分",
+		"Second": "秒",
+		"DEPNOW": "立即存款",
+		"TIPSS": "获得最大存款奖金，将即时达到您的账户中。",
+		"DepositTo": "存款到",
+		"DepositBonus": "存款奖金比例",
+		"MaxDepositBonus": "最大存款奖金",
+		"WageringRequirements": "投注要求",
+		"GameType": "游戏类型",
+		"TotlaWager": "总需投注"
+	},
+	"DailyRebatePopup": {
+		"title": "每日返水",
+		"prompt": "获得奖励来自您的押注不论其结果赢还是输。",
+		"Calculationcycle": "计算周期",
+		"Calculation1": "每天可领取一次",
+		"Claimtime": "领取时间：",
+		"slots": "电游",
+		"fishing": "捕鱼",
+		"livecasino": "真人",
+		"bingo": "彩票游戏",
+		"mini": "迷你游戏",
+		"sports": "体育电竞",
+		"PVP": "桌面游戏",
+		"Level": "等级",
+		"DailyRebate": "每日返水比例",
+		"Wager": "每日押注×1×"
+	},
+	"DailyCashBackPopup": {
+		"title": "每日亏损返还",
+		"prompt": "次日获得您今日存款金币的损失返还。",
+		"Calculationcycle": "计算周期",
+		"Calculation1": "每天可领取一次",
+		"Claimtime": "领取时间：",
+		"TIP": "每日亏损返还来自您损失的存款金币",
+		"DailyLoss": "每日损失",
+		"CashBack": "亏损返还",
+		"MaxBonus": "最大奖金"
+	},
+	"WeeklyCashBackPopup": {
+		"title": "每周亏损返还",
+		"prompt": "获得本周存款金币的损失返还高达20%。",
+		"Calculationcycle": "计算周期",
+		"Calculation": "每7天重置",
+		"Claimtime": "领取时间：",
+		"TIP": "每周亏损返还来自您损失的存款金币",
+		"WeeklyLoss": "每周损失",
+		"CashBack": "亏损返还",
+		"MaxBonus": "最大奖金"
+	},
+	"WeeklyBonusPopup": {
+		"title": "每周奖金",
+		"prompt": "每周存款金额达到指标即可领取。",
+		"Calculationcycle": "计算周期",
+		"Calculation": "每7天重置",
+		"Claimtime": "领取时间：",
+		"TIP": "每周奖金来自您每周的存款",
+		"TIPS": "存款以解锁"
+	},
+	"MonthlyBonusPopup": {
+		"title": "每月奖金",
+		"prompt": "每月存款金额达到指标即可认领。",
+		"Calculationcycle": "计算周期",
+		"Calculation": "每30天重置",
+		"Claimtime": "领取时间：",
+		"TIP": "每月奖金来自您每月的存款",
+		"TIPS": "存款以解锁"
+	},
+	"BonusFAQ": {
+		"FrequentlyAskedQuestions": [{
+				"Q": "奖励兑现是否有数量限制？",
+				"A": "奖励兑现的数量不受限制。"
+			},
+			{
+				"Q": "通常奖励会过期吗？",
+				"A": "永远不会，亏损返还、每周和每月奖励将保存至您的账户直到您领取到它。"
+			},
+			{
+				"Q": "是否有任何限制或禁止事项？",
+				"A": "奖励皆供个人使用（即单一帐户和 IP 地址）。玩家不能使用多个帐户来获得奖金。 我们保留权利对使用各种方案和多重计数来操纵奖励获取的用户完全禁用奖励。如果怀疑存在此类操纵行为，也有权随时禁用用户奖励且不另行通知。并保留随时更改奖励计算、机制和规则的权利。"
+			},
+			{
+				"Q": "我应该如何启用奖励？",
+				"A": "存款可启用一些奖金。 通过单击奖励卡上的＂存款＂按钮或在钱包弹出窗口中选择奖励。"
+			},
+			{
+				"Q": "存款奖励加成如何运作？",
+				"A": "奖励加成根据存款数量增加存款奖励的百分比。"
+			},
+			{
+				"Q": "什么是存款奖励？",
+				"A": "如果您选择存款奖励，奖励余额将根据奖励条款按您存款的百分比补充，但不得超过奖励详情弹出窗口中提到的最大奖励。"
+			}
+		]
+	},
+	"WelcomePackgePopup": {
+		"Packge": "欢迎礼包",
+		"prompt": "注册成功后即可获得欢迎大礼包。",
+		"RegBTN": "立即注册"
+	},
+	"DepositPageBonus": {
+		"Packge": "欢迎礼包",
+		"More": "更多详情",
+		"EARNBonus": "获取奖励",
+		"DepBonusPlus": "存款奖金加成",
+		"UPTO": "高达",
+		"depto": "存款达到",
+		"andget": "获得",
+		"CLOSE": "如果您已经存款，请不要更改“获得奖金”状态，直到存款成功计入游戏余额。"
+	},
+	"LockFundsPop-ups": {
+		"title": "锁定资金",
+		"prompt": "由于反洗钱政策，您必须完成投注才能提取资金。",
+		"prompt1": "每 5 分钟统计一次。",
+		"Depositin": "存款于",
+		"TotalWager": "总投注"
+	},
+	"OrderProgerss": {
+		"title": "订单进度",
+		"status": "状态",
+		"time": "时间",
+		"OrderID": "订单ID",
+		"PayPe": "支付商",
+		"TOP1": "订单创建",
+		"TOP2": "等待进展",
+		"tip1": "订单将5~10分钟完成",
+		"TOP3": "交易完成",
+		"TOP3b": "交易失败",
+		"support": "联系客服"
+	},
+	"RewardHistoryPopup": {
+		"title": "奖励历史",
+		"TotalBonus": "总奖励",
+		"bonus1": "存款优惠",
+		"bonus2": "每日返水",
+		"bonus3": "每日亏损返还",
+		"bonus4": "每周亏损返还",
+		"bonus5": "等级奖金",
+		"bonus6": "其他奖励"
+	},
+	"ADDnew": {
+		"WithDea": "提款详情",
+		"TIPS": "请确认您的提款信息并输入资金密码",
+		"WithACC": "提款账户",
+		"WithAmo": "提款金额",
+		"AcPAY": "实际付款金额",
+		"VerifyFundPassword": "验证资金密码",
+		"ConfirmBTN": "确认",
+		"cashback": "亏损返还",
+		"Promotions": "促销",
+		"LevelUPCongra": "恭喜",
+		"NewLevel": "到达新等级",
+		"LevelBonus": "等级奖金",
+		"TIP1": "等级奖励已到达，祝你好运，快来领取吧。",
+		"ClaimBTN": "领取",
+		"BirthHappy": "生日快乐",
+		"CurrentLevel": "当前级别",
+		"BirthBonus": "生日奖励",
+		"TIP2": "生日奖励已到达，祝你好运，快来领取吧。",
+		"BirthB": "您的生日奖励{BirthB}已发送，请查收。",
+		"LevelB": "您已达到{Level}，等级奖励{LevelB}已发送，请查收。",
+		"Bonus": "奖金",
+		"Reward": "奖励",
+		"18TIP": "本网站提供有风险的游戏体验。要成为我们网站的用户，您必须年满 18 岁。我们不对违反您当地与网络游戏相关的法律负责。负责任地玩游戏并享受乐趣。",
+		"all": "版权所有",
+		"priWith": "优先提款",
+		"excPrev": "独家预览",
+		"onlSupp": "专属在线支持",
+		"excProm": "独家促销",
+		"TIP1": "快捷和方便",
+		"TIP2": "安装和奖励",
+		"register1": "需要输入至少8位字符",
+		"register2": "需要包含任意数字",
+		"register3": "需要包含任意字母",
+		"register4": "需要输入大写字母",
+		"register5": "需要输入小写字母",
+		"Poker": "棋牌游戏",
+		"Lottery": "彩票游戏",
+		"Arcade": "街机游戏"
+	},
+	"DailySignIn": {
+		"Title": "每日签到",
+		"Prompt": "连续签到以提高奖励",
+		"NumberOfCheckins": "签到次数",
+		"DailyRecharge": "每日充值",
+		"Todaybetting": "今日投注",
+		"CheckTheDetails": "查看详情",
+		"SignInNow": "立即签到",
+		"Prompt": "连续完成任务",
+		"Day1": "第1天",
+		"Day2": "第2天",
+		"Day3": "第3天",
+		"Day4": "第4天",
+		"Day5": "第5天",
+		"Day6": "第6天",
+		"Day7": "第7天",
+		"SignedIn": "已签到",
+		"NotSignedIn": "未签到",
+		"SignInTask": "签到任务",
+		"InProgress": "进行中",
+		"Earn": "赚取",
+		"TodayDeposit": "今日存款",
+		"Receive": "立即领取"
+	},
+	"ADDnew2": {
+		"DownloadTheApp": "下载APP",
+		"NoRewardsYet": "尚无奖励",
+		"PleaseuseyourphonealbumtoscantheQRcodetodownload": "请使用手机相册扫描二维码下载",
+		"DirectDownload": "直接下载",
+		"Android": "安卓",
+		"Apple": "苹果",
+		"CopyTheDownloadlink": "复制下载链接",
+		"Rewards": "热门爆奖",
+		"Hint": "币种决定第三方游戏且不能修改哦",
+		"PopUps": "为了您的资金安全，请在提取资金之前验证您的电话号码或电子邮件地址",
+		"Security Verification": "安全验证已通过官方",
+		"How to use": "如何使用"
+	},
+	"Betting requirements": {
+		"title": "投注要求",
+		"register1": "还需投注",
+		"register2": "才可提现",
+		"hint": "由于反洗钱政策，您必须完成投注才能提取资金。",
+		"register3": "每5分钟统计一次",
+		"register4": "存款于",
+		"register5": "奖励于",
+		"register6": "总投注",
+		"register7": "复制完成"
+	},
+	"ADDnew3": {
+		"Tips": "提示",
+		"Complete the operation": "在继续之前，您必须完成以下操作:",
+		"Complete information": "完善个人信息",
+		"Verify mobile phone": "验证手机",
+		"Verify email": "验证邮箱",
+		"Bind account": "绑定提款账户",
+		"Start": "开始",
+		"Confirm": "确认"
+	}
+}
+

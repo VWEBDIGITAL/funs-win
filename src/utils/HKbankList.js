@@ -1,0 +1,517 @@
+const data = [{
+	"bankCode": "BETPAY",
+	"bankName": "BetPay"
+}, {
+	"bankCode": "ZSK",
+	"bankName": "转数快"
+}, {
+	"bankCode": "ZDBXG",
+	"bankName": "渣打銀行(香港)有限公司"
+}, {
+	"bankCode": "XGSHHF",
+	"bankName": "香港上海匯豐銀行有限公司"
+}, {
+	"bankCode": "DFHL",
+	"bankName": "東方匯理銀行"
+}, {
+	"bankCode": "HQB",
+	"bankName": "花旗銀行"
+}, {
+	"bankCode": "MGDT",
+	"bankName": "摩根大通銀行"
+}, {
+	"bankCode": "GMXMS",
+	"bankName": "國民西敏寺資本市場銀行有限公司"
+}, {
+	"bankCode": "ZGJSB",
+	"bankName": "中國建設銀行(亞洲)股份有限公司"
+}, {
+	"bankCode": "ZGB",
+	"bankName": "中國銀行(香港)有限公司"
+}, {
+	"bankCode": "DYB",
+	"bankName": "東亞銀行有限公司"
+}, {
+	"bankCode": "XZB",
+	"bankName": "星展銀行(香港)有限公司"
+}, {
+	"bankCode": "ZXB",
+	"bankName": "中信銀行國際有限公司"
+}, {
+	"bankCode": "ZSYL",
+	"bankName": "招商永隆銀行有限公司"
+}, {
+	"bankCode": "HUAQB",
+	"bankName": "華僑銀行"
+}, {
+	"bankCode": "HSB",
+	"bankName": "恒生銀行有限公司"
+}, {
+	"bankCode": "SHY",
+	"bankName": "上海商業銀行有限公司"
+}, {
+	"bankCode": "JTB",
+	"bankName": "交通銀行股份有限公司"
+}, {
+	"bankCode": "DZB",
+	"bankName": "大眾銀行(香港)有限公司"
+}, {
+	"bankCode": "HQYH",
+	"bankName": "華僑永亨銀行有限公司"
+}, {
+	"bankCode": "DAYB",
+	"bankName": "大有銀行有限公司"
+}, {
+	"bankCode": "JIYB",
+	"bankName": "集友銀行有限公司"
+}, {
+	"bankCode": "DXB",
+	"bankName": "大新銀行有限公司"
+}, {
+	"bankCode": "CXB",
+	"bankName": "創興銀行有限公司"
+}, {
+	"bankCode": "NYSY",
+	"bankName": "南洋商業銀行有限公司"
+}, {
+	"bankCode": "UCOB",
+	"bankName": "UCOBANK"
+}, {
+	"bankCode": "KEBHANABANK",
+	"bankName": "KEBHANABANK"
+}, {
+	"bankCode": "SLUFJ",
+	"bankName": "三菱UFJ銀行"
+}, {
+	"bankCode": "PANGB",
+	"bankName": "盤谷銀行"
+}, {
+	"bankCode": "YDHY",
+	"bankName": "印度海外銀行"
+}, {
+	"bankCode": "DYZB",
+	"bankName": "德意志銀行"
+}, {
+	"bankCode": "MGB",
+	"bankName": "美國銀行"
+}, {
+	"bankCode": "FZBL",
+	"bankName": "法國巴黎銀行"
+}, {
+	"bankCode": "YDB",
+	"bankName": "印度銀行"
+}, {
+	"bankCode": "BJGM",
+	"bankName": "巴基斯坦國民銀行"
+}, {
+	"bankCode": "DSB",
+	"bankName": "大生銀行有限公司"
+}, {
+	"bankCode": "MLB",
+	"bankName": "馬來亞銀行"
+}, {
+	"bankCode": "SJZY",
+	"bankName": "三井住友銀行"
+}, {
+	"bankCode": "YNGB",
+	"bankName": "印尼國家銀行"
+}, {
+	"bankCode": "JYB",
+	"bankName": "金融銀行有限公司"
+}, {
+	"bankCode": "DAHB",
+	"bankName": "大華銀行有限公司"
+}, {
+	"bankCode": "ZGGSB",
+	"bankName": "中國工商銀行(亞洲)有限公司"
+}, {
+	"bankCode": "BARCLAYSBANKPLC",
+	"bankName": "BARCLAYSBANKPLC."
+}, {
+	"bankCode": "JNDFY",
+	"bankName": "加拿大豐業銀行"
+}, {
+	"bankCode": "JNDHJ",
+	"bankName": "加拿大皇家銀行"
+}, {
+	"bankCode": "FGXY",
+	"bankName": "法國興業銀行"
+}, {
+	"bankCode": "YDGB",
+	"bankName": "印度國家銀行"
+}, {
+	"bankCode": "DLDDM",
+	"bankName": "多倫多道明銀行"
+}, {
+	"bankCode": "MDKB",
+	"bankName": "滿地可銀行"
+}, {
+	"bankCode": "JNDDG",
+	"bankName": "加拿大帝國商業銀行"
+}, {
+	"bankCode": "DGSY",
+	"bankName": "德國商業銀行"
+}, {
+	"bankCode": "RSB",
+	"bankName": "瑞士銀行"
+}, {
+	"bankCode": "MGHF",
+	"bankName": "美國滙豐銀行"
+}, {
+	"bankCode": "RUISB",
+	"bankName": "瑞穗銀行"
+}, {
+	"bankCode": "DGZY",
+	"bankName": "德國中央合作銀行"
+}, {
+	"bankCode": "YOULB",
+	"bankName": "友利銀行"
+}, {
+	"bankCode": "PHILIPPINENATIONALBANK",
+	"bankName": "PHILIPPINENATIONALBANK"
+}, {
+	"bankCode": "FUBB",
+	"bankName": "富邦銀行(香港)有限公司"
+}, {
+	"bankCode": "SLUFJXT",
+	"bankName": "三菱UFJ信託銀行"
+}, {
+	"bankCode": "NYMLB",
+	"bankName": "紐約梅隆銀行有限公司"
+}, {
+	"bankCode": "INGBANKN",
+	"bankName": "INGBANKN.V."
+}, {
+	"bankCode": "XBYDY",
+	"bankName": "西班牙對外銀行",
+}, {
+	"bankCode": "ADLYG",
+	"bankName": "澳大利亞國民銀行"
+}, {
+	"bankCode": "XTPY",
+	"bankName": "西太平洋銀行"
+}, {
+	"bankCode": "AOXINB",
+	"bankName": "澳新銀行集團有限公司"
+}, {
+	"bankCode": "AZLB",
+	"bankName": "澳洲聯邦銀行"
+}, {
+	"bankCode": "YDLLH",
+	"bankName": "義大利聯合聖保羅銀行股份有限公司"
+}, {
+	"bankCode": "YUXB",
+	"bankName": "裕信(德國)銀行股份有限公司"
+}, {
+	"bankCode": "RDSY",
+	"bankName": "瑞典商業銀行"
+}, {
+	"bankCode": "QIANYB",
+	"bankName": "千葉銀行"
+}, {
+	"bankCode": "BLSLH",
+	"bankName": "比利時聯合銀行"
+}, {
+	"bankCode": "FUGUO",
+	"bankName": "富國銀行香港分行"
+}, {
+	"bankCode": "HELAN",
+	"bankName": "荷蘭合作銀行"
+}, {
+	"bankCode": "XINZHAN",
+	"bankName": "星展銀行香港分行"
+}, {
+	"bankCode": "JINW",
+	"bankName": "靜岡銀行"
+}, {
+	"bankCode": "BASER",
+	"bankName": "八十二銀行"
+}, {
+	"bankCode": "HUANSY",
+	"bankName": "華南商業銀行股份有限公司"
+}, {
+	"bankCode": "ZIHB",
+	"bankName": "滋賀銀行"
+}, {
+	"bankCode": "YIWAN",
+	"bankName": "臺灣銀行股份有限公司"
+}, {
+	"bankCode": "THECHUGOKUBANKLIMITED",
+	"bankName": "THECHUGOKUBANKLIMITED"
+}, {
+	"bankCode": "DYSY",
+	"bankName": "第一商業銀行股份有限公司"
+}, {
+	"bankCode": "ZHSY",
+	"bankName": "彰化商業銀行股份有限公司"
+}, {
+	"bankCode": "FGWM",
+	"bankName": "法國外貿銀行"
+}, {
+	"bankCode": "ZGGS",
+	"bankName": "中國工商銀行股份有限公司"
+}, {
+	"bankCode": "MGDF",
+	"bankName": "美國道富銀行"
+}, {
+	"bankCode": "ZGJS",
+	"bankName": "中國建設銀行股份有限公司"
+}, {
+	"bankCode": "ZGNY",
+	"bankName": "中國農業銀行股份有限公司"
+}, {
+	"bankCode": "ERSTEGROUPBANKAG",
+	"bankName": "ERSTEGROUPBANKAG"
+}, {
+	"bankCode": "ZGXT",
+	"bankName": "中國信託商業銀行股份有限公司"
+}, {
+	"bankCode": "YWZXQY",
+	"bankName": "臺灣中小企業銀行股份有限公司"
+}, {
+	"bankCode": "CREDITSUISSEAG",
+	"bankName": "CREDITSUISSEAG"
+}, {
+	"bankCode": "GTSHSY",
+	"bankName": "國泰世華商業銀行股份有限公司"
+}, {
+	"bankCode": "RSYF",
+	"bankName": "瑞士盈豐銀行股份有限公司"
+}, {
+	"bankCode": "ZSYB",
+	"bankName": "招商銀行股份有限公司"
+}, {
+	"bankCode": "TBFBSY",
+	"bankName": "台北富邦商業銀行股份有限公司"
+}, {
+	"bankCode": "YFSYB",
+	"bankName": "永豐商業銀行股份有限公司"
+}, {
+	"bankCode": "ZFGJSY",
+	"bankName": "兆豐國際商業銀行"
+}, {
+	"bankCode": "YSSYB",
+	"bankName": "玉山商業銀行股份有限公司"
+}, {
+	"bankCode": "TXGJSY",
+	"bankName": "台新國際商業銀行股份有限公司"
+}, {
+	"bankCode": "FLYB",
+	"bankName": "豐隆銀行有限公司"
+}, {
+	"bankCode": "ZDB",
+	"bankName": "渣打銀行"
+}, {
+	"bankCode": "HQXGB",
+	"bankName": "花旗銀行(香港)有限公司"
+}, {
+	"bankCode": "ICICIBANKLIMITED",
+	"bankName": "ICICIBANKLIMITED"
+}, {
+	"bankCode": "MELLIBANKPLC",
+	"bankName": "MELLIBANKPLC"
+}, {
+	"bankCode": "HUAMB",
+	"bankName": "華美銀行"
+}, {
+	"bankCode": "BALD",
+	"bankName": "巴魯達銀行"
+}, {
+	"bankCode": "YDGJSY",
+	"bankName": "遠東國際商業銀行股份有限公司"
+}, {
+	"bankCode": "CANARABANK",
+	"bankName": "CANARABANK"
+}, {
+	"bankCode": "GUOTB",
+	"bankName": "國泰銀行"
+}, {
+	"bankCode": "TWTDB",
+	"bankName": "台灣土地銀行股份有限公司"
+}, {
+	"bankCode": "HZJKSY",
+	"bankName": "合作金庫商業銀行股份有限公司"
+}, {
+	"bankCode": "PUNJABNATIONALBANK",
+	"bankName": "PUNJABNATIONALBANK"
+}, {
+	"bankCode": "XBYSTD",
+	"bankName": "西班牙桑坦德銀行有限公司"
+}, {
+	"bankCode": "UNIONBANKOFINDIA",
+	"bankName": "UNIONBANKOFINDIA"
+}, {
+	"bankCode": "SHSYCX",
+	"bankName": "上海商業儲蓄銀行股份有限公司"
+}, {
+	"bankCode": "INDUSTRIALBANKOFKOREA",
+	"bankName": "INDUSTRIALBANKOFKOREA"
+}, {
+	"bankCode": "XJPB",
+	"bankName": "新加坡銀行有限公司"
+}, {
+	"bankCode": "SHINHANBANK",
+	"bankName": "SHINHANBANK"
+}, {
+	"bankCode": "WDSY",
+	"bankName": "王道商業銀行股份有限公司"
+}, {
+	"bankCode": "BNPPARIBASSECURITIESSERVICES",
+	"bankName": "BNPPARIBASSECURITIESSERVICES"
+}, {
+	"bankCode": "GJKFB",
+	"bankName": "國家開發銀行"
+}, {
+	"bankCode": "FIRSTABUDHABIBANKPJSC",
+	"bankName": "FIRSTABUDHABIBANKPJSC"
+}, {
+	"bankCode": "SAFRASARASINLTD",
+	"bankName": "BANKJ.SAFRASARASINLTD."
+}, {
+	"bankCode": "ABNAMROBANKN",
+	"bankName": "ABNAMROBANKN.V."
+}, {
+	"bankCode": "HDFCBANKLIMITED",
+	"bankName": "HDFCBANKLIMITED"
+}, {
+	"bankCode": "UNIONBANCAIREPRIVEE",
+	"bankName": "UNIONBANCAIREPRIVEE,UBPSA"
+}, {
+	"bankCode": "SKANDINAVISKAENSKILDABANKENAB",
+	"bankName": "SKANDINAVISKAENSKILDABANKENAB"
+}, {
+	"bankCode": "BANKJULIUSBAER",
+	"bankName": "BANKJULIUSBAER&CO.LTD."
+}, {
+	"bankCode": "CREDITINDUSTRIELETCOMMERCIAL",
+	"bankName": "CREDITINDUSTRIELETCOMMERCIAL"
+}, {
+	"bankCode": "YWXGSY",
+	"bankName": "臺灣新光商業銀行股份有限公司"
+}, {
+	"bankCode": "ZGYHXG",
+	"bankName": "中國銀行香港分行"
+}, {
+	"bankCode": "SWITZERLAND",
+	"bankName": "CAINDOSUEZ(SWITZERLAND)SA"
+}, {
+	"bankCode": "ICBCSTANDARDBANKPLC",
+	"bankName": "ICBCSTANDARDBANKPLC"
+}, {
+	"bankCode": "LGTHJXG",
+	"bankName": "LGT皇家銀行(香港)"
+}, {
+	"bankCode": "MGLB",
+	"bankName": "麥格理銀行有限公司"
+}, {
+	"bankCode": "SHPDFZ",
+	"bankName": "上海浦東發展銀行股份有限公司"
+}, {
+	"bankCode": "ZGMSB",
+	"bankName": "中國民生銀行股份有限公司"
+}, {
+	"bankCode": "PICTET&CIE",
+	"bankName": "PICTET&CIE(EUROPE)S.A."
+}, {
+	"bankCode": "GFB",
+	"bankName": "廣發銀行股份有限公司"
+}, {
+	"bankCode": "BOHB",
+	"bankName": "渤海銀行股份有限公司"
+}, {
+	"bankCode": "ZGGD",
+	"bankName": "中國光大銀行股份有限公司"
+}, {
+	"bankCode": "SJZYXT",
+	"bankName": "三井住友信託銀行"
+}, {
+	"bankCode": "SHXGB",
+	"bankName": "上海銀行(香港)有限公司"
+}, {
+	"bankCode": "CIMBBANKBERHAD",
+	"bankName": "CIMBBANKBERHAD"
+}, {
+	"bankCode": "XINYEB",
+	"bankName": "興業銀行股份有限公司"
+}, {
+	"bankCode": "YDSY",
+	"bankName": "元大商業銀行股份有限公司"
+}, {
+	"bankCode": "MASHREQBANK",
+	"bankName": "MASHREQBANK-PUBLICSHAREHOLDINGCOMPANY"
+}, {
+	"bankCode": "KOOKMINBANK",
+	"bankName": "KOOKMINBANK"
+}, {
+	"bankCode": "JTXG",
+	"bankName": "交通銀行(香港)有限公司"
+}, {
+	"bankCode": "ZSYHB",
+	"bankName": "浙商銀行股份有限公司"
+}, {
+	"bankCode": "MGSDL",
+	"bankName": "摩根士丹利銀行亞洲有限公司"
+}, {
+	"bankCode": "PINANB",
+	"bankName": "平安銀行股份有限公司"
+}, {
+	"bankCode": "HUAXIA",
+	"bankName": "華夏銀行股份有限公司"
+}, {
+	"bankCode": "ZANB",
+	"bankName": "眾安銀行有限公司"
+}, {
+	"bankCode": "LIVIVBLIMITED",
+	"bankName": "LIVIVBLIMITED"
+}, {
+	"bankCode": "MOXBANKLIMITED",
+	"bankName": "MOXBANKLIMITED"
+}, {
+	"bankCode": "WELABBANKLIMITED",
+	"bankName": "WELABBANKLIMITED"
+}, {
+	"bankCode": "FRB",
+	"bankName": "富融銀行有限公司"
+}, {
+	"bankCode": "PAYZHT",
+	"bankName": "平安壹賬通銀行(香港)有限公司"
+}, {
+	"bankCode": "MYXG",
+	"bankName": "螞蟻銀行(香港)有限公司"
+}, {
+	"bankCode": "QATARNATIONALBANK",
+	"bankName": "QATARNATIONALBANK(Q.P.S.C.)"
+}, {
+	"bankCode": "TXB",
+	"bankName": "天星銀行有限公司"
+}, {
+	"bankCode": "HONGKONGSECURITIESCLEARINGCOMPANYLIMITED",
+	"bankName": "HONGKONGSECURITIESCLEARINGCOMPANYLIMITED"
+}, {
+	"bankCode": "CLSBANKINTERNATIONAL",
+	"bankName": "CLSBANKINTERNATIONAL"
+}, {
+	"bankCode": "BANQUE",
+	"bankName": "BANQUE PICTET & CIE SA"
+}, {
+	"bankCode": "DGB",
+	"bankName": "東莞銀行股份有限公司"
+}, {
+	"bankCode": "NXB",
+	"bankName": "農協銀行"
+}, {
+	"bankCode": "WECHAT",
+	"bankName": "WeChat Pay Hong Kong Limited"
+}, {
+	"bankCode": "ALIPAY",
+	"bankName": "Alipay Financial Services(HK) Limited"
+}, {
+	"bankCode": "BDTK",
+	"bankName": "八達通卡有限公司"
+}, {
+	"bankCode": "LHB",
+	"bankName": "388 LIVI BANK LIMITED"
+}]
+module.exports = {
+	list: data
+}
