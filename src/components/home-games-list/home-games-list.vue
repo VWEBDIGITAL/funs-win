@@ -618,6 +618,13 @@
 			</view>
 
 
+    <!-- Qiaozhi Component -->
+    <view class="leaderbaords-component">
+    <Leaderboards />
+    </view>
+
+
+
 			<!-- PC单独显示供应商 -->
 			<!-- #ifndef APP-PLUS -->
 			<match-media :min-width="800">
@@ -648,7 +655,8 @@
 											mode="widthFix" @click="togamesGongying(itemk)"></image>
 									</view>
 									<view class="games-count">
-										<span class="slug">{{ $t('Qiaozhi.Games') }}</span><span class="number">{{randomNumber()}}</span>
+										<span class="slug">{{ $t('Qiaozhi.Games') }}</span><span
+											class="number">{{randomNumber()}}</span>
 									</view>
 								</view>
 							</view>
@@ -697,14 +705,14 @@
 
 			<!-- Qiaozhi Component -->
 			<match-media :min-width="800">
-		    <view class="game-selection">
-				<view class="container">
-					<uni-row class="row justify-content-center pt-15 pb-15 mb-10">
-						<view class="wrapper">
-						<h1 class="title">{{$t('Qiaozhi.Games-Selection-Title')}}<span class="title-slug">{{$t('Qiaozhi.Game')}}</span>?</h1>
-						<view class="animated-mocks">
-							<image
-                            v-for="(mock, index) in [
+				<view class="game-selection">
+					<view class="container">
+						<uni-row class="row justify-content-center pt-15 pb-15 mb-10">
+							<view class="wrapper">
+								<h1 class="title">{{$t('Qiaozhi.Games-Selection-Title')}}<span
+										class="title-slug">{{$t('Qiaozhi.Game')}}</span>?</h1>
+								<view class="animated-mocks">
+									<image v-for="(mock, index) in [
                                 '/static/image/game-selection-helper/animated-mocks/Chip.png',
                                 '/static/image/game-selection-helper/animated-mocks/Cards.png',
                                 '/static/image/game-selection-helper/animated-mocks/Cube.png',
@@ -712,69 +720,83 @@
                                 '/static/image/game-selection-helper/animated-mocks/Cherries.png',
                                 '/static/image/game-selection-helper/animated-mocks/Bomb.png',
                                 '/static/image/game-selection-helper/animated-mocks/Ball.png'
-                            ]"
-                            :key="index"
-                            :src="mock"
-                            :class="`mockup item-${index + 1}`"
-                            mode="widthFix"
-                        ></image>
-						</view>
-						<view class="reel">
-						<view class="slot item-1">
-							<uni-col :xs="24" :sm="7" :md="7" :lg="7">
-							<view class="col">
-								<image class="item" :src="'/static/image/game-selection-helper/Stairs.png'" mode="widthFix"></image>
+                                ]" :key="index" :src="mock" :class="`mockup item-${index + 1}`" mode="widthFix">
+									</image>
+								</view>
+								<view class="reel">
+									<view class="slot item-1">
+										<uni-col :xs="24" :sm="7" :md="7" :lg="7">
+											<view class="col">
+												<image class="item"
+													:src="'/static/image/game-selection-helper/Stairs.png'"
+													mode="widthFix"></image>
+											</view>
+										</uni-col>
+										<uni-col :xs="24" :sm="7" :md="7" :lg="7">
+											<view class="col">
+												<image class="item"
+													:src="'/static/image/game-selection-helper/Instant-Roulette.png'"
+													mode="widthFix"></image>
+											</view>
+										</uni-col>
+										<uni-col :xs="24" :sm="7" :md="7" :lg="7">
+											<view class="col">
+												<image class="item"
+													:src="'/static/image/game-selection-helper/Speed-Baccarat.png'"
+													mode="widthFix"></image>
+											</view>
+										</uni-col>
+									</view>
+									<view class="slot item-2">
+										<uni-col :xs="24" :sm="7" :md="7" :lg="7">
+											<view class="col">
+												<image class="item"
+													:src="'/static/image/game-selection-helper/Stairs.png'"
+													mode="widthFix"></image>
+											</view>
+										</uni-col>
+										<uni-col :xs="24" :sm="7" :md="7" :lg="7">
+											<view class="col">
+												<image class="item"
+													:src="'/static/image/game-selection-helper/Instant-Roulette.png'"
+													mode="widthFix"></image>
+											</view>
+										</uni-col>
+										<uni-col :xs="24" :sm="7" :md="7" :lg="7">
+											<view class="col">
+												<image class="item"
+													:src="'/static/image/game-selection-helper/Speed-Baccarat.png'"
+													mode="widthFix"></image>
+											</view>
+										</uni-col>
+									</view>
+									<view class="slot item-3">
+										<uni-col :xs="24" :sm="7" :md="7" :lg="7">
+											<view class="col">
+												<image class="item"
+													:src="'/static/image/game-selection-helper/Stairs.png'"
+													mode="widthFix"></image>
+											</view>
+										</uni-col>
+										<uni-col :xs="24" :sm="7" :md="7" :lg="7">
+											<view class="col">
+												<image class="item"
+													:src="'/static/image/game-selection-helper/Instant-Roulette.png'"
+													mode="widthFix"></image>
+											</view>
+										</uni-col>
+										<uni-col :xs="24" :sm="7" :md="7" :lg="7">
+											<view class="col">
+												<image class="item"
+													:src="'/static/image/game-selection-helper/Speed-Baccarat.png'"
+													mode="widthFix"></image>
+											</view>
+										</uni-col>
+									</view>
+								</view>
 							</view>
-						</uni-col>
-						<uni-col :xs="24" :sm="7" :md="7" :lg="7">
-							<view class="col">
-								<image class="item" :src="'/static/image/game-selection-helper/Instant-Roulette.png'" mode="widthFix"></image>
-							</view>
-						</uni-col>
-						<uni-col :xs="24" :sm="7" :md="7" :lg="7">
-							<view class="col">
-								<image class="item" :src="'/static/image/game-selection-helper/Speed-Baccarat.png'" mode="widthFix"></image>
-							</view>
-						</uni-col>
-						</view>
-						<view class="slot item-2">
-							<uni-col :xs="24" :sm="7" :md="7" :lg="7">
-							<view class="col">
-								<image class="item" :src="'/static/image/game-selection-helper/Stairs.png'" mode="widthFix"></image>
-							</view>
-						</uni-col>
-						<uni-col :xs="24" :sm="7" :md="7" :lg="7">
-							<view class="col">
-								<image class="item" :src="'/static/image/game-selection-helper/Instant-Roulette.png'" mode="widthFix"></image>
-							</view>
-						</uni-col>
-						<uni-col :xs="24" :sm="7" :md="7" :lg="7">
-							<view class="col">
-								<image class="item" :src="'/static/image/game-selection-helper/Speed-Baccarat.png'" mode="widthFix"></image>
-							</view>
-						</uni-col>
-						</view>
-						<view class="slot item-3">
-							<uni-col :xs="24" :sm="7" :md="7" :lg="7">
-							<view class="col">
-								<image class="item" :src="'/static/image/game-selection-helper/Stairs.png'" mode="widthFix"></image>
-							</view>
-						</uni-col>
-						<uni-col :xs="24" :sm="7" :md="7" :lg="7">
-							<view class="col">
-								<image class="item" :src="'/static/image/game-selection-helper/Instant-Roulette.png'" mode="widthFix"></image>
-							</view>
-						</uni-col>
-						<uni-col :xs="24" :sm="7" :md="7" :lg="7">
-							<view class="col">
-								<image class="item" :src="'/static/image/game-selection-helper/Speed-Baccarat.png'" mode="widthFix"></image>
-							</view>
-						</uni-col>
-						</view>
-					    </view>
-						</view>
-					</uni-row>
-				</view>
+						</uni-row>
+					</view>
 				</view>
 			</match-media>
 			<!-- Qiaozhi Component -->
@@ -861,7 +883,12 @@
 <script>
 	import Swiper from 'swiper'; // 注意引入的是Swiper
     import 'swiper/swiper-bundle.css'; // 注意这里的引入
+	import Leaderboards from "@/components/Leaderboards/Leaderboards.vue";
+
 	export default {
+		components: {
+			Leaderboards,
+		    },
 		name: "home-games-list",
 		props: {
 			HotBaoJiangList: {

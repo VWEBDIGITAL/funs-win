@@ -630,3 +630,190 @@ html {
   }  
  }	
 }
+
+
+uni-view.leaderboards {
+	display: block;
+	position: relative;
+	& .title-wrap {
+		padding-right: 0;
+        margin-top: 35px !important;
+        margin-bottom: 12px;
+        background-color: $bg !important;
+		& .title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			& .heading {
+				display: flex;
+				align-items: center;
+				overflow: hidden;
+				& .icon {
+					position: relative;
+					width: 22px;
+					height: 22px;
+					margin-right: 5px;
+				}
+				& .title {
+					font-weight: bold !important;
+					color: var(--me-text-color);
+					font-size: 17px;
+				}
+			}
+		}
+	}
+
+	& .tournaments {
+		display: block;
+		padding: 0;
+		position: relative;
+		width: 100%;
+		color: $white;
+		overflow: hidden;
+
+		& .col {
+			display: flex;
+			position: relative;
+			padding: 1rem;
+			background: #213743;
+            justify-content: space-between;
+			font-size: 1rem;
+			border-radius: 4px 4px 0 0;
+			overflow: hidden;
+			& p {
+				margin-top: 0.5rem;
+				font-size: 13px;
+				font-weight: normal;
+			}
+			& .countdown {
+				display: block;
+				position: relative;
+				padding: 2rem;
+				line-height: 1.75;
+				background-color: #1A2C38;
+				border-radius: 100%;
+
+				& .slug {
+                  font-size: 12px;
+				  color: #B1BAD3;
+				  font-weight: normal;
+				  margin-bottom: 0.25rem;
+				}
+			}
+		}
+
+		& .bottom {
+			display: flex;
+			position: relative;
+			padding: 1rem;
+			align-items: center;
+			justify-content: start;
+			background: #213743;
+			border-top: 2px #2F4553 solid;
+			border-radius: 0 0 4px 4px;
+			& .slug {
+				font-size: 13px;
+				font-weight: normal;
+			}
+
+			& .progress {
+			    display: block;
+				position: relative;
+				padding: 0;
+				margin: 0 0.5rem;
+				width: 100%;
+				background: #2F4553;
+				height: 0.75rem;
+				border-radius: 7px;
+			}
+		}
+
+		& .item-1 {
+		   margin-right: 1rem;
+		 }
+	}
+
+	& .tabs {
+		position: relative;
+		& .tabs-wrapper {
+			display: flex;
+			padding: 0.5rem 0.5rem;
+			position: relative;
+			width: auto;
+			background: #0F212E;
+			border-radius: 48px;
+			overflow: hidden;
+
+			& .tab {
+				display: block;
+				position: relative;
+				padding: 1rem 2rem;
+				margin: 0;
+				width: auto;
+				font-weight: normal;
+				font-size: 14px;
+				color: $white;
+				border-radius: 48px;
+
+				&.active {
+				  background-color: #2F4553;
+				  border: 0;
+				}
+				&:nth-child(3) {
+					&::after {
+						content: "";
+						display: inline-block;
+						position: relative;
+						padding: 0;
+						margin: 0 0 0 0.5rem;
+						background-color: #1FFF20;
+						height: 0.45rem;
+						width: 0.45rem;
+						border-radius: 100%;
+						overflow: hidden;
+						-webkit-animation: pulse 1.5s infinite;
+						animation: pulse 1.5s infinite;
+				    }
+				}
+			}
+
+		}
+	}
+
+	& .uni-row { 
+      & .names {
+		display: block;
+		padding: 1.25rem 1rem;
+		position: relative;
+		width: 100%;
+		color: var(--me-subtext-color);
+		font-weight: normal;
+		font-size: 13px;
+		background-color: #1A2C38;
+		overflow: hidden;
+	  }
+
+	  & .board {
+		display: block;
+		padding: 1.15rem 1rem;
+		position: relative;
+		width: 100%;
+		color: var(--me-subtext-color);
+		font-weight: normal;
+		font-size: 13px;
+		$colors: transparent, #213743;
+		@for $i from 1 through 7 {
+		  &.item-#{$i} {
+			background: nth($colors, (($i - 1) % 2) + 1);
+		  }
+		}
+		overflow: hidden;
+	  }
+	  .uni-col {
+		.col {
+		position: relative;
+		text-align: left;
+		}
+	}
+	}
+}
