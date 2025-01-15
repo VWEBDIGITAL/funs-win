@@ -1,4 +1,4 @@
-# funs.winn || VWEB.DIGITAL 乔治
+# FUNS.WIN || VWEB.DIGITAL 乔治
 
 ## Project setup
 ```
