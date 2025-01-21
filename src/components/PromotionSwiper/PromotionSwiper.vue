@@ -7,32 +7,34 @@
         </view>
       </view>
     </view>
-    <view class="swiper-navigation-wrapper">
-    <view v-if="navigation" class="swiper-button-prev"></view>
-    <view v-if="pagination" class="swiper-pagination"></view>
-    <view v-if="navigation" class="swiper-button-next"></view>
+    <view v-if="showNavigation" class="swiper-navigation-wrapper">
+      <view v-if="navigation" class="swiper-button-prev"></view>
+      <view v-if="pagination" class="swiper-pagination"></view>
+      <view v-if="navigation" class="swiper-button-next"></view>
     </view>
   </view>
 </template>
+
 <script>
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
+
 export default {
   data() {
     return {
       slides: [
-    {image: '/static/image/hero-slider/Slide1.png'},
-    {image: '/static/image/hero-slider/Slide2.png'},
-    {image: '/static/image/hero-slider/Slide3.png'},
-    {image: '/static/image/hero-slider/Slide4.png'},
-    {image: '/static/image/hero-slider/Slide1.png'},
-    {image: '/static/image/hero-slider/Slide2.png'},
-		{image: '/static/image/hero-slider/Slide3.png'},
-		{image: '/static/image/hero-slider/Slide4.png'},
-		{image: '/static/image/hero-slider/Slide1.png'},
-    {image: '/static/image/hero-slider/Slide2.png'},
-    {image: '/static/image/hero-slider/Slide3.png'},
-    {image: '/static/image/hero-slider/Slide4.png'},
+        { image: '/static/image/hero-slider/Slide1.png' },
+        { image: '/static/image/hero-slider/Slide2.png' },
+        { image: '/static/image/hero-slider/Slide3.png' },
+        { image: '/static/image/hero-slider/Slide4.png' },
+        { image: '/static/image/hero-slider/Slide1.png' },
+        { image: '/static/image/hero-slider/Slide2.png' },
+        { image: '/static/image/hero-slider/Slide3.png' },
+        { image: '/static/image/hero-slider/Slide4.png' },
+        { image: '/static/image/hero-slider/Slide1.png' },
+        { image: '/static/image/hero-slider/Slide2.png' },
+        { image: '/static/image/hero-slider/Slide3.png' },
+        { image: '/static/image/hero-slider/Slide4.png' },
       ],
       navigation: true,
       pagination: true,
@@ -41,19 +43,44 @@ export default {
         disableOnInteraction: false,
       },
       swiperInstance: null,
+      showNavigation: true,
     };
   },
   mounted() {
+    this.detectDevice();
     this.initializeSwiper();
-    window.addEventListener('resize', this.updateSwiper);
+    window.addEventListener('resize', this.onResize);
   },
   destroyed() {
     if (this.swiperInstance) {
       this.swiperInstance.destroy();
     }
-    window.removeEventListener('resize', this.updateSwiper);
+    window.removeEventListener('resize', this.onResize);
   },
   methods: {
+    // Detect Mobile
+    isMobile() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      const isUserAgentMobile = /Android|webOS|iPhone|iPod|iPad|Tablet|BlackBerry|IEMobile|Opera Mini/i.test(
+        userAgent.toLowerCase()
+      );
+      const isScreenMobile = window.innerWidth <= 768;
+      return isUserAgentMobile || isScreenMobile;
+    },
+    // Update Navigation & Pagination
+    detectDevice() {
+      const isMobileDevice = this.isMobile();
+      this.navigation = !isMobileDevice;
+      this.pagination = !isMobileDevice;
+      this.showNavigation = !isMobileDevice;
+    },
+    // Window Resize Update
+    onResize() {
+      this.detectDevice();
+      if (this.swiperInstance) {
+        this.swiperInstance.update();
+      }
+    },
     // Initialize Swiper
     initializeSwiper() {
       if (this.swiperInstance) {
@@ -61,31 +88,42 @@ export default {
       }
       this.swiperInstance = new Swiper('.swiper-container-promotion', {
         loop: false,
-		    rewind: true,
+        rewind: true,
         autoplay: this.autoplay,
         slidesPerGroup: 3,
         slidesPerView: 1,
-		    speed: 1500,
+        speed: 1500,
         spaceBetween: 20,
         observer: true,
         observeParents: true,
-        navigation: {
-          enabled: true,
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-          disabledClass: 'swiper-nav-disabled',
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
+        navigation: this.navigation
+          ? {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+              disabledClass: 'swiper-nav-disabled',
+            }
+          : false,
+        pagination: this.pagination
+          ? {
+              el: '.swiper-pagination',
+              clickable: true,
+            }
+          : false,
         breakpoints: {
           320: {
             slidesPerView: 1,
             spaceBetween: 20,
           },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
           768: {
             slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
             spaceBetween: 20,
           },
           1280: {
@@ -95,13 +133,6 @@ export default {
         },
       });
       this.swiperInstance.update();
-    },
-    
-    // Update Swiper On Resize
-    updateSwiper() {
-      if (this.swiperInstance) {
-        this.swiperInstance.update();
-      }
     },
   },
 };

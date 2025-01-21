@@ -174,23 +174,6 @@
 		}
 	}
 
-
-
-
-
-
-
-
-	.u-tab-item {
-		padding: 0 20rpx;
-		//margin-right: 20rpx;
-		height: 38px !important;
-		line-height: 38px !important;
-		position: relative;
-		background-color: #1d2532;
-		border-radius: 12px;
-	}
-
 	.bg_color {
 		background-image: linear-gradient(to right, #548dff, #0c5eff) !important;
 	}

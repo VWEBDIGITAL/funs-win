@@ -2,7 +2,7 @@
     <!-- Qiaozhi Component -->
     <match-media :min-width="800">
       <view class="leaderboards">
-        <view class="title-wrap mb-5">
+        <view class="title-wrap mt-5 mb-3">
           <view class="title">
             <view class="heading">
               <image class="icon" src="/static/image/home/icons8-pgjj.png" mode="scaleToFill" />
@@ -12,12 +12,22 @@
         </view>
 
         <view class="container-fluid">
-          <uni-row class="row justify-content-center mb-5">
+          <uni-row class="row justify-content-center">
             <view class="tournaments">
-              <uni-col :xs="24" :sm="12" :md="12" :lg="12">
+              <uni-col class="mb-5" :xs="24" :sm="24" :md="24" :lg="12">
                 <view class="col item-1">
                 <view class="title">$10m Christmas Race
-                 <p>Ready to race to the top?</p>    
+                 <p class="mb-5">Ready to race to the top?</p>
+                 <view class="item-info">
+                 <view class="item-button me-3">
+                   <a href="#" class="button btn-mn btn-secondary btn-md">Leaderboard</a>
+                </view> 
+                <view class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                <path d="M7.98022 0C4.11404 0 0.980225 3.13381 0.980225 7C0.980225 10.8662 4.11404 14 7.98022 14C11.8464 14 14.9802 10.8662 14.9802 7C14.9802 3.13381 11.8464 0 7.98022 0ZM9.12648 11.305H6.83397V6.71125H9.12648V11.305ZM7.98022 5.3725C7.71545 5.3725 7.45661 5.29398 7.23645 5.14688C7.0163 4.99978 6.84471 4.79069 6.74338 4.54607C6.64205 4.30144 6.61554 4.03227 6.6672 3.77257C6.71885 3.51288 6.84636 3.27434 7.03359 3.08711C7.22081 2.89988 7.45936 2.77238 7.71905 2.72072C7.97874 2.66907 8.24792 2.69558 8.49254 2.79691C8.73717 2.89823 8.94625 3.06982 9.09335 3.28998C9.24046 3.51014 9.31897 3.76897 9.31897 4.03375V4.0425C9.31897 4.39524 9.17885 4.73353 8.92943 4.98295C8.68 5.23238 8.34171 5.3725 7.98897 5.3725H7.97979H7.98022Z" fill="white"/>
+                 </svg>
+                </view>
+                 </view>
                 </view>
                 <view class="countdown">
                 <view class="slug">Ends in</view> 
@@ -31,10 +41,13 @@
                 <view class="slug ms-2">Not entered yet</view>
                </view>
               </uni-col>
-              <uni-col :xs="24" :sm="12" :md="12" :lg="12">
+              <uni-col class="mb-5" :xs="24" :sm="24" :md="24" :lg="12">
                 <view class="col item-2">
                 <view class="title">$75k Weekly Raffle
-                 <p>Finish your week with a win!</p>    
+                 <p class="mb-5">Finish your week with a win!</p>
+                 <view class="item-button disabled">
+                   <a href="#" class="button btn-mn btn-secondary btn-md">0 Tickets</a>
+                </view>
                 </view>
                 <view class="countdown">
                 <view class="slug">Ends in</view> 

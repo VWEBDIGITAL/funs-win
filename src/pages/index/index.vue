@@ -175,6 +175,14 @@
 			<!-- 关于我们和技术支持 -->
 			<home-bottom-info ref=""></home-bottom-info>
 		</view>
+			
+		
+		    <!-- Qiaozhi Game-Selection -->
+			<GameSelection />
+			<!-- Qiaozhi AboutFeedback -->
+			<AboutFeedback />
+			<!-- Qiaozhi Footer -->
+			<Footer />
 
 		<DepositoAdv ref="DepositoAdvOpen"></DepositoAdv>
 		<!-- 登录密码修改 -->
@@ -266,12 +274,18 @@
 	} from '@/utils/socket.js';
 	import dragButton from "@/components/drag-button/drag-button.vue";
 	import PromotionSwiper from "@/components/PromotionSwiper/PromotionSwiper.vue";
+	import GameSelection from "@/components/GameSelection/GameSelection.vue";
+	import AboutFeedback from "@/components/AboutFeedback/AboutFeedback.vue";
+	import Footer from "@/components/Footer/Footer.vue";
 
 	//import FingerprintJS from '@fingerprintjs/fingerprintjs';
 	export default {
 		components: {
 		    dragButton,
 			PromotionSwiper,
+			GameSelection,
+			AboutFeedback,
+			Footer,
 		    },
 		data() {
 			return {

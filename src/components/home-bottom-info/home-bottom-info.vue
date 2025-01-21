@@ -1,4 +1,5 @@
 <template>
+	<match-media :max-width="800">
 	<view :style="theme">
 		<view class="footer page_wrap">
 			<view class="About">
@@ -60,6 +61,7 @@
 			<copyright></copyright>
 		</view>
 	</view>
+</match-media>
 </template>
 
 <script>

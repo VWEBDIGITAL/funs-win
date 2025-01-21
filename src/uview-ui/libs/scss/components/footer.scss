@@ -1,3 +1,44 @@
 .footer {
-  display: none;
+  display: block;
+  position: relative;
+  padding: 3rem;
+  background-color: #19212C;
+  color: #55657E;
+  h5 {
+    font-size: 12px;
+    font-weight: normal;
+    color: #A7B5CA;
+    margin-bottom: 1rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-size: 12px;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+
+      a {
+        color: #2283F6;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  & .footer-bottom {
+    & .copyright-disclaimer {
+      font-weight: normal;
+      font-size: 10px;
+      width: 60%;
+    }
+
+    & .copyright {
+      font-weight: normal;
+      font-size: 12px;
+    }
+}
 }

@@ -1,37 +1,95 @@
-.uv-sticky {
-	z-index: 120 !important;
+// Desktop Navigation
+uni-main {
+	& .uv-sticky__content {
+		& .lobby_nav {
+			display: block;
+			padding: 0.25rem 0.25rem;
+			border: 1px solid $border-color-dark;
+			border-radius: 3.125rem;
+			box-sizing: border-box;
+			& .u-tab-item {
+			  position: relative;
+			  padding: 0.75rem 1rem !important;
+			  height: auto !important;
+			  line-height: $line-height !important;
+			  background-color: transparent;
+			  border-radius: inherit;
+			  &.bg_color {
+				padding: 0.75rem 1rem;
+				background-image: none !important;
+				background-color: $color-primary;
+				height: auto !important;
+				line-height: $line-height !important;
+				border-radius: 5rem;
+			  }
+			  & .tabs_icon .moren {
+				margin-right: 0.6rem;
+			  }
+			}
+		  }
+		  & .souso_cion {
+			display: flex;
+			position: relative;
+			padding: 1rem 0.75rem;
+			margin: 0 2rem 0rem 1rem;
+			justify-content: start;
+			align-items: center;
+			background-color: $color-secondary;
+			border-radius: 12px;
+		  }
+	}
   }
 
-uni-main {
-	& .list_wrap_box {
-	  position: relative;
-	  & .lobby_nav {
+// Mob Navigation
+@include breakpoint(max-md) {
+	.lobby_nav {
 		display: block;
 		padding: 0.25rem 0.25rem;
 		border: 1px solid $border-color-dark;
 		border-radius: 3.125rem;
 		box-sizing: border-box;
+		& .u-scroll-box {
+		  height: auto;
+		  line-height: 0;
+		}
 		& .u-tab-item {
 		  position: relative;
-		  padding: 0.75rem 1rem;
+		  padding: 0.75rem 1rem !important;
 		  height: auto !important;
 		  line-height: $line-height !important;
+		  font-weight: normal !important;
 		  background-color: transparent;
 		  border-radius: inherit;
-		  &.bg_color {
-			padding: 0.75rem 1rem;
+		  & .bg_color {
+			padding: 0;
 			background-image: none !important;
 			background-color: $color-primary;
 			height: auto !important;
 			line-height: $line-height !important;
 			border-radius: 5rem;
+	
+			height: 100% !important;
+			padding: 1rem;
+			line-height: 3 !important;
 		  }
-		  & .tabs_icon .moren {
-			margin-right: 0.6rem;
+
+		  & .bg_color2 {
+            background-color: transparent;
+		  }
+		  & .tabs_icon {
+			line-height: 0;
+			height: auto;
+
+			& .game_num {
+				display: block;
+			}
 		  }
 		}
+       & .uni-scroll-view {
+         border-radius: 3.125rem;
+	   }
 	  }
-	  & .souso_cion {
+	   .souso_cion {
 		display: flex;
 		position: relative;
 		padding: 1rem 0.75rem;
@@ -40,6 +98,9 @@ uni-main {
 		align-items: center;
 		background-color: $color-secondary;
 		border-radius: 12px;
-	  }
 	}
-  }
+
+	& .u-navbar-placeholder {
+       display: none;
+	}
+}

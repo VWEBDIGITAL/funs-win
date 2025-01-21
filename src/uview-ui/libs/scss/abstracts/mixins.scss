@@ -92,6 +92,13 @@
             @content ;
         }
     }
+
+    @if $point==max-xxs {
+        @media (max-width: 374px) {
+            @content ;
+        }
+    }
+
     @else if $point==max-xs {
         @media (max-width: 450px) {
             @content ;

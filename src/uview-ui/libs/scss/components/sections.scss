@@ -106,4 +106,45 @@ uni-main {
 	 }
 	}
   }
+  & .statistics {
+	padding: 1rem 0rem;
+	font-size: 12px;
+	& .number {
+	  margin-right: 0.25rem;
+	  color: $white;
+
+	  &:before {
+		content: "";
+		display: inline-block;
+		position: relative;
+		padding: 0;
+		margin: 0 0.5rem 0 0;
+		background-color: #1FFF20;
+		height: 0.45rem;
+		width: 0.45rem;
+		border-radius: 100%;
+		overflow: hidden;
+		animation: pulse 1.5s infinite;
+		@keyframes pulse {
+			0% {
+			  transform: scale(1);
+			  opacity: 1;
+			}
+			50% {
+			  transform: scale(1.1);
+			  opacity: 0.2;
+			}
+			100% {
+			  transform: scale(1);
+			  opacity: 1;
+			}
+		  }
+	  }
+	}
+
+	& .slug {
+	  color: #B1BAD3;
+	  font-weight: normal;
+	}
+  }
 }

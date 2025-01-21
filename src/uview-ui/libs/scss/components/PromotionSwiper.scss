@@ -2,7 +2,10 @@ uni-page-body {
 	.hero-swiper {
 	  display: block;
 	  position: relative;
-	  @include breakpoint(lg) {
+	  @include breakpoint(max-md) {
+		padding: 5rem 2rem 1rem 2rem;
+	  }
+	  @include breakpoint(md) {
 		padding: 3rem 2rem 0 2rem;
 	  }
 	  margin: 0;
@@ -93,7 +96,7 @@ uni-page-body {
 	  .swiper-button-prev {
 		position: relative;
 		color: #fff;
-		z-index: 110;
+		z-index: 100;
 		display: block;
 		text-align: center;
 		line-height: 0;

@@ -4,8 +4,7 @@
 			<scroll-view scroll-y="true" style="height: calc(100vh)">
 				<view class="menu_wrap">
 					<view class="menu_wrap_box2">
-						<view class="souso_cion" @click="Tosearch()"><u-icon name="search" color="#3c485c"
-								size="38"></u-icon>{{$t('Qiaozhi.Search')}}</view>
+						<view class="souso_cion" @click="Tosearch()"><u-icon name="search" color="#3c485c" size="38"></u-icon>{{$t('Qiaozhi.Search')}}</view>
 						<view class="cell_box_title">{{$t('Qiaozhi.Betting')}}</view>
 						<view class="cell_box">
 							<u-cell-group :border="false">
@@ -48,7 +47,6 @@
 								</u-cell-item>
 							</u-cell-group>
 						</view>
-
 						<view class="cell_box" :style="{display:'none'}">
 							<u-cell-group :border="false">
 								<u-cell-item :title="$t('sidebar.title6')" :border-bottom="false"
@@ -63,7 +61,6 @@
 								</u-cell-item>
 							</u-cell-group>
 						</view>
-
 						<view class="cell_box_title">{{$t('Qiaozhi.General')}}</view>
 						<view class="cell_box _default">
 							<u-cell-group :border="false">
@@ -106,16 +103,13 @@
 								</u-cell-item>
 							</u-cell-group>
 						</view>
-
 						<view class="payment_methods _line"></view>
-
 						<view class="payment_methods" @click="openType">
 							<image class="_item" src="/static/image/payments/gpay.png" mode="widthFix"></image>
 							<image class="_item" src="/static/image/payments/applepay.png" mode="widthFix"></image>
 							<image class="_item" src="/static/image/payments/mastercard.png" mode="widthFix"></image>
 							<image class="_item" src="/static/image/payments/visa.png" mode="widthFix"></image>
 						</view>
-
 						<view class="cell_box _default">
 							<view class="sevae_btn_wrap _no_fixed">
 								<view class="sevae_btn buy_btn">
@@ -123,7 +117,6 @@
 								</view>
 							</view>
 						</view>
-
 						<view class="cell_box_wrapper">
 							<view class="cell_box_title _no-item">{{$t('Qiaozhi.App')}}</view>
 							<view class="_apps">
@@ -191,7 +184,6 @@
 		<signInPopup ref="signInShow" :isTabs="istabsType"></signInPopup>
 		<LanguagePopup ref="Language"></LanguagePopup>
 		<musicPopup ref="OpenMusic"></musicPopup>
-
 	</view>
 </template>
 

@@ -11,7 +11,6 @@
 						<view class="tabs_icon">
 							<image class="moren" :class="current == index?'zhihui':''" :src="item.path" mode="widthFix"></image>
 							<!--<view>{{item[name] || item['name']}}</view>-->
-							
 							<view :class="[current == index?'bianbai':'morenc']" v-if="item.name && item.name=='Lobby'">{{$t('Lobby')}}</view>
 							<view :class="[current == index?'bianbai':'morenc']" v-if="item.name && item.name=='Slots'">{{$t('Slots')}}</view>
 							<view :class="[current == index?'bianbai':'morenc']" v-if="item.name && item.name=='Fishing'">{{$t('Fishing')}}</view>
@@ -23,9 +22,7 @@
 							<view :class="[current == index?'bianbai':'morenc']" v-if="item.name && item.name=='Poker'">{{$t('ADDnew.Poker')}}</view>
 							<view :class="[current == index?'bianbai':'morenc']" v-if="item.name && item.name=='ARCADE'">{{$t('ADDnew.Arcade')}}</view>
 							<view :class="[current == index?'bianbai':'morenc']" v-if="item.name && item.name=='Lottery'">{{$t('ADDnew.Lottery')}}</view>
-							
 							<view class="game_num" v-if="current == index">{{QiuHe(item)}}</view>
-							
 						</view>
 						<view class="bg_color" v-if="current == index"></view>
 						<view class="bg_color2" v-if="current != index"></view>
@@ -380,8 +377,8 @@
 
 	.u-tab-item {
 		margin-right: 20rpx;
-		height: 38px !important;
-		line-height: 38px !important;
+		height: 38px;
+		line-height: 38px;
 		position: relative;
 		/* #ifndef APP-NVUE */
 		display: inline-block;

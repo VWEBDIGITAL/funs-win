@@ -1,0 +1,94 @@
+/*
+ * @package	     VWEB.DIGITAL
+ * @subpackage	 Qiaozhi Elements
+ * @author       <VWEB.DIGITAL>
+ * @website      <https://vweb.digital>
+ * @copyright    Copyright © 2025 VWEB.DIGITAL. All Rights Reserved.<https://vweb.digital>
+ * @license      GNU General Public License Version 2; See License.txt
+ */
+
+.btn,
+.btn-mn {
+    display: inline-block;
+    position: relative;
+    padding: 10px 30px;
+    color: $white;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    border-radius: $border-radius;
+    @include transition;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s transform;
+    z-index: 1;
+    overflow: hidden;
+
+    &.btn-primary {
+      background-color: #313841;
+      border-radius: 8px;
+    }
+
+    &.btn-secondary {
+     background-color: #1475E1;
+    }
+
+    &:focus {
+      color: $dark;  
+    }
+
+    @include breakpoint(max-xl) {
+      font-size: 16px;
+    }
+
+    &:hover,
+    &.active {
+        color: $white;
+        transform: translateY(-2px);
+    }
+
+    &.btn-lg {
+        padding: 10px 30px;
+        @include breakpoint(max-lg) {
+            font-size: 16px;
+        }
+
+        @include breakpoint(max-sm) {
+            font-size: 14px;
+        }
+    }
+
+    &.btn-md {
+        padding: 10px 20px;
+        font-size: 14px;
+        @include breakpoint(max-sm) {
+            font-size: 14px;
+        }     
+    }
+
+    &.btn-sm {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    &.btn-xs {
+        padding: 3px 10px;
+        font-size: 14px;
+    }
+}
+
+uni-button {
+ &::after {
+    content: none;
+    display: none;
+ }
+}
+
+.disabled .btn-mn {
+   opacity: 0.5;
+}
