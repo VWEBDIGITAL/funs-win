@@ -176,7 +176,6 @@
 			<home-bottom-info ref=""></home-bottom-info>
 		</view>
 			
-		
 		    <!-- Qiaozhi Game-Selection -->
 			<GameSelection />
 			<!-- Qiaozhi AboutFeedback -->

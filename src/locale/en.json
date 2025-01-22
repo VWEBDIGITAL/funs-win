@@ -19,7 +19,7 @@
 	"hdhkpintu": "Swipe to complete the puzzle",
 	"shuaxin": "Refresh",
 	
-	"HotGames": "Popular games",
+	"HotGames": "Popular Games",
 	"jmhb": "Crypto currency",
 	"fbck": "Fiat currency",
 	"bizhong": "Currency",
@@ -1164,7 +1164,7 @@
 		"Bonus": "Bonus",
 		"Reward": "Reward",
 		"18TIP": "This website offers a risky gaming experience. You must be at least 18 years old to be a user of our website. We are not responsible for any violations of your local laws regarding online gaming. Play responsibly and have fun.",
-		"all": "All rights reserved",
+		"all": " All Rights Reserved",
 		"priWith": "Priority Withdrawals",
 		"excPrev": "Exclusive Previews",
 		"onlSupp": "Dedicated online support",
@@ -1253,6 +1253,8 @@
 	 "Games": "Games",
 	 "Game": "game",
 	 "Games-Selection-Title": "Need help choosing a",
-	 "Leaderboards": "Races & Raffles"
+	 "Leaderboards": "Races & Raffles",
+	 "TOP": "TOP",
+	 "HotGames": "Hot Games"
 	}
 }

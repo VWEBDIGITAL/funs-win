@@ -1,16 +1,13 @@
 <template>
 	<view class="banquanbox">
-
 		<view style="margin-top: 50rpx;"></view>
-		<view class="wenan1" @click="userinfo">© 2024<!-- <span class="wangzhi2">{{removeCharLevel(LuoDidomain)}}</span> | -->{{$t('ADDnew.all')}}.</view>
+		<view class="wenan1" @click="userinfo">© 2025 FUNS.WIN | <!-- <span class="wangzhi2">{{removeCharLevel(LuoDidomain)}}</span> | --> {{$t('ADDnew.all')}}.</view>
 		<!---<view class="wenan1">Stake is owned and operated by Medium Rare N.V., registration number: 145353, registered
 			address: Korporaalweg 10, Willemstad, Curaçao. Contact us at support@stake.com.</view>
 		<view class="wenan1">
 			Payment agent company is Medium Rare Limited with address 7-9 Riga Feraiou, LIZANTIA COURT, Office 310,
 			Agioi Omologites, 1087 Nicosia, Cyprus and Registration number: HE 410775</view>
 			-->
-
-
 	</view>
 </template>
 

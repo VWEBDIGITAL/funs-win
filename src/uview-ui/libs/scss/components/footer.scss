@@ -42,3 +42,118 @@
     }
 }
 }
+
+// Mobile Footer
+.mobile-footer.qiaozhi {
+  display: block;
+  position: relative;
+  padding: 1rem 1rem 6rem 1rem;
+  background-color: #071D2A;
+  color: #B1BAD3;
+  & .page_wrap {
+    background: transparent;
+    padding: 0;
+  }
+  & .About {
+    margin: 0 !important;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem !important;
+    border-bottom: 2px #213743 solid;
+  }
+  & .logo {
+     display: flex;
+     position: relative;
+     justify-content: flex-start;
+     align-items: center;
+     overflow: hidden;
+    & uni-image.logo {
+      position: relative;
+      width: 100%;
+    }
+  }
+  & .copyright {
+    & .banquanbox {
+      padding: 0;
+    }
+    & .wenan1 {
+      text-align: left;
+      font-size: 12px;
+    }
+  }
+  & .social-icons {
+     position: relative;
+     & .huoban {
+       display: flex;
+       padding: 1.5rem 0rem !important;
+       margin-bottom: 1.5rem;
+       justify-content: space-between !important;
+       align-items: center;
+       border: 0 !important;
+       border-bottom: 2px #213743 solid !important;
+       overflow: hidden;
+       & uni-view  {
+        display: block !important;
+       }
+        & svg.icon {
+        display: block;
+        position: relative;
+        height: 1.5rem;
+        width: auto;
+        fill: $white;
+       }
+     }
+  }
+
+  & .About_title {
+     display: flex;
+     padding: 1rem 1rem;
+     position: relative;
+     background-color: #213743;
+     margin-bottom: 1rem;
+     border-radius: 4px;
+     font-size: 12px !important;
+     font-weight: normal !important;
+  }
+
+  & .info_1 {
+    padding: 1rem 1rem;
+    background-color: #213743;
+    border-radius: 4px;
+    color: #B1BAD3 !important;
+    margin-bottom: 1rem;
+  }
+ 
+  & .moreIcon {
+    transform: rotate(90deg) !important;
+    & .uicon-arrow-down {
+      &::before {
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+
+    &.no-showOptions {
+      transform: rotate(0deg) !important;
+    }
+  }
+
+  & .game-providers {
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px #213743 solid !important;
+    & .allgys .nav-bar-item uni-image {
+      background-color: #213743;
+    }
+  }
+
+  & .shiBa_wrap {
+    border: 0 !important;
+    padding-top: 0 !important;
+    & .shiba_text {
+      position: relative;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+}

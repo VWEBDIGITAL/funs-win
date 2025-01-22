@@ -1,20 +1,16 @@
 <template>
 	<view :style="theme" class="pc_top_nav">
 		<view class="logo_and_right">
-
 			<view class="left_logo">
 				<image @click="startAnimation()" class="menu" :animation="animationData" src="/static/image/menu_fold_one_icon_155136.png"></image>
 				<image class="logo"  :src="'/static/logo/' + platform + '_LOGO_MAIN.png'" mode="widthFix" @click="Tohome()"></image>
-				
 				<view class="xsTask">
 					<!-- 新手任务 -->
 					<NoviceTask ref="" :Bonuses="$t('NEWBonusPageB.bonuses')" :ispc="true"></NoviceTask>
 				</view>
-				
 			</view>
 
 			<view class="right_box" v-if="is_logon == 1">
-				
 				<view class="dw_app" @click="dlApp()">
 					<view><u-icon name="download" color="#a8b5ca"></u-icon>{{$t('ADDnew2.DownloadTheApp')}}</view>
 				</view>
@@ -23,11 +19,9 @@
 					<view class="mayjine" v-show="is_games_in == 0">
 						<!-- <image class="shuaxin" :class="{'rotate360':showAnimate}" @click="play2()" src="/static/image/shuaxin.png"></image> -->
 						<view class="yue" @click="YiJianShow = true">
-							
 							<image class="rank_icon" src="/static/image/currency_coins.png" v-if="platform == 8"></image>
 							<image class="rank_icon" src="/static/image/coin-yuan_cny.png" v-else-if="platform == 1 || platform == 5 || platform == 6"></image>
 							<image class="rank_icon" src="/static/image/jinbi-3.png" v-else></image>
-							
 							<view class="myedu">{{convertToYuan(balance)}}</view>
 						</view>
 						<z-top-tips ref="uTips" navbar-height="20"></z-top-tips>
@@ -42,21 +36,13 @@
 					</view>
 				</view>
 				
-		
-				
-
-
 				<view class="my_info" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-					
 					<image class="mytx_icon" :src="avatar"></image>
 					<u-icon name="arrow-down" color="#a8b5ca"></u-icon>
-
 					<uni-transition :mode-class="['fade', 'zoom-in']" :show="isHover">
 						<view class="isHover" v-if="isHover">
 							<view class="xf_menu">
-								
 								<view class="top_sj"></view>
-								
 								<view class="menu_me_box">
 									<view class="menu_me_item">
 										<image :src="avatar"></image>
@@ -146,7 +132,6 @@
 				
 				<view class="tongzhi" @mouseenter="handleMouseEnter3" @mouseleave="handleMouseLeave3">
 					<view class="jiaobiao" v-if="SystemunreadList + PersonalunreadList != 0">{{SystemunreadList + PersonalunreadList}}</view>
-
 					<u-icon name="bell-fill" color="#a8b5ca"></u-icon>
 					<uni-transition :mode-class="['fade', 'slide-right']" :styles="styles" :show="isHover3">
 						<view class="isHover hover_width" v-if="isHover3">
@@ -219,11 +204,9 @@
 		<!-- 找回金币操作 -->
 		<u-popup v-model="YiJianShow" mode="center" length="auto" border-radius="34" :closeable="true">
 			<view class="YijianZhaohui_wwrap">
-				
 				<image class="jinbifuhao" src="/static/image/currency_coins.png" v-if="platform == 8"></image>
 				<image class="jinbifuhao" src="/static/image/coin-yuan_cny.png" v-else-if="platform == 1 || platform == 5 || platform == 6"></image>
 				<image class="jinbifuhao" src="/static/image/jinbi-3.png" v-else></image>
-				
 				<view class="myyue">
 					<u-count-to ref="shuaxinJinbi" :start-val="0" :end-val="convertToYuan(balance)" :decimals="2" color="#fff" font-size="58" :bold="true"></u-count-to>
 				</view>

@@ -70,6 +70,15 @@ uni-main {
 		  font-weight: normal;
 		}
 	  }
+	  & .games_list_wrap .games_list_title  { 
+	  & .caozuo_btn {
+		position: relative;
+		z-index: 95;
+		& .gengduo {
+			display: none;
+		  }
+	  }
+	}
 	}
 
 	& .game-providers {
@@ -148,3 +157,103 @@ uni-main {
 	}
   }
 }
+
+.games_list_wrap .games_list_title {
+	& .list_title uni-view {
+		font-weight: normal !important;
+	 }
+& .caozuo_btn {
+	& .gengduo {
+		display: none !important;
+	  }
+  }
+}
+
+  // Mobile Game Listing
+  .shopTuijian {
+	& .statistics {
+		padding: 1rem 0rem;
+		font-size: 12px;
+		& .number {
+		  margin-right: 0.25rem;
+		  color: $white;
+	
+		  &:before {
+			content: "";
+			display: inline-block;
+			position: relative;
+			padding: 0;
+			margin: 0 0.5rem 0 0;
+			background-color: #1FFF20;
+			height: 0.45rem;
+			width: 0.45rem;
+			border-radius: 100%;
+			overflow: hidden;
+			animation: pulse 1.5s infinite;
+			@keyframes pulse {
+				0% {
+				  transform: scale(1);
+				  opacity: 1;
+				}
+				50% {
+				  transform: scale(1.1);
+				  opacity: 0.2;
+				}
+				100% {
+				  transform: scale(1);
+				  opacity: 1;
+				}
+			  }
+		  }
+		}
+	
+		& .slug {
+		  color: #B1BAD3;
+		  font-weight: normal;
+		}
+	  }
+
+	  & .top {
+		display: block;
+		position: absolute;
+		padding: 0.3rem 0.35rem;
+		background-color: #ED1D49;
+		font-size: 9px;
+		top: 5%;
+		left: 0.5rem;
+		width: auto;
+		height: auto;
+		color: #fff;
+		border-radius: 15px;
+		font-weight: normal;
+		letter-spacing: 0.075rem;
+		transform: translateY(-5%);
+	  }
+  }
+
+ .games_list_wrap {
+	margin-bottom: 0rem;
+	& .games_list_title {
+		& .list_title {
+			& span {
+				display: none !important;
+			}
+		}
+		& .scroll-prev {
+			display: block;
+			position: relative;
+			padding: 0.5rem 1rem;
+			border: 1px solid #2F4553;
+			border-radius: 20px 0 0 20px;
+		  }
+	
+		  & .scroll-next {
+			display: block;
+			position: relative;
+			padding: 0.5rem 1rem;
+			border: 1px solid #2F4553;
+			border-radius: 0px 20px 20px 0px;
+			border-left: 0;
+		  }
+	}
+  }

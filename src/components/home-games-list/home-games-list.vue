@@ -91,10 +91,24 @@
 									<view class="caozuo_btn">
 										<view class="gengduo" @click="TolishiLog()">
 											{{$t('ViewAll')}}<span>({{GameHistory.length || 0}})</span></view>
-										<view class="swiper-button-prev-zzy"><u-icon name="arrow-left"
-												color="#566488"></u-icon></view>
-										<view class="swiper-button-next-zzy"><u-icon name="arrow-right"
-												color="#566488"></u-icon></view>
+										<view class="swiper-button-prev-zzy">
+											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10"
+												viewBox="0 0 12 10" fill="none">
+												<path
+													d="M11.2197 6.37011H4.45838L6.69926 8.61098L5.31829 9.99217L0.719727 5.39361L5.31829 0.795044L6.69926 2.17623L4.45838 4.41711H11.2197V6.3712V6.37011Z"
+													fill="#B1BAD3" />
+											</svg>
+											<u-icon v-if="false" name="arrow-left" color="#566488"></u-icon>
+										</view>
+										<view class="swiper-button-next-zzy">
+											<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+												viewBox="0 0 11 10" fill="none">
+												<path
+													d="M0.389893 6.37011H7.15124L4.91036 8.61098L6.29133 9.99217L10.8899 5.39361L6.29133 0.795044L4.91036 2.17623L7.15124 4.41711H0.389893V6.3712V6.37011Z"
+													fill="#B1BAD3" />
+											</svg>
+											<u-icon v-if="false" name="arrow-right" color="#566488"></u-icon>
+										</view>
 									</view>
 								</view>
 							</view>
@@ -113,28 +127,6 @@
 			</match-media>
 			<!-- #endif -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 			<!-- H5热门游戏 -->
 			<!--有的游戏没达到2行6个所以少于6个的就显示一行-->
 			<!-- #ifdef H5 || WEB -->
@@ -145,26 +137,45 @@
 						<view class="games_list_title">
 							<view class="list_title">
 								<u-icon name="thumb-up-fill" size="42" color="#566488"></u-icon>
-								<view>{{$t('HotGames')}}</view>
-								<span>({{GameHotList.length || 0}})</span>
+								<view>{{ $t('Qiaozhi.HotGames') }}</view>
+								<span>({{ GameHotList.length || 0 }})</span>
 							</view>
 							<view class="caozuo_btn">
-								<view class="gengduo" @click="lookAll()">{{$t('ViewAll')}}<u-icon name="arrow-right"
+								<view class="gengduo" @click="lookAll()">{{ $t('ViewAll') }}<u-icon name="arrow-right"
 										color="#2283f6"></u-icon></view>
+								<view class="scroll-prev" @click="scrollToPrev()">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"
+										fill="none">
+										<path
+											d="M11.2197 6.37011H4.45838L6.69926 8.61098L5.31829 9.99217L0.719727 5.39361L5.31829 0.795044L6.69926 2.17623L4.45838 4.41711H11.2197V6.3712V6.37011Z"
+											fill="#B1BAD3" />
+									</svg>
+								</view>
+								<view class="scroll-next" @click="scrollToNext()">
+									<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"
+										fill="none">
+										<path
+											d="M0.389893 6.37011H7.15124L4.91036 8.61098L6.29133 9.99217L10.8899 5.39361L6.29133 0.795044L4.91036 2.17623L7.15124 4.41711H0.389893V6.3712V6.37011Z"
+											fill="#B1BAD3" />
+									</svg>
+								</view>
 							</view>
 						</view>
 					</view>
-					<view class='rec_bottom' style="margin-bottom: 30px;"> <!--  v-if="GameHotList.length < 12" -->
-						<!-- <view class="zheceng2"></view> -->
+					<view class='rec_bottom' style="margin-bottom: 30px;">
 						<view class="shopTuijian">
-							<scroll-view class="uni-swiper-tab" scroll-x>
-								<view class="scrollx_items" v-for="(valgg,indexgg) in GameHotList" :key="indexgg">
+							<scroll-view class="uni-swiper-tab" scroll-x ref="hotGamesScroll">
+								<view class="scrollx_items" v-for="(valgg, indexgg) in GameHotList" :key="indexgg">
 									<view class='jrsx_item2'>
 										<view class='goodsdetail'>
-											<view class='jrsx_img' @click="lookMask(valgg,valgg.gameCode+indexgg)">
+											<view class='jrsx_img' @click="lookMask(valgg, valgg.gameCode + indexgg)">
 												<u-lazy-load :is-effect="false" class="goods-icon" height="100%"
 													:image="valgg.path" border-radius="18" :loading-img="loadingImg"
 													:error-img="errorImg"></u-lazy-load>
+												<view class="top">{{$t('Qiaozhi.TOP') }}</view>
+												<view class="statistics">
+													<span class="number">{{randomNumber()}}</span><span class="slug">{{ $t('Qiaozhi.playing') }}</span>
+												</view>
 											</view>
 										</view>
 									</view>
@@ -206,15 +217,29 @@
 								<view class="games_list_title">
 									<view class="list_title">
 										<u-icon name="thumb-up-fill" size="42" color="#566488"></u-icon>
-										<view>{{$t('HotGames')}}</view>
+										<view>{{$t('Qiaozhi.HotGames')}}</view>
 									</view>
 									<view class="caozuo_btn">
 										<view class="gengduo" @click="lookAll()">
 											{{$t('ViewAll')}}<span>({{GameHotList.length || 0}})</span></view>
-										<view class="swiper-button-prev-zzy"><u-icon name="arrow-left"
-												color="#566488"></u-icon></view>
-										<view class="swiper-button-next-zzy"><u-icon name="arrow-right"
-												color="#566488"></u-icon></view>
+										<view class="swiper-button-prev-zzy">
+											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10"
+												viewBox="0 0 12 10" fill="none">
+												<path
+													d="M11.2197 6.37011H4.45838L6.69926 8.61098L5.31829 9.99217L0.719727 5.39361L5.31829 0.795044L6.69926 2.17623L4.45838 4.41711H11.2197V6.3712V6.37011Z"
+													fill="#B1BAD3" />
+											</svg>
+											<u-icon v-if="false" name="arrow-left" color="#566488"></u-icon>
+										</view>
+										<view class="swiper-button-next-zzy">
+											<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+												viewBox="0 0 11 10" fill="none">
+												<path
+													d="M0.389893 6.37011H7.15124L4.91036 8.61098L6.29133 9.99217L10.8899 5.39361L6.29133 0.795044L4.91036 2.17623L7.15124 4.41711H0.389893V6.3712V6.37011Z"
+													fill="#B1BAD3" />
+											</svg>
+											<u-icon v-if="false" name="arrow-right" color="#566488"></u-icon>
+										</view>
 									</view>
 								</view>
 							</view>
@@ -224,7 +249,7 @@
 										:image="itemuu.path" border-radius="28" :loading-img="loadingImg"
 										:error-img="errorImg"
 										@click="lookMask(itemuu,itemuu.gameCode+indexuu)"></u-lazy-load>
-										<view class="statistics"><span class="number">{{randomNumber()}}</span><span class="slug">{{ $t('Qiaozhi.playing') }}</span></view>
+									<view class="statistics"><span class="number">{{randomNumber()}}</span><span class="slug">{{ $t('Qiaozhi.playing') }}</span></view>
 								</view>
 							</view>
 						</view>
@@ -234,37 +259,9 @@
 			</match-media>
 			<!-- #endif -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 			<view v-for="(item,index) in categoryGames" :key="index" v-if="item.games.length != 0">
-
 				<!-- 显示充值礼包 -->
 				<view v-if="index === 3">
-
 					<view v-if="firstPay.switchStatus && secondPay.switchStatus && thirdPay.switchStatus">
 						<view class="gundong_box_wrap"
 							v-if="payCount < 3 && (firstPay.countdown > 0 || secondPay.countdown > 0 || thirdPay.countdown > 0)">
@@ -276,9 +273,7 @@
 								<scroll-view :scroll-x="true" class="scrollview-box">
 									<!--首充-->
 									<view class="scroll_item_box">
-
 										<view class="scroll_item_box_item">
-
 											<view class="gantanhao">
 												<image @click="DepositBonus_Popup(firstPay)"
 													src="/static/Bonuslogin/i.png"></image>
@@ -436,37 +431,6 @@
 					</view>
 				</view>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 				<!-- H5 -->
 				<!--有的游戏没达到2行6个所以少于6个的就显示一行-->
 				<!-- #ifdef H5 || WEB -->
@@ -492,6 +456,22 @@
 							<view class="caozuo_btn">
 								<view class="gengduo" @click="toList(item,index+1)">{{$t('ViewAll')}}<u-icon
 										name="arrow-right" color="#2283f6"></u-icon></view>
+								<view class="scroll-prev" @click="scrollToPrev()">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"
+										fill="none">
+										<path
+											d="M11.2197 6.37011H4.45838L6.69926 8.61098L5.31829 9.99217L0.719727 5.39361L5.31829 0.795044L6.69926 2.17623L4.45838 4.41711H11.2197V6.3712V6.37011Z"
+											fill="#B1BAD3" />
+									</svg>
+								</view>
+								<view class="scroll-next" @click="scrollToNext()">
+									<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"
+										fill="none">
+										<path
+											d="M0.389893 6.37011H7.15124L4.91036 8.61098L6.29133 9.99217L10.8899 5.39361L6.29133 0.795044L4.91036 2.17623L7.15124 4.41711H0.389893V6.3712V6.37011Z"
+											fill="#B1BAD3" />
+									</svg>
+								</view>
 							</view>
 						</view>
 					</view>
@@ -507,6 +487,9 @@
 												<u-lazy-load :is-effect="false" class="goods-icon" height="100%"
 													:image="val.path" border-radius="18" :loading-img="loadingImg"
 													:error-img="errorImg"></u-lazy-load>
+												<view class="statistics">
+													<span class="number">{{randomNumber()}}</span><span class="slug">{{ $t('Qiaozhi.playing') }}</span>
+												</view>
 											</view>
 										</view>
 									</view>
@@ -535,35 +518,6 @@
 				</match-media>
 				<!-- #endif -->
 				<!-- H5 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 				<!-- PC -->
 				<!-- #ifndef APP-PLUS -->
@@ -606,7 +560,8 @@
 											:error-img="errorImg"
 											@click="lookMask(itembb,itembb.gameCode+indexbb)"></u-lazy-load>
 										<view class="order">{{indexbb + 1}}</view>
-										<view class="statistics"><span class="number">{{randomNumber()}}</span><span class="slug">{{ $t('Qiaozhi.playing') }}</span></view>
+										<view class="statistics"><span class="number">{{randomNumber()}}</span><span
+												class="slug">{{ $t('Qiaozhi.playing') }}</span></view>
 									</view>
 								</view>
 							</view>
@@ -617,13 +572,10 @@
 				<!-- #endif -->
 			</view>
 
-
-    <!-- Qiaozhi Component -->
-    <view class="leaderbaords-component">
-    <Leaderboards />
-    </view>
-
-
+			<!-- Qiaozhi Component -->
+			<view class="leaderbaords-component">
+				<Leaderboards />
+			</view>
 
 			<!-- PC单独显示供应商 -->
 			<!-- #ifndef APP-PLUS -->
@@ -666,12 +618,11 @@
 			</match-media>
 			<!-- #endif -->
 
-
 			<!-- H5单独显示供应商 -->
 			<!-- #ifdef H5 || WEB -->
 			<match-media :max-width="800">
 				<!-- #endif -->
-				<view class="games_list_wrap">
+				<view v-if="false" class="games_list_wrap">
 					<view class="games_list_title">
 						<view class="list_title">
 							<image class="title_icon" src="/static/image/home/icons8-pgjj.png" mode="scaleToFill">
@@ -684,7 +635,7 @@
 						</view>
 					</view>
 				</view>
-				<view class="allgys">
+				<view v-if="false" class="allgys">
 					<!-- <view class="zheceng2"></view> -->
 					<scroll-view class="nav-bar_gys" scroll-x @scroll="scroll">
 						<view class="nav-bar-wrap_gys">
@@ -701,7 +652,6 @@
 				<!-- #ifdef H5 || WEB -->
 			</match-media>
 			<!-- #endif -->
-
 
 		</view>
 		<view class="popupPlay">
@@ -903,9 +853,31 @@
 			this.GetWelcomePackage();
 		},
 		methods: {
+		// Qiaozhi Modifications
 		randomNumber() {
           return Math.floor(100 + Math.random() * 900);
         },
+        scrollToPrev() {
+            const scrollView = this.$refs.hotGamesScroll;
+            if (scrollView) {
+                scrollView.scrollBy({ left: -200, behavior: 'smooth' });
+            }
+        },
+		scrollToNext() {
+        const scrollView = this.$refs.scrollView;
+       if (scrollView && typeof scrollView.scrollBy === 'function') {
+        scrollView.scrollBy({ left: 100, behavior: 'smooth' });
+       } else if (scrollView) {
+        const currentScroll = scrollView.scrollLeft || 0;
+        scrollView.scrollTo({
+            left: currentScroll + 100,
+            behavior: 'smooth'
+        });
+       } else {
+        console.warn('scrollView Is Not Valid!');
+       }
+       },
+	   // Qiaozhi Modifications End
 			getSwiper2() {
 				let that = this
 				that.swiper2 = new Swiper(".swiper-container2", {
@@ -954,8 +926,6 @@
 				});
 			},
 			
-			
-			
 			getSwiper3(){
 				let that = this
 				that.swiper3 = new Swiper(".swiper-container3", {
@@ -1000,19 +970,6 @@
 				});
 			},
 
-
-
-
-
-
-
-
-
-
-
-
-
-			
 			QiuHe(item) {
 				let zong = 0
 				item.vendors.forEach((items, indexs) => {
@@ -1085,38 +1042,6 @@
 					})
 				}
 			},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 			
 			scroll(event) {
 				
@@ -1127,15 +1052,7 @@
 				that.domains = ress.data.domain;
 				that.ProvidersList = ress.data.vendors
 			},
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
 			JiSuanHuiLv(data){
 				//金额显示 = 游戏币×汇率
 				let price = (1 * data.currency_rate).toFixed(2);
@@ -1156,10 +1073,6 @@
 					that.SelectCurrencyData = SelectCurrencys
 					that.is_SelectCurrencyData = true
 				}
-				
-				
-				
-				
 				
 				this.PlayGameshow = true
 				this.playGameData = item
@@ -1193,10 +1106,6 @@
 			    const mask = 1 << bitPosition;
 			    return (num & mask) !== 0;
 			},
-			
-			
-			
-			
 			
 			
 			JumpNewUrl(val){
@@ -1430,35 +1339,9 @@
 					const _czc = _czc || [];
 					window._czc.push(['_trackEvent', '打开', 'GAMEOPEN']);
 					// #endif
-
-
 				//}, 1000)
 			},
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
 			togamesGongying(item) {
 				//console.log(item)
 				uni.navigateTo({
@@ -1697,6 +1580,7 @@
 	.games_list_wrap {
 		//margin-bottom: 24rpx;
 		margin-top: 60rpx;
+		margin-bottom: 1rem;
 		background-color: $home-games-wrap-color !important;
 
 		.games_list_title {
@@ -1714,7 +1598,7 @@
 				}
 
 				view {
-					font-weight: bold !important;
+					//font-weight: bold !important;
 					color: $me-text-color;
 					font-size: 34rpx;
 				}
@@ -2032,11 +1916,6 @@
 		opacity: 1;
 	}
 
-
-
-
-
-
 	.zheceng {
 		width: 100rpx;
 		height: 98.5%;
@@ -2057,18 +1936,10 @@
 		z-index: 9;
 	}
 
-
-
-
-
 	.pc_all {
 		position: relative;
 		overflow: hidden;
 	}
-
-
-
-
 
 	.all {
 		position: relative;
@@ -2151,14 +2022,6 @@
 		/* left: 50%; */
 	}
 
-
-
-
-
-
-
-
-
 	.allgys_pc {
 		position: relative;
 		overflow: hidden;
@@ -2221,7 +2084,6 @@
 			/* left: 50%; */
 		}
 	}
-
 
 	.gundong_box_wrap {
 		padding: 46rpx 0 0 0;
@@ -2493,7 +2355,7 @@
 		.games_list_wrap {
 			padding-right: 0;
 			margin-top: 35px !important;
-			margin-bottom: 12px;
+			margin-bottom: 1.5rem;
 			background-color: $home-games-wrap-color !important;
 		}
 		
