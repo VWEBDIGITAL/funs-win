@@ -1,0 +1,136 @@
+uni-view.contest {
+	display: block;
+	position: relative;
+	& .title-wrap {
+		padding-right: 0;
+        background-color: $bg !important;
+		& .title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			& .heading {
+				display: flex;
+				align-items: center;
+				overflow: hidden;
+				& .icon {
+					position: relative;
+					width: 22px;
+					height: 22px;
+					margin-right: 5px;
+				}
+				& .title {
+					font-weight: bold !important;
+					color: var(--me-text-color);
+					font-size: 17px;
+				}
+			}
+		}
+	}
+
+	& .tabs {
+		position: relative;
+		& .tabs-wrapper {
+			display: flex;
+			padding: 0.25rem 0.25rem;
+			position: relative;
+			width: 100%;
+			background: var(--xiding-bg-color);
+			border-radius: 48px 0px 0px 48px;
+            border: 1px solid #2e3441;
+            border-right: none;
+			overflow: hidden;
+
+			& .tab {
+				display: block;
+				position: relative;
+				padding: 1rem;
+				margin: 0;
+				width: auto;
+				font-weight: normal;
+				font-size: 13px;
+                line-height: 1;
+				color: var(--bonus-cabinet-sib-subtitle);
+				border-radius: 48px;
+
+				&.active {
+				  background-color: $color-primary;
+				  border: 0;
+                  color: $white;
+				}
+			}
+
+		}
+	}
+
+	& .uni-row { 
+      & .names {
+		display: flex;
+		padding: 1.25rem 1rem;
+		position: relative;
+		width: 100%;
+		color: var(--me-subtext-color);
+        justify-content: space-between;
+		font-weight: normal;
+		font-size: 13px;
+		background-color: #1A2C38;
+		overflow: hidden;
+        & .uni-col.result {
+            .col {
+            position: relative;
+            text-align: right;
+            }
+        }
+	  }
+
+	  & .board {
+		display: flex;
+		padding: 1.15rem 1rem;
+		position: relative;
+		width: 100%;
+		color: $white;
+        justify-content: space-between;
+		font-weight: normal;
+		font-size: 13px;
+		$colors: transparent, #213743;
+		@for $i from 1 through 10 {
+		  &.item-#{$i} {
+			background: nth($colors, (($i - 1) % 2) + 1);
+		  }
+		}
+		overflow: hidden;
+        & .uni-col.game {
+            .col {
+            position: relative;
+            text-align: left;
+            }
+
+            & .u-icon {
+              display: inline;
+              position: relative;
+              float: left;
+              width: 1rem;
+              height: 1rem;
+            }
+        }
+        & .uni-col.payout {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: flex-end;
+            .col {
+            position: relative;
+            text-align: right;
+            color: #00E701;
+            }
+
+            & .u-icon {
+              display: block;
+              position: relative;
+              margin-left: 5px;
+              width: 15px;
+              height: 15px;
+            }
+        }
+	  }
+   }
+}

@@ -1,5 +1,5 @@
+<!--Qiaozhi Component-->
 <template>
-  <!-- Qiaozhi Footer Component -->
   <match-media :min-width="800">
     <view class="footer">
       <view class="container">

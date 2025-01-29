@@ -1,5 +1,5 @@
+<!--Qiaozhi Component-->
 <template>
-    <!-- Qiaozhi Component -->
     <match-media :min-width="800">
       <view class="leaderboards">
         <view class="title-wrap mt-5 mb-3">

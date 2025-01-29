@@ -1,3 +1,4 @@
+<!--Qiaozhi Component-->
 <template>
   <view id="PromotionSwiper" class="PromotionSwiper swiper-container-promotion">
     <view class="swiper-wrapper">

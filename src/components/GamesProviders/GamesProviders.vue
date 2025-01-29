@@ -1,3 +1,4 @@
+<!--Qiaozhi Component-->
 <template>
     <view class="game-providers">
         <view class="allgys">

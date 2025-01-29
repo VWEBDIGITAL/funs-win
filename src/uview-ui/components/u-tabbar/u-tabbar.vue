@@ -1,13 +1,45 @@
 <template>
 	<view :style="theme" v-if="show" class="u-tabbar" @touchmove.stop.prevent="() => {}">
+
+		<!--Qiaozhi Tabbar-->
+		<view class="qiaozhi">
+		<view v-if="show" class="u-tabbar__content qiaozhi" :style="{ height: $u.addUnit(height) }" :class="{ 'u-border-top': borderTop }">
+			<view class="u-tabbar__content__item" v-for="(item, index) in list" :key="index"
+				:class="{ 'u-tabbar__content__circle': midButton && item.midButton, 'dise': index === 2 }"
+				@tap.stop="clickHandler(index)">
+				<view class="u-tabbar__content__item__topBian" :style="{background: BianelColor(index),display: BianelColor(index).includes('linear-gradient') ? 'block' : '' }"></view>
+			<view :class="[midButton && item.midButton ? 'u-tabbar__content__circle__button' : 'u-tabbar__content__item__button',]">
+				<u-icon class="aotu_icon" :name="elIconPath(index)" img-mode="scaleToFill" :color="elColor(index)" :custom-prefix="item.customIcon ? 'custom-icon' : 'uicon'"></u-icon>
+				<u-badge :count="item.count" :is-dot="item.isDot" v-if="item.count || item.isDot" :offset="[-2, getOffsetRight(item.count, item.isDot)]"></u-badge>
+				</view>
+				<view class="u-tabbar__content__item__text" :style="{ color: elColor(index) }">
+					<text class="u-line-1" v-if="index === 0">{{ $t('Qiaozhi.Browse') }}</text>
+					<text class="u-line-1" v-if="index === 1">{{ $t('Qiaozhi.Contests') }}</text>
+					<text class="u-line-1" v-if="index === 2">{{ $t('Qiaozhi.Chat') }}</text>
+					<text class="u-line-1" v-if="index === 3">{{ $t('Qiaozhi.Casino') }}</text>
+				</view>
+			</view>
+			<view v-if="midButton" class="u-tabbar__content__circle__border"
+				:class="{ 'u-border': borderTop, 'tuqidhua': Dangidx === 2 }"
+				:style="{ background: Dangidx === 2 ? '#007aff' : bgColor, left: midButtonLeft }"></view>
+		</view>
+	   </view>
+
 		<!--safe-area-inset-bottom 底部安全区域-->
-		<view class="u-tabbar__content " :style="{ height: $u.addUnit(height) }" :class="{ 'u-border-top': borderTop }"><!-- , backgroundColor: bgColor, -->
-			<view class="u-tabbar__content__item" v-for="(item, index) in list" :key="index" :class="{ 'u-tabbar__content__circle': midButton && item.midButton,'dise': index == 2 }" @tap.stop="clickHandler(index)"><!-- :style="{ backgroundColor: bgColor }"-->
-				<view v-if="index != 2" class="u-tabbar__content__item__topBian" :style="{background: BianelColor(index)}"></view>
+		<view v-if="false" class="u-tabbar__content " :style="{ height: $u.addUnit(height) }"
+			:class="{ 'u-border-top': borderTop }"><!-- , backgroundColor: bgColor, -->
+			<view class="u-tabbar__content__item" v-for="(item, index) in list" :key="index"
+				:class="{ 'u-tabbar__content__circle': midButton && item.midButton,'dise': index == 2 }"
+				@tap.stop="clickHandler(index)"><!-- :style="{ backgroundColor: bgColor }"-->
+				<view v-if="index != 2" class="u-tabbar__content__item__topBian"
+					:style="{background: BianelColor(index)}"></view>
 				<!--<view class="u-tabbar__content__item__bottomBian" :style="{boxShadow: BianelBottomColor(index)}"></view>-->
-				<view :class="[midButton && item.midButton ? 'u-tabbar__content__circle__button' : 'u-tabbar__content__item__button']">
-					<u-icon class="aotu_icon" :name="elIconPath(index)" img-mode="scaleToFill" :color="elColor(index)" :custom-prefix="item.customIcon ? 'custom-icon' : 'uicon'"></u-icon>
-					<u-badge :count="item.count" :is-dot="item.isDot" v-if="item.count || item.isDot" :offset="[-2, getOffsetRight(item.count, item.isDot)]"></u-badge>
+				<view
+					:class="[midButton && item.midButton ? 'u-tabbar__content__circle__button' : 'u-tabbar__content__item__button']">
+					<u-icon class="aotu_icon" :name="elIconPath(index)" img-mode="scaleToFill" :color="elColor(index)"
+						:custom-prefix="item.customIcon ? 'custom-icon' : 'uicon'"></u-icon>
+					<u-badge :count="item.count" :is-dot="item.isDot" v-if="item.count || item.isDot"
+						:offset="[-2, getOffsetRight(item.count, item.isDot)]"></u-badge>
 				</view>
 				<view class="u-tabbar__content__item__text" :style="{color: elColor(index)}">
 					<text class="u-line-1" v-if="index==0">{{$t('tabBar.home')}}</text>
@@ -17,7 +49,9 @@
 					<text class="u-line-1" v-if="index==4">{{$t('tabBar.profile')}}</text>
 				</view>
 			</view>
-			<view v-if="midButton" class="u-tabbar__content__circle__border" :class="[{'u-border': borderTop,},Dangidx == 2?'tuqidhua':'']" :style="{background: Dangidx == 222222?'#007aff':bgColor, left: midButtonLeft}"></view>
+			<view v-if="midButton" class="u-tabbar__content__circle__border"
+				:class="[{'u-border': borderTop,},Dangidx == 2?'tuqidhua':'']"
+				:style="{background: Dangidx == 222222?'#007aff':bgColor, left: midButtonLeft}"></view>
 		</view>
 		<!-- 这里加上一个48rpx的高度,是为了增高有凸起按钮时的防塌陷高度(也即按钮凸出来部分的高度)
 		<view class="u-fixed-placeholder safe-area-inset-bottom" :style="{ height: `calc(${$u.addUnit(height)} + ${midButton ? 48 : 0}rpx)`, }"></view> -->
@@ -45,7 +79,7 @@
 			// tabbar的高度，默认50px，单位任意，如果为数值，则为rpx单位
 			height: {
 				type: [String, Number],
-				default: '64px'
+				default: '58px'
 			},
 			// 非凸起图标的大小，单位任意，数值默认rpx
 			iconSize: {
@@ -60,12 +94,12 @@
 			// 激活时的演示，包括字体图标，提示文字等的演示
 			activeColor: {
 				type: String,
-				default: '#548dff'
+				default: '#ffffff'
 			},
 			// 未激活时的颜色
 			inactiveColor: {
 				type: String,
-				default: '#6d7693'
+				default: '#A7B5CA'
 			},
 			// 是否显示中部的凸起按钮
 			midButton: {
@@ -73,7 +107,7 @@
 				default: true
 			},
 			// 配置参数
-			list: {
+			/*list: {
 				type: Array,
 				default () {
 					return [{
@@ -103,6 +137,35 @@
 						selectedIconPath: "/static/tabbar/tabbar44.png",
 						text: this.$t('tabBar.profile')
 					}]
+				}
+			},*/
+
+			// Qiaozhi List
+			list: {
+				type: Array,
+				default () {
+					return [{
+						pagePath: "/pages/Account/Account",
+						iconPath: "/static/tabbar/qiaozhi/browse.png",
+						selectedIconPath: "/static/tabbar/qiaozhi/browse.png",
+						text: this.$t('Qiaozhi.Browse')
+					}, {
+						pagePath: "/pages/searchFor/searchFor",
+						iconPath: "/static/tabbar/qiaozhi/contests.png",
+						selectedIconPath: "/static/tabbar/qiaozhi/contests.png",
+						text: this.$t('Qiaozhi.Contests')
+					},					{
+						pagePath: "/pages/searchFor/searchFor",
+						iconPath: "/static/tabbar/qiaozhi/chat.png",
+						selectedIconPath: "/static/tabbar/qiaozhi/chat.png",
+						text: this.$t('Qiaozhi.Chat')
+					},
+					{
+						pagePath: "/pages/index/index",
+						iconPath: "/static/tabbar/qiaozhi/casino.png",
+						selectedIconPath: "/static/tabbar/qiaozhi/casino.png",
+						text: this.$t('Qiaozhi.Casino')
+					},]
 				}
 			},
 			// 切换前的回调
@@ -184,7 +247,7 @@
 					// 判断方法同理于elIconPath
 					let pagePath = this.list[index].pagePath;
 					if (pagePath) {
-						if (pagePath == this.pageUrl || pagePath == '/' + this.pageUrl) return '#007aff';
+						if (pagePath == this.pageUrl || pagePath == '/' + this.pageUrl) return '-webkit-linear-gradient(left, rgba(237, 29, 73, 0) 0%, #ed1d49 48%, rgba(237, 29, 73, 0) 100%)';
 						else return '$all-secondary-color';
 					} else {
 						return index == this.value ? '#3673D9' : '$all-secondary-color';

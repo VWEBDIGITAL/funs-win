@@ -577,6 +577,16 @@
 				<Leaderboards />
 			</view>
 
+			<!-- Qiaozhi Component -->
+			<view class="contest-component">
+				<Contest />
+			</view>
+
+			<!-- Qiaozhi Component -->
+			<view class="about-component mt-5 pt-5 mb-5">
+				<About />
+			</view>
+
 			<!-- PC单独显示供应商 -->
 			<!-- #ifndef APP-PLUS -->
 			<match-media :min-width="800">
@@ -630,8 +640,7 @@
 							<view>{{$t('GameProviders')}}</view>
 						</view>
 						<view class="caozuo_btn">
-							<view class="gengduo" @click="toListFuwus()">{{$t('ViewAll')}}<u-icon name="arrow-right"
-									color="#2283f6"></u-icon></view>
+							<view class="gengduo" @click="toListFuwus()">{{$t('ViewAll')}}<u-icon name="arrow-right" color="#2283f6"></u-icon></view>
 						</view>
 					</view>
 				</view>
@@ -735,10 +744,14 @@
 	import Swiper from 'swiper'; // 注意引入的是Swiper
     import 'swiper/swiper-bundle.css'; // 注意这里的引入
 	import Leaderboards from "@/components/Leaderboards/Leaderboards.vue";
+	import Contest from "@/components/Contests/Contest.vue";
+	import About from "@/components/About/About.vue";
 
 	export default {
 		components: {
 			Leaderboards,
+			Contest,
+			About,
 		    },
 		name: "home-games-list",
 		props: {

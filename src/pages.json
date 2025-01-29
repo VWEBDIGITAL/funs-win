@@ -342,7 +342,7 @@
 				"//selectedIconPath": "static/tabbar/tabbar22.png",
 				"//text": "Bonus"
 			}, {
-				"pagePath": "pages/Wallet/Wallet",
+				"pagePath": "pages/searchFor/searchFor",
 				"//iconPath": "static/tabbar/tabbar2.png",
 				"//selectedIconPath": "static/tabbar/tabbar22.png",
 				"//text": "Bonus"

@@ -25,7 +25,7 @@ const themes = {
 			--wallet-myedu: #ffffff;
 			--wallet-edithb: #252d3c;
 			--wallet-edithbitem: #18212c;
-			--tabbar-bg-color: #181f2b;
+			--tabbar-bg-color: #111923;
 			--select-drop-down-color: #1c2838;
 			--select-drop-down-border-color: #1c2838;
 			--select-drop-down-bg-color: #192533;

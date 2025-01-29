@@ -1,5 +1,5 @@
+<!--Qiaozhi Component-->
 <template>
-  <!-- Qiaozhi AboutFeedback Component -->
   <match-media :min-width="800">
     <view class="about-feedback">
       <view class="container">
