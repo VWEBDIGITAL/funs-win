@@ -260,7 +260,18 @@ uni-main {
 
 
   // Bottom Bar [Tab Bar]
-  .qiaozhi{
+  .qiaozhi-tabbar{
+	display: block;
+    position: fixed;
+    width: 100%;
+    height: 58px;
+    z-index: 1000;
+	 & .q-u-tabbar {
+	&-wrapper {
+	  display: block;
+	  text-align: center;
+	}
+   }
 	& .u-tabbar__content.qiaozhi {
 		display: flex;
 		border-top: 0.67px solid var(--disanfang-border-color);

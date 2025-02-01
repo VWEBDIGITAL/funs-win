@@ -18,7 +18,7 @@
 					<view class="nav_title">{{title}}</view>
 				</view>
 				<view class="left_logo" v-else>
-					<image @click="startAnimation()" class="menu" :animation="animationData" src="/static/image/menu_fold_one_icon_155136.png"></image>
+					<!--<image @click="startAnimation()" class="menu" :animation="animationData" src="/static/image/menu_fold_one_icon_155136.png"></image>-->
 					<!--<image v-else @click="MenuShow = false" class="menu2" src="/static/image/guanbi.png"></image>-->
 					<image class="logo" :src="'/static/logo/' + platform + '_LOGO_MAIN.png'" mode="widthFix" @click="Tohome()"></image>
 				</view>
@@ -32,7 +32,6 @@
 									<image class="rank_icon" v-else-if="SelectCurrencyData.type == 444" src="/static/image/coin-yuan_cny.png"></image>
 									<image class="rank_icon" v-else-if="SelectCurrencyData.type == 555" src="/static/image/jinbi-3.png"></image>
 									<image class="rank_icon" v-else :src="staticDname + '/pay/' + SelectCurrencyData.abbr + '.png'"></image>
-									
 									<view class="myedu" @click="openShuaxinbc()">
 										{{JiSuanHuiLv(SelectCurrencyData)}}
 									</view>
@@ -62,6 +61,72 @@
 							<view><image src="/static/image/wallet_icon.png"></image></view>
 						</view>
 					</view>
+
+					<!-- Qiaozhi My Info Integration [Mobile Menu] -->
+					<view class="my_info" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
+					<image class="mytx_icon" :src="avatar"></image>
+					<u-icon name="arrow-down" color="#a8b5ca"></u-icon>
+					<uni-transition :mode-class="['fade', 'zoom-in']" :show="isHover">
+						<view class="isHover" v-if="isHover">
+							<view class="xf_menu">
+								<view class="top_sj"></view>
+								<view class="menu_me_box">
+									<view class="menu_me_item">
+										<image :src="avatar"></image>
+										<span>{{Progress.vip+1}} Rank</span>
+									</view>
+									<view class="menu_me_name">{{userInfo.nickName||'--'}}</view>
+								</view>
+								<view class="user_vip" @click="toVippage()" v-if="userInfo.userId">
+									<view class="vip_title">
+										<image src="/static/image/me/huangguan.png"></image><text>RANK {{Progress.vip+1}}</text>
+									</view>
+									<view class="vip_jdt">
+										<view class="jdt_wrap">
+											<view class="jdt_box">
+												<u-line-progress :percent="Progress.progressRate" active-color="#3673D9"
+													inactive-color="#222a38" height="14">
+													<view slot="default"></view>
+												</u-line-progress>
+											</view>
+											<view class="jdt_ask">
+												<view>{{$t('XP')}}</view>
+												<view>{{Progress.progressRate}}%</view>
+											</view>
+										</view>
+										<view class="jdt_righticon">
+											<image src="/static/image/arrow_right_icon.png"></image>
+										</view>
+									</view>
+								</view>
+								<view class="menu_list_wrap">
+									<view class="menu_list_item" @click="ToOpen(1)">
+										<image src="/static/image/menuIcon/m2.png"></image>
+										<span>{{$t('navBarTitle.ProfileInfo')}}</span>
+									</view>
+									<view class="menu_list_item" @click="ToOpen(2)">
+										<image src="/static/image/bank-account.png"></image>
+										<span>{{$t('ManageAccount')}}</span>
+									</view>
+									<view class="menu_list_item" @click="ToOpen(3)">
+										<image src="/static/image/details_pc.png"></image>
+										<span>{{$t('Details')}}</span>
+									</view>
+									<view class="menu_list_item" @click="ToOpen(4)">
+										<image src="/static/image/gamehis.png"></image>
+										<span>{{$t('GameHistory')}}</span>
+									</view>
+									<view class="menu_list_item" @click="ToOpen(5)">
+										<image src="/static/image/transaction-history.png"></image>
+										<span>{{$t('Transaction')}}</span>
+									</view>
+								</view>
+								<view class="outBtn" @click="TuiChu()">{{$t('SignoutPopup.title')}}</view>
+							</view>
+						</view>
+					</uni-transition>
+				</view>
+
 					<view class="xsTask">
 						<!-- 新手任务 -->
 						<NoviceTask ref=""></NoviceTask>
@@ -445,6 +510,7 @@
 	</view>
 </template>
 <script>
+import avatarList from "@/utils/avatar.js";
 	export default {
 		name: "navbar",
 		props: {
@@ -519,7 +585,14 @@
 				PersonalunreadList: 0,
 				staticDname: '',
 				SelectCurrencyData: {},
-				is_SelectCurrencyData: false
+				is_SelectCurrencyData: false,
+
+				// Qiaozhi Modification
+				avatarlist: avatarList.avatarlist,
+				userInfo: {},
+				Progress: {},
+				avatar: '',
+				isHover: false,
 			};
 		},
 		computed: {
@@ -592,6 +665,7 @@
 
 			} else {
 				that.getMybalance();
+				that.getuserinfo()
 			}
 
 			uni.$on('getinspectToken', (val) => {
@@ -728,12 +802,6 @@
 			removeCharLevel(value) {
 				return value.replace(new RegExp('https://', 'g'), '');
 			},
-			
-			
-			
-			
-			
-			
 			// 选中某个复选框时，由checkbox时触发
 			checkboxChange(e) {
 				//console.log('2',e);
@@ -798,15 +866,6 @@
 					window.open(url,'_self');
 				}
 			},
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			TochatUrl(){
 				let that = this
 				const language = uni.getStorageSync('language') || uni.getStorageSync('UNI_LOCALE');
@@ -1108,7 +1167,6 @@
 					})
 				},500)
 			},
-			
 			Tosearch() {
 				uni.navigateTo({
 					url: '/pages/searchFor/searchFor'
@@ -1144,7 +1202,63 @@
 					that.PersonalunreadList = unread.length
 				})
 			},
+			// Qiaozhi My Info Integration
+			TuiChu(){
+				uni.removeStorageSync('userinfo');
+				uni.removeStorageSync('token');
+				uni.$emit("getinspectToken", 1)
+				
+				this.$refs.RegisterNowRefs.hideRegisterNowRefs(0)
+				this.showRegisterNow = false
+				
+				//#ifdef  H5
+				window.location.reload();
+				// uni.reLaunch({
+				// 	url: '/pages/index/index',
+				// 	success: function(res) {}
+				// })
+				//#endif
+				
+				//#ifdef  APP-PLUS
+				uni.reLaunch({
+					url: '/pages/index/index'
+				})
+				//#endif
+			},
+			getuserinfo() {
+				let that = this
+				that.$u.post('/user/get/info', {
 
+				}).then(res => {
+					uni.setStorageSync('userinfo', res.data)
+					that.userInfo = uni.getStorageSync("userinfo")
+					let headId = that.userInfo.headId
+					let tx = ''
+					that.avatarlist.forEach((item, index) => {
+						if (item.id == headId) {
+							tx = item.img
+						}
+					});
+					that.avatar = tx
+					that.getVipDetails()
+				})
+			},
+			getVipDetails() {
+				let that = this
+				that.$u.post('/vip/progress', {
+					vipLevel: that.userInfo.vip
+				}).then(res => {
+					that.Progress = res.data.progress
+				})
+			},
+			handleMouseEnter() {
+				this.isHover = true;
+				// 进行鼠标移入时的操作
+			},
+			handleMouseLeave() {
+				this.isHover = false;
+				// 进行鼠标移出时的操作
+			},
 		}
 	}
 </script>
@@ -1393,7 +1507,7 @@
 		.left_logo {
 			display: flex;
 			align-items: center;
-			width: 140px;
+			width: auto;
 
 			.menu {
 				width: 45.14rpx;
@@ -1433,6 +1547,7 @@
 						word-break:break-all;
 						display:-webkit-box;
 						-webkit-line-clamp:1;
+						line-clamp:1;
 						-webkit-box-orient:vertical;
 						overflow:hidden;
 						background-color: #3673D9;
@@ -1471,7 +1586,8 @@
 						font-weight: bold;
 						word-break:break-all;
 						display:-webkit-box;
-						-webkit-line-clamp:1;
+						-webkit-line-clamp: 1;
+						line-clamp: 1;
 						-webkit-box-orient:vertical;
 						overflow:hidden;
 						//background: linear-gradient(1turn,#FF9619 .8%,#FFB930);
@@ -1671,14 +1787,6 @@
 		}
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
 	.sevae_btn_wrap {
 		width: 100%;
 		position: fixed;
@@ -1693,15 +1801,6 @@
 			}
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	.Register_btn {
 		width: 95%;
@@ -1730,6 +1829,7 @@
 			word-break: break-all;
 			display: -webkit-box;
 			-webkit-line-clamp: 1;
+			line-clamp: 1;
 			-webkit-box-orient: vertical;
 			overflow: hidden;
 		}
@@ -1749,5 +1849,223 @@
 		position: absolute;
 		right: 0;
 		z-index: 1;
+	}
+// Qiaozhi My Info CSS
+.my_info {
+	margin-left: 10rpx;
+	background: #232e3d;
+	border-radius: 200rpx;
+	padding: 10rpx 10rpx 10rpx 10rpx;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+	z-index: 4;
+
+	.u-icon {
+		display: none;
+		margin-left: 20rpx;
+		margin-right: 10rpx;
+		font-size: 24rpx;
+	}
+
+	.mytx_icon {
+		width: 46rpx;
+		height: 46rpx;
+		border-radius: 200rpx;
+		border: 2px solid #3673D9;
+	}
+}
+
+.isHover {
+		width: 265px;
+		background-color: transparent;
+		padding: 58rpx 0 0 0;
+		border-radius: 28rpx;
+		position: absolute;
+		top: 0;
+		right: -20rpx;
+		z-index: 2;
+
+		.xf_menu {
+			background-color: #1e2531;
+			padding: 60rpx 30rpx 30rpx 30rpx;
+			border-radius: 28rpx;
+			position: relative;
+			.top_sj {
+				position: absolute;
+				top: -8rpx;
+				right: 48rpx;
+				background-color: #1e2531;
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				transform: rotate(45deg);
+				border-radius: 4rpx;
+			}
+			.xf_menu_title {
+				color: $all-secondary-text-color;
+				font-weight: bold;
+				font-size: 34rpx;
+				margin-bottom: 30rpx;
+			}
+			
+			.menu_me_box {
+				text-align: center;
+
+				.menu_me_item {
+					position: relative;
+
+					image {
+						width: 140rpx;
+						height: 140rpx;
+						border-radius: 200rpx;
+						border: 2px solid #3673D9;
+					}
+
+					span {
+						display: inline-table;
+						position: absolute;
+						left: 0;
+						right: 0;
+						text-align: center;
+						bottom: -10rpx;
+						margin: 0 auto;
+						background-color: #3673D9;
+						color: #fff;
+						border-radius: 200rpx;
+						padding: 4rpx 20rpx;
+						font-size: 24rpx;
+					}
+				}
+
+				.menu_me_name {
+					font-weight: bold;
+					color: #fff;
+					margin-top: 30rpx;
+				}
+			}
+
+			.menu_list_wrap {
+				padding: 36rpx;
+				background-color: #2c3545;
+				width: 100%;
+				margin: 0 auto;
+				border-radius: 28rpx;
+
+				.menu_list_item {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					cursor: pointer;
+					margin-bottom: 36rpx;
+
+					image {
+						width: 40rpx;
+						height: 40rpx;
+					}
+
+					span {
+						margin-left: 20rpx;
+						font-weight: bold;
+						color: #aab5c8;
+						font-size: 26rpx;
+					}
+					
+					span:hover {
+						color: $all-secondary-text-color;
+					}
+				}
+
+				.menu_list_item:last-child {
+					margin-bottom: 0;
+				}
+			}
+			.outBtn {
+				display: inline-block;
+				padding: 22rpx 36rpx;
+				background-color: #393f4a;
+				margin: 30rpx 0 0 0;
+				border-radius: 18rpx;
+				font-weight: bold;
+				color: #aab5c8;
+			}
+			.outBtn:hover {
+				color: $all-secondary-text-color;
+			}
+		}
+	}
+	.user_vip {
+		width: 100%;
+		margin: 20rpx auto;
+		background-color: #2c3545;
+		padding: 20rpx;
+		border-radius: 28rpx;
+
+		.vip_title {
+			color: #aab5c8;
+			display: flex;
+			align-items: center;
+
+			image {
+				width: 34rpx;
+				height: 34rpx;
+				margin-right: 10rpx;
+			}
+
+			/*text {
+				//font-weight: bold;
+			}*/
+		}
+
+		.vip_jdt {
+			margin-top: 16rpx;
+			display: flex;
+			align-items: flex-start;
+			position: relative;
+
+			.jdt_wrap {
+				flex: 1;
+
+				.jdt_box {
+					display: flex;
+					align-items: center;
+					margin-bottom: 16rpx;
+				}
+
+				.jdt_ask {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					font-size: 24rpx;
+
+					view:nth-child(1) {
+						color: #aab5c8;
+					}
+
+					view:nth-child(2) {
+						color: #aab5c8;
+					}
+				}
+			}
+
+			.jdt_righticon {
+				width: 10rpx;
+				height: 20rpx;
+				position: relative;
+				top: -4rpx;
+				margin-left: 12rpx;
+				right: 4px;
+
+				image {
+					width: 12px;
+					height: 12px;
+					transform: rotate(180deg);
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+		}
 	}
 </style>
