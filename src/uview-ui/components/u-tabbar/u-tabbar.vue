@@ -2,203 +2,214 @@
 	<view :style="theme" v-if="show" class="u-tabbar" @touchmove.stop.prevent="() => {}">
 		<!--Qiaozhi Tabbar-->
 		<view class="qiaozhi-tabbar">
-		<view v-if="show" class="u-tabbar__content qiaozhi" :style="{ height: $u.addUnit(height) }" :class="{ 'u-border-top': borderTop }">
-			<view class="u-tabbar__content__item" v-for="(item, index) in list" :key="index" :class="{ 'u-tabbar__content__circle': midButton && item.midButton, 'dise': index === 2 }"
-			@tap.stop="clickHandler(index)">
-			 <view @click="startAnimation(index)" :animation="disableAnimation ? null : animationData" class="q-u-tabbar-wrapper">
-			 <view class="u-tabbar__content__item__topBian" :style="{background: BianelColor(index),display: BianelColor(index).includes('linear-gradient') ? 'block' : '' }"></view>
-			<view :class="[midButton && item.midButton ? 'u-tabbar__content__circle__button' : 'u-tabbar__content__item__button',]">
-				<u-icon class="aotu_icon" :name="elIconPath(index)" img-mode="scaleToFill" :color="elColor(index)" :custom-prefix="item.customIcon ? 'custom-icon' : 'uicon'"></u-icon>
-				<u-badge :count="item.count" :is-dot="item.isDot" v-if="item.count || item.isDot" :offset="[-2, getOffsetRight(item.count, item.isDot)]"></u-badge>
+			<view v-if="show" class="u-tabbar__content qiaozhi" :style="{ height: $u.addUnit(height) }" :class="{ 'u-border-top': borderTop }">					
+			<view class="u-tabbar__content__item" v-for="(item, index) in list" :key="index" :class="{ 'u-tabbar__content__circle': midButton && item.midButton, 'mid-button': index === null, 'current-item': activeIndex === index }" @tap.stop="clickHandler(index)">
+					<view @click="QiaozhiHandleClick(index)" :animation="disableAnimation ? null : animationData" class="q-u-tabbar-wrapper">
+						<view class="u-tabbar__content__item__topBian" :class="{ 'active': (activeIndex === index) && !(index === 0 && (!QiaozhiPopUp && !MenuShow) || index === 1 && (!QiaozhiPopUp && !MenuShow) || index === 2 && (!QiaozhiPopUp && !MenuShow)) }"  :style="{background: BianelColor(index),display: BianelColor(index).includes('linear-gradient') ? 'none' : 'none' }">
+						</view>
+						<view :class="[midButton && item.midButton ? 'u-tabbar__content__circle__button' : 'u-tabbar__content__item__button',]">
+							<u-icon class="aotu_icon" :name="IconPath(index)" img-mode="scaleToFill" :color="elColor(index)" :custom-prefix="item.customIcon ? 'custom-icon' : 'uicon'"></u-icon>
+							<u-badge :count="item.count" :is-dot="item.isDot" v-if="item.count || item.isDot" :offset="[-2, getOffsetRight(item.count, item.isDot)]"></u-badge>
+						</view>
+						<view class="u-tabbar__content__item__text" :style="{color: QiaozhiGetTextColor(index)}">
+							<text class="u-line-1" v-if="index === 0">{{ $t('Qiaozhi.Browse') }}</text>
+							<text class="u-line-1" v-if="index === 1">{{ $t('Qiaozhi.Contests') }}</text>
+							<text class="u-line-1" v-if="index === 2">{{ $t('Qiaozhi.Chat') }}</text>
+							<text class="u-line-1" v-if="index === 3">{{ $t('Qiaozhi.Casino') }}</text>
+						</view>
+					</view>
 				</view>
-				<view class="u-tabbar__content__item__text" :style="{ color: elColor(index) }">
-					<text class="u-line-1" v-if="index === 0">{{ $t('Qiaozhi.Browse') }}</text>
-					<text class="u-line-1" v-if="index === 1">{{ $t('Qiaozhi.Contests') }}</text>
-					<text class="u-line-1" v-if="index === 2">{{ $t('Qiaozhi.Chat') }}</text>
-					<text class="u-line-1" v-if="index === 3">{{ $t('Qiaozhi.Casino') }}</text>
-				</view>
+				<view v-if="midButton" class="u-tabbar__content__circle__border"
+					:class="{ 'u-border': borderTop, 'tuqidhua': Dangidx === 2 }"
+					:style="{ background: Dangidx === 2 ? '#007aff' : bgColor, left: midButtonLeft }"></view>
 			</view>
-			</view>
-			<view v-if="midButton" class="u-tabbar__content__circle__border"
-				:class="{ 'u-border': borderTop, 'tuqidhua': Dangidx === 2 }"
-				:style="{ background: Dangidx === 2 ? '#007aff' : bgColor, left: midButtonLeft }"></view>
 		</view>
-	   </view>
 
-	   <!--Qiaozhi Mobile Menu [Browse Tab]-->
-	   	 <!-- Qiaozhi Mobile Menu-->
-		<match-media :max-width="800" >
+		<!--Qiaozhi Uni Popup Module-->
+		<view class="q-tabbar-view">
+			<u-popup v-model="QiaozhiPopUp" mode="center" z-index="101" width="80%" :closeable="false"
+				@close="QiaozhiPopUpclose">
+				<view>
+		          <!-- Qiaozhi Component -->
+				  <component :is="QiaozhiComponent"></component>
+				</view>
+			</u-popup>
+		</view>
+
+		<!--Qiaozhi Mobile Menu [Browse Tab]-->
+		<!-- Qiaozhi Mobile Menu-->
+		<match-media :max-width="800">
 			<u-popup v-model="MenuShow" mode="left" z-index="101" width="74%" :closeable="false" @close="PopUpclose">
-				<view class="menu_wrap" :class="statusBarHeight == true?'menu_wrap2':''" :style="{paddingTop: showInstall && platform != 8?Navheight + 15 + 'px':''}">
+				<view class="menu_wrap" :class="statusBarHeight == true?'menu_wrap2':''"
+					:style="{paddingTop: showInstall && platform != 8?Navheight + 15 + 'px':''}">
 					<view :style="{height: isStatusBarHeight}"></view>
-					<view class="souso_cion" @click="Tosearch()"><u-icon name="search" color="#3c485c" size="38"></u-icon>{{$t('Qiaozhi.Search')}}</view>
+					<view class="souso_cion" @click="Tosearch()"><u-icon name="search" color="#3c485c"
+							size="38"></u-icon>{{$t('Qiaozhi.Search')}}</view>
 					<view class="cell_box_title">{{$t('Qiaozhi.Betting')}}</view>
-						<view class="cell_box">
-							<u-cell-group :border="false">
-								<u-cell-item class="active" :title="$t('Qiaozhi.Casino')" :border-bottom="false" :title-style="titleStype"
-									hover-class="cell-hover-class" index="99" @click="openType" :arrow="false">
-									<u-icon slot="icon" size="28" name="/static/image/menuIcon/casino.webp"></u-icon>
-									<view slot="right-icon">
+					<view class="cell_box">
+						<u-cell-group :border="false">
+							<u-cell-item class="active" :title="$t('Qiaozhi.Casino')" :border-bottom="false"
+								:title-style="titleStype" hover-class="cell-hover-class" index="99" @click="openType"
+								:arrow="false">
+								<u-icon slot="icon" size="28" name="/static/image/menuIcon/casino.webp"></u-icon>
+								<view slot="right-icon">
+									<image class="arrow_right" src="/static/image/arrow_right_icon.png" mode="widthFix">
+									</image>
+								</view>
+							</u-cell-item>
+						</u-cell-group>
+					</view>
+					<view class="cell_box_title">{{$t('Qiaozhi.Crypto')}}</view>
+					<view class="cell_box">
+						<u-cell-group :border="false">
+							<u-cell-item :title="$t('Deposit')" :border-bottom="false" :title-style="titleStype"
+								hover-class="active" index="14" @click="openType" :arrow="false">
+								<u-icon slot="icon" size="28" name="/static/image/menuIcon/usd-green.webp"></u-icon>
+							</u-cell-item>
+							<u-cell-item :title="$t('Qiaozhi.CryptoSwap')" :border-bottom="false"
+								:title-style="titleStype" hover-class="active" index="15" @click="openType"
+								:arrow="false">
+								<u-icon slot="icon" size="26"
+									name="/static/image/menuIcon/crypto-swap-3d.webp"></u-icon>
+							</u-cell-item>
+							<u-cell-item :title="$t('Vault Pro')" :border-bottom="false" :title-style="titleStype"
+								hover-class="active" index="16" @click="openType" :arrow="false">
+								<u-icon slot="icon" size="26" name="/static/image/menuIcon/vault-pro.webp"></u-icon>
+							</u-cell-item>
+						</u-cell-group>
+					</view>
+
+					<view class="cell_box" :style="{display:'none'}">
+						<u-cell-group :border="false">
+							<u-cell-item :title="$t('sidebar.title3')" :border-bottom="false" :title-style="titleStype"
+								hover-class="cell-hover-class" index="3" @click="openType" :arrow="false">
+								<u-icon slot="icon" size="28" name="/static/image/menuIcon/m3.png"></u-icon>
+							</u-cell-item>
+						</u-cell-group>
+					</view>
+
+					<view class="cell_box" :style="{display:'none'}">
+						<u-cell-group :border="false">
+							<u-cell-item :title="$t('sidebar.title6')" :border-bottom="false" :title-style="titleStype"
+								hover-class="cell-hover-class" index="6" @click="openType" :arrow="false">
+								<u-icon slot="icon" size="28" name="/static/image/menuIcon/m7.png"></u-icon>
+							</u-cell-item>
+							<u-cell-item :title="$t('sidebar.title7')" :border-bottom="false" :title-style="titleStype"
+								hover-class="cell-hover-class" index="7" @click="openType" :arrow="false">
+								<u-icon slot="icon" size="28" name="/static/image/menuIcon/m6.png"></u-icon>
+							</u-cell-item>
+						</u-cell-group>
+					</view>
+
+					<view class="cell_box_title">{{$t('Qiaozhi.General')}}</view>
+					<view class="cell_box _default">
+						<u-cell-group :border="false">
+							<u-cell-item :title="$t('sidebar.title2')" :border-bottom="false" :title-style="titleStype"
+								hover-class="cell-hover-class" index="2" @click="openType" :arrow="false">
+								<u-icon slot="icon" size="26" name="/static/image/menuIcon/m1.png"></u-icon>
+							</u-cell-item>
+							<u-cell-item :title="$t('sidebar.title8')" :border-bottom="false" :title-style="titleStype"
+								hover-class="cell-hover-class" index="8" @click="openType" :arrow="false">
+								<u-icon slot="icon" size="28" name="/static/image/menuIcon/m8.png"></u-icon>
+							</u-cell-item>
+							<u-cell-item :style="{display:'none'}" :title="$t('NEWBonusPageA.BonusSYS')"
+								:border-bottom="false" :title-style="titleStype" hover-class="cell-hover-class"
+								index="17" @click="openType" :arrow="false">
+								<u-icon slot="icon" size="28" name="/static/image/menuIcon/jiangli.png"></u-icon>
+								<view slot="right-icon">
+									<view class="tasg_icon">
+										<span>Hot</span>
 										<image class="arrow_right" src="/static/image/arrow_right_icon.png"
 											mode="widthFix"></image>
 									</view>
-								</u-cell-item>
-							</u-cell-group>
-						</view>
-						<view class="cell_box_title">{{$t('Qiaozhi.Crypto')}}</view>
-						<view class="cell_box">
-							<u-cell-group :border="false">
-								<u-cell-item :title="$t('Deposit')" :border-bottom="false" :title-style="titleStype"
-									hover-class="active" index="14" @click="openType" :arrow="false">
-									<u-icon slot="icon" size="28" name="/static/image/menuIcon/usd-green.webp"></u-icon>
-								</u-cell-item>
-								<u-cell-item :title="$t('Qiaozhi.CryptoSwap')" :border-bottom="false"
-									:title-style="titleStype" hover-class="active" index="15"
-									@click="openType" :arrow="false">
-									<u-icon slot="icon" size="26"
-										name="/static/image/menuIcon/crypto-swap-3d.webp"></u-icon>
-								</u-cell-item>
-								<u-cell-item :title="$t('Vault Pro')" :border-bottom="false" :title-style="titleStype"
-									hover-class="active" index="16" @click="openType" :arrow="false">
-									<u-icon slot="icon" size="26" name="/static/image/menuIcon/vault-pro.webp"></u-icon>
-								</u-cell-item>
-							</u-cell-group>
-						</view>
-
-						<view class="cell_box" :style="{display:'none'}">
-							<u-cell-group :border="false">
-								<u-cell-item :title="$t('sidebar.title3')" :border-bottom="false"
-									:title-style="titleStype" hover-class="cell-hover-class" index="3" @click="openType"
-									:arrow="false">
-									<u-icon slot="icon" size="28" name="/static/image/menuIcon/m3.png"></u-icon>
-								</u-cell-item>
-							</u-cell-group>
-						</view>
-
-						<view class="cell_box" :style="{display:'none'}">
-							<u-cell-group :border="false">
-								<u-cell-item :title="$t('sidebar.title6')" :border-bottom="false"
-									:title-style="titleStype" hover-class="cell-hover-class" index="6" @click="openType"
-									:arrow="false">
-									<u-icon slot="icon" size="28" name="/static/image/menuIcon/m7.png"></u-icon>
-								</u-cell-item>
-								<u-cell-item :title="$t('sidebar.title7')" :border-bottom="false"
-									:title-style="titleStype" hover-class="cell-hover-class" index="7" @click="openType"
-									:arrow="false">
-									<u-icon slot="icon" size="28" name="/static/image/menuIcon/m6.png"></u-icon>
-								</u-cell-item>
-							</u-cell-group>
-						</view>
-
-						<view class="cell_box_title">{{$t('Qiaozhi.General')}}</view>
-						<view class="cell_box _default">
-							<u-cell-group :border="false">
-								<u-cell-item :title="$t('sidebar.title2')" :border-bottom="false"
-									:title-style="titleStype" hover-class="cell-hover-class" index="2" @click="openType"
-									:arrow="false">
-									<u-icon slot="icon" size="26" name="/static/image/menuIcon/m1.png"></u-icon>
-								</u-cell-item>
-								<u-cell-item :title="$t('sidebar.title8')" :border-bottom="false"
-									:title-style="titleStype" hover-class="cell-hover-class" index="8" @click="openType"
-									:arrow="false">
-									<u-icon slot="icon" size="28" name="/static/image/menuIcon/m8.png"></u-icon>
-								</u-cell-item>
-								<u-cell-item :style="{display:'none'}" :title="$t('NEWBonusPageA.BonusSYS')"
-									:border-bottom="false" :title-style="titleStype" hover-class="cell-hover-class"
-									index="17" @click="openType" :arrow="false">
-									<u-icon slot="icon" size="28" name="/static/image/menuIcon/jiangli.png"></u-icon>
-									<view slot="right-icon">
-										<view class="tasg_icon">
-											<span>Hot</span>
-											<image class="arrow_right" src="/static/image/arrow_right_icon.png"
-												mode="widthFix"></image>
-										</view>
-									</view>
-								</u-cell-item>
-								<u-cell-item :border-bottom="false" :title-style="titleStype"
-									hover-class="cell-hover-class" index="9" @click="openType" :arrow="false">
-									<u-icon slot="icon" size="28" name="/static/image/menuIcon/m9.png"></u-icon>
-									<template slot="title">
-										<span class="slug">{{$t('Qiaozhi.VIP')}}</span>{{$t('Qiaozhi.Club')}}
-									</template>
-								</u-cell-item>
-							</u-cell-group>
-
-							<u-cell-group :border="false">
-								<u-cell-item :title="$t('sidebar.title11')" :border-bottom="false"
-									:title-style="titleStype" hover-class="cell-hover-class" index="11"
-									@click="openType" :arrow="false">
-									<u-icon slot="icon" size="28" name="/static/image/menuIcon/m11.png"></u-icon>
-								</u-cell-item>
-							</u-cell-group>
-						</view>
-						<view class="payment_methods _line"></view>
-						<view class="payment_methods" @click="openType">
-							<image class="_item" src="/static/image/payments/gpay.png" mode="widthFix"></image>
-							<image class="_item" src="/static/image/payments/applepay.png" mode="widthFix"></image>
-							<image class="_item" src="/static/image/payments/mastercard.png" mode="widthFix"></image>
-							<image class="_item" src="/static/image/payments/visa.png" mode="widthFix"></image>
-						</view>
-						<view class="cell_box _default">
-							<view class="sevae_btn_wrap _no_fixed">
-								<view class="sevae_btn buy_btn">
-									<u-button type="secondary" @click="openType">{{$t('Qiaozhi.BuyCrypto')}}</u-button>
 								</view>
+							</u-cell-item>
+							<u-cell-item :border-bottom="false" :title-style="titleStype" hover-class="cell-hover-class"
+								index="9" @click="openType" :arrow="false">
+								<u-icon slot="icon" size="28" name="/static/image/menuIcon/m9.png"></u-icon>
+								<template slot="title">
+									<span class="slug">{{$t('Qiaozhi.VIP')}}</span>{{$t('Qiaozhi.Club')}}
+								</template>
+							</u-cell-item>
+						</u-cell-group>
+
+						<u-cell-group :border="false">
+							<u-cell-item :title="$t('sidebar.title11')" :border-bottom="false" :title-style="titleStype"
+								hover-class="cell-hover-class" index="11" @click="openType" :arrow="false">
+								<u-icon slot="icon" size="28" name="/static/image/menuIcon/m11.png"></u-icon>
+							</u-cell-item>
+						</u-cell-group>
+					</view>
+					<view class="payment_methods _line"></view>
+					<view class="payment_methods" @click="openType">
+						<image class="_item" src="/static/image/payments/gpay.png" mode="widthFix"></image>
+						<image class="_item" src="/static/image/payments/applepay.png" mode="widthFix"></image>
+						<image class="_item" src="/static/image/payments/mastercard.png" mode="widthFix"></image>
+						<image class="_item" src="/static/image/payments/visa.png" mode="widthFix"></image>
+					</view>
+					<view class="cell_box _default">
+						<view class="sevae_btn_wrap _no_fixed">
+							<view class="sevae_btn buy_btn">
+								<u-button type="secondary" @click="openType">{{$t('Qiaozhi.BuyCrypto')}}</u-button>
 							</view>
 						</view>
-						<view class="cell_box_wrapper">
-							<view class="cell_box_title _no-item">{{$t('Qiaozhi.App')}}</view>
-							<view class="_apps">
-								<view class="_apps _item">
-									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-										fill="none">
-										<g opacity="0.7">
-											<g clip-path="url(#clip0_1_6367)">
-												<mask id="mask0_1_6367" style="mask-type:luminance"
-													maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
-													<path d="M0 0H14V14H0V0Z" fill="white" />
-												</mask>
-												<g mask="url(#mask0_1_6367)">
-													<path d="M8.89577 2.02413C9.14079 1.74356 9.32735 1.41691 9.44454 1.06333C9.56174 0.709749 9.6072 0.336338 9.57827 -0.0350342C8.83276 0.0317759 8.14146 0.382646 7.64744 0.944966C7.41108 1.21698 7.23194 1.53382 7.12069 1.87658C7.00945 2.21934 6.96838 2.58099 6.99994 2.93997C7.36561 2.94657 7.72771 2.86712 8.05703 2.70804C8.38634 2.54895 8.67365 2.31468 8.89577 2.02413ZM10.5233 6.82497C10.5271 6.33062 10.6565 5.84535 10.8994 5.41475C11.1422 4.98414 11.4905 4.62233 11.9116 4.3633C11.6435 3.98296 11.2916 3.66939 10.8829 3.44686C10.4742 3.22432 10.0199 3.09879 9.55494 3.07997C8.54577 2.97497 7.61827 3.6633 7.08161 3.6633C6.55077 3.6633 5.79827 3.09163 4.95827 3.1033C4.4092 3.11897 3.87376 3.27795 3.40511 3.56447C2.93645 3.85098 2.55086 4.25507 2.28661 4.73663C1.14911 6.7083 1.99494 9.63663 3.13244 11.235C3.64577 12.0166 4.29327 12.8975 5.14494 12.8683C5.99661 12.8391 6.27077 12.3375 7.25661 12.3375C8.24244 12.3375 8.54577 12.8625 9.38577 12.845C10.2258 12.8275 10.8149 12.0458 11.3574 11.27C11.7442 10.7008 12.045 10.0777 12.2499 9.4208C11.7408 9.20132 11.3065 8.83851 11 8.37658C10.6934 7.91464 10.5278 7.37352 10.5233 6.81913" fill="white" />
-												</g>
+					</view>
+					<view class="cell_box_wrapper">
+						<view class="cell_box_title _no-item">{{$t('Qiaozhi.App')}}</view>
+						<view class="_apps">
+							<view class="_apps _item">
+								<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+									fill="none">
+									<g opacity="0.7">
+										<g clip-path="url(#clip0_1_6367)">
+											<mask id="mask0_1_6367" style="mask-type:luminance"
+												maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+												<path d="M0 0H14V14H0V0Z" fill="white" />
+											</mask>
+											<g mask="url(#mask0_1_6367)">
+												<path
+													d="M8.89577 2.02413C9.14079 1.74356 9.32735 1.41691 9.44454 1.06333C9.56174 0.709749 9.6072 0.336338 9.57827 -0.0350342C8.83276 0.0317759 8.14146 0.382646 7.64744 0.944966C7.41108 1.21698 7.23194 1.53382 7.12069 1.87658C7.00945 2.21934 6.96838 2.58099 6.99994 2.93997C7.36561 2.94657 7.72771 2.86712 8.05703 2.70804C8.38634 2.54895 8.67365 2.31468 8.89577 2.02413ZM10.5233 6.82497C10.5271 6.33062 10.6565 5.84535 10.8994 5.41475C11.1422 4.98414 11.4905 4.62233 11.9116 4.3633C11.6435 3.98296 11.2916 3.66939 10.8829 3.44686C10.4742 3.22432 10.0199 3.09879 9.55494 3.07997C8.54577 2.97497 7.61827 3.6633 7.08161 3.6633C6.55077 3.6633 5.79827 3.09163 4.95827 3.1033C4.4092 3.11897 3.87376 3.27795 3.40511 3.56447C2.93645 3.85098 2.55086 4.25507 2.28661 4.73663C1.14911 6.7083 1.99494 9.63663 3.13244 11.235C3.64577 12.0166 4.29327 12.8975 5.14494 12.8683C5.99661 12.8391 6.27077 12.3375 7.25661 12.3375C8.24244 12.3375 8.54577 12.8625 9.38577 12.845C10.2258 12.8275 10.8149 12.0458 11.3574 11.27C11.7442 10.7008 12.045 10.0777 12.2499 9.4208C11.7408 9.20132 11.3065 8.83851 11 8.37658C10.6934 7.91464 10.5278 7.37352 10.5233 6.81913"
+													fill="white" />
 											</g>
 										</g>
-										<defs>
-											<clipPath id="clip0_1_6367">
-												<rect width="14" height="14" fill="white" />
-											</clipPath>
-										</defs>
-									</svg>
-								</view>
-								<view class="_apps _item">
-									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-										fill="none">
-										<g opacity="0.7">
-											<path fill-rule="evenodd" clip-rule="evenodd"
-												d="M8.59258 2.99831C8.54077 2.99986 8.48917 2.99109 8.44078 2.97251C8.39239 2.95393 8.34818 2.92591 8.31072 2.89008C8.27326 2.85425 8.24331 2.81133 8.2226 2.76381C8.20188 2.7163 8.19083 2.66514 8.19008 2.61331C8.19008 2.39747 8.37091 2.22831 8.59258 2.22831C8.81425 2.22831 8.98925 2.40331 8.98925 2.61331C8.98849 2.66463 8.97762 2.71531 8.95728 2.76244C8.93693 2.80956 8.9075 2.85222 8.87066 2.88797C8.83383 2.92372 8.79031 2.95187 8.7426 2.9708C8.69488 2.98973 8.64391 2.99908 8.59258 2.99831ZM5.40758 2.99831C5.35626 2.99908 5.30528 2.98973 5.25757 2.9708C5.20985 2.95187 5.16633 2.92372 5.1295 2.88797C5.09266 2.85222 5.06323 2.80956 5.04289 2.76244C5.02254 2.71531 5.01168 2.66463 5.01091 2.61331C5.01091 2.39747 5.18591 2.22831 5.40758 2.22831C5.62925 2.22831 5.81008 2.40331 5.81008 2.61331C5.80933 2.66514 5.79828 2.7163 5.77757 2.76381C5.75686 2.81133 5.7269 2.85425 5.68944 2.89008C5.65198 2.92591 5.60777 2.95393 5.55938 2.97251C5.51099 2.99109 5.45939 2.99986 5.40758 2.99831ZM8.82591 1.45247L8.97175 1.23081L9.12341 1.01497L9.45008 0.536641C9.46665 0.515948 9.47568 0.490231 9.47568 0.463724C9.47568 0.437217 9.46665 0.4115 9.45008 0.390807L9.41508 0.349974C9.38617 0.331629 9.35133 0.325034 9.31771 0.331541C9.28409 0.338048 9.25423 0.357164 9.23425 0.384974L8.72675 1.11997L8.57508 1.34164C8.07046 1.15636 7.53763 1.05966 7.00008 1.05581C6.46254 1.05966 5.9297 1.15636 5.42508 1.34164L5.27341 1.11997L5.12175 0.904141L4.77175 0.384974C4.75944 0.366928 4.74291 0.352161 4.72359 0.341955C4.70428 0.33175 4.68276 0.326416 4.66091 0.326416C4.63907 0.326416 4.61755 0.33175 4.59824 0.341955C4.57892 0.352161 4.56239 0.366928 4.55008 0.384974C4.53494 0.405169 4.52675 0.429731 4.52675 0.454974C4.52675 0.480217 4.53494 0.504779 4.55008 0.524974L4.87675 1.00914L5.02841 1.22497L5.17425 1.44081C4.04841 1.95414 3.29008 2.92247 3.29008 4.02497H10.7101C10.7101 2.91664 9.95175 1.95414 8.82591 1.44081M3.34258 4.53247H3.28425V10.2141C3.28425 10.6633 3.66341 11.0308 4.13008 11.0308H4.73675C4.71341 11.1008 4.70175 11.1728 4.70175 11.2466V12.88C4.70175 13.3058 5.05758 13.6558 5.50091 13.6558C5.93841 13.6558 6.29425 13.3058 6.29425 12.88V11.2466C6.29629 11.1731 6.28441 11.0999 6.25925 11.0308H7.74091C7.71758 11.1008 7.70591 11.1728 7.70591 11.2466V12.88C7.70591 13.3058 8.06175 13.6558 8.50508 13.6558C8.94258 13.6558 9.29841 13.3058 9.29841 12.88V11.2466C9.29841 11.1689 9.28675 11.0969 9.26341 11.0308H9.87008C10.3367 11.0308 10.7101 10.6633 10.7101 10.2141V4.54997L3.34258 4.53247ZM1.96008 4.53247C1.52258 4.54997 1.16675 4.89997 1.16675 5.32581V8.63914C1.16675 9.06497 1.52258 9.41497 1.96008 9.41497C2.39758 9.41497 2.75925 9.06497 2.75925 8.63914V5.31997C2.75925 4.89414 2.40341 4.54997 1.96008 4.54997M12.0401 4.54997C11.5967 4.54997 11.2409 4.89997 11.2409 5.32581V8.63914C11.2409 9.06497 11.5967 9.41497 12.0401 9.41497C12.4776 9.41497 12.8334 9.06497 12.8334 8.63914V5.31997C12.8334 4.89414 12.4776 4.54997 12.0401 4.54997Z"
-												fill="#A4C639" />
-										</g>
-									</svg>
-								</view>
-								<view class="_apps _item">
-									<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<g opacity="0.7">
-											<path
-												d="M12.2501 1.71497L6.57423 2.54913V6.77247L12.2501 6.7258V1.71497ZM1.70923 7.22747V10.8208L6.01423 11.4158V7.25663L1.70923 7.22747ZM6.52756 7.2858L6.53339 11.48L12.2501 12.285V7.29747L6.52756 7.2858ZM1.70923 3.2083V6.80163L6.01423 6.7783V2.62497L1.70923 3.2083Z"
-												fill="#0078D6" />
-										</g>
-									</svg>
-								</view>
+									</g>
+									<defs>
+										<clipPath id="clip0_1_6367">
+											<rect width="14" height="14" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</view>
+							<view class="_apps _item">
+								<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+									fill="none">
+									<g opacity="0.7">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M8.59258 2.99831C8.54077 2.99986 8.48917 2.99109 8.44078 2.97251C8.39239 2.95393 8.34818 2.92591 8.31072 2.89008C8.27326 2.85425 8.24331 2.81133 8.2226 2.76381C8.20188 2.7163 8.19083 2.66514 8.19008 2.61331C8.19008 2.39747 8.37091 2.22831 8.59258 2.22831C8.81425 2.22831 8.98925 2.40331 8.98925 2.61331C8.98849 2.66463 8.97762 2.71531 8.95728 2.76244C8.93693 2.80956 8.9075 2.85222 8.87066 2.88797C8.83383 2.92372 8.79031 2.95187 8.7426 2.9708C8.69488 2.98973 8.64391 2.99908 8.59258 2.99831ZM5.40758 2.99831C5.35626 2.99908 5.30528 2.98973 5.25757 2.9708C5.20985 2.95187 5.16633 2.92372 5.1295 2.88797C5.09266 2.85222 5.06323 2.80956 5.04289 2.76244C5.02254 2.71531 5.01168 2.66463 5.01091 2.61331C5.01091 2.39747 5.18591 2.22831 5.40758 2.22831C5.62925 2.22831 5.81008 2.40331 5.81008 2.61331C5.80933 2.66514 5.79828 2.7163 5.77757 2.76381C5.75686 2.81133 5.7269 2.85425 5.68944 2.89008C5.65198 2.92591 5.60777 2.95393 5.55938 2.97251C5.51099 2.99109 5.45939 2.99986 5.40758 2.99831ZM8.82591 1.45247L8.97175 1.23081L9.12341 1.01497L9.45008 0.536641C9.46665 0.515948 9.47568 0.490231 9.47568 0.463724C9.47568 0.437217 9.46665 0.4115 9.45008 0.390807L9.41508 0.349974C9.38617 0.331629 9.35133 0.325034 9.31771 0.331541C9.28409 0.338048 9.25423 0.357164 9.23425 0.384974L8.72675 1.11997L8.57508 1.34164C8.07046 1.15636 7.53763 1.05966 7.00008 1.05581C6.46254 1.05966 5.9297 1.15636 5.42508 1.34164L5.27341 1.11997L5.12175 0.904141L4.77175 0.384974C4.75944 0.366928 4.74291 0.352161 4.72359 0.341955C4.70428 0.33175 4.68276 0.326416 4.66091 0.326416C4.63907 0.326416 4.61755 0.33175 4.59824 0.341955C4.57892 0.352161 4.56239 0.366928 4.55008 0.384974C4.53494 0.405169 4.52675 0.429731 4.52675 0.454974C4.52675 0.480217 4.53494 0.504779 4.55008 0.524974L4.87675 1.00914L5.02841 1.22497L5.17425 1.44081C4.04841 1.95414 3.29008 2.92247 3.29008 4.02497H10.7101C10.7101 2.91664 9.95175 1.95414 8.82591 1.44081M3.34258 4.53247H3.28425V10.2141C3.28425 10.6633 3.66341 11.0308 4.13008 11.0308H4.73675C4.71341 11.1008 4.70175 11.1728 4.70175 11.2466V12.88C4.70175 13.3058 5.05758 13.6558 5.50091 13.6558C5.93841 13.6558 6.29425 13.3058 6.29425 12.88V11.2466C6.29629 11.1731 6.28441 11.0999 6.25925 11.0308H7.74091C7.71758 11.1008 7.70591 11.1728 7.70591 11.2466V12.88C7.70591 13.3058 8.06175 13.6558 8.50508 13.6558C8.94258 13.6558 9.29841 13.3058 9.29841 12.88V11.2466C9.29841 11.1689 9.28675 11.0969 9.26341 11.0308H9.87008C10.3367 11.0308 10.7101 10.6633 10.7101 10.2141V4.54997L3.34258 4.53247ZM1.96008 4.53247C1.52258 4.54997 1.16675 4.89997 1.16675 5.32581V8.63914C1.16675 9.06497 1.52258 9.41497 1.96008 9.41497C2.39758 9.41497 2.75925 9.06497 2.75925 8.63914V5.31997C2.75925 4.89414 2.40341 4.54997 1.96008 4.54997M12.0401 4.54997C11.5967 4.54997 11.2409 4.89997 11.2409 5.32581V8.63914C11.2409 9.06497 11.5967 9.41497 12.0401 9.41497C12.4776 9.41497 12.8334 9.06497 12.8334 8.63914V5.31997C12.8334 4.89414 12.4776 4.54997 12.0401 4.54997Z"
+											fill="#A4C639" />
+									</g>
+								</svg>
+							</view>
+							<view class="_apps _item">
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g opacity="0.7">
+										<path
+											d="M12.2501 1.71497L6.57423 2.54913V6.77247L12.2501 6.7258V1.71497ZM1.70923 7.22747V10.8208L6.01423 11.4158V7.25663L1.70923 7.22747ZM6.52756 7.2858L6.53339 11.48L12.2501 12.285V7.29747L6.52756 7.2858ZM1.70923 3.2083V6.80163L6.01423 6.7783V2.62497L1.70923 3.2083Z"
+											fill="#0078D6" />
+									</g>
+								</svg>
 							</view>
 						</view>
-						<view class="cell_box _default">
-							<view class="sevae_btn_wrap _no_fixed">
-								<view class="sevae_btn">
-									<u-button type="secondary" @click="getUrl()"><u-icon name="server-fill" color="#ffffff" size="34"></u-icon>{{$t('LiveSupport')}}</u-button>
-								</view>
+					</view>
+					<view class="cell_box _default">
+						<view class="sevae_btn_wrap _no_fixed">
+							<view class="sevae_btn">
+								<u-button type="secondary" @click="getUrl()"><u-icon name="server-fill" color="#ffffff"
+										size="34"></u-icon>{{$t('LiveSupport')}}</u-button>
 							</view>
 						</view>
+					</view>
 				</view>
 			</u-popup>
 		</match-media>
@@ -209,8 +220,7 @@
 			<view class="u-tabbar__content__item" v-for="(item, index) in list" :key="index"
 				:class="{ 'u-tabbar__content__circle': midButton && item.midButton,'dise': index == 2 }"
 				@tap.stop="clickHandler(index)"><!-- :style="{ backgroundColor: bgColor }"-->
-				<view v-if="index != 2" class="u-tabbar__content__item__topBian"
-					:style="{background: BianelColor(index)}"></view>
+				<view v-if="index != 2" class="u-tabbar__content__item__topBian" :style="{background: BianelColor(index)}"></view>
 				<!--<view class="u-tabbar__content__item__bottomBian" :style="{boxShadow: BianelBottomColor(index)}"></view>-->
 				<view
 					:class="[midButton && item.midButton ? 'u-tabbar__content__circle__button' : 'u-tabbar__content__item__button']">
@@ -237,7 +247,13 @@
 </template>
 
 <script>
+import ContestMobile from "@/components/ContestsMobile/ContestMobile.vue";
+import ChatMobile from "@/components/ChatMobile/ChatMobile.vue";
 	export default {
+		components: {
+			ContestMobile,
+			ChatMobile,
+		    },
 		props: {
 			// 显示与否
 			show: {
@@ -325,23 +341,23 @@
 					return [{
 						//pagePath: "/pages/Account/Account",
                         iconPath: "/static/tabbar/qiaozhi/browse.png",
-                        selectedIconPath: "/static/tabbar/qiaozhi/browse.png",
+                        selectedIconPath: "/static/tabbar/qiaozhi/browse-white.png",
                         text: this.$t('Qiaozhi.Browse'),
 					}, {
-						pagePath: "/pages/searchFor/searchFor",
+						//pagePath: "/pages/searchFor/searchFor",
 						iconPath: "/static/tabbar/qiaozhi/contests.png",
-						selectedIconPath: "/static/tabbar/qiaozhi/contests.png",
+						selectedIconPath: "/static/tabbar/qiaozhi/contests-white.png",
 						text: this.$t('Qiaozhi.Contests')
 					},					{
-						pagePath: "/pages/searchFor/searchFor",
+						//pagePath: "/pages/searchFor/searchFor",
 						iconPath: "/static/tabbar/qiaozhi/chat.png",
-						selectedIconPath: "/static/tabbar/qiaozhi/chat.png",
-						text: this.$t('Qiaozhi.Chat')
+						selectedIconPath: "/static/tabbar/qiaozhi/chat-white.png",
+						text: this.$t('Qiaozhi.Chat'),
 					},
 					{
 						pagePath: "/pages/index/index",
 						iconPath: "/static/tabbar/qiaozhi/casino.png",
-						selectedIconPath: "/static/tabbar/qiaozhi/casino.png",
+						selectedIconPath: "/static/tabbar/qiaozhi/casino-white.png",
 						text: this.$t('Qiaozhi.Casino')
 					},]
 				}
@@ -383,6 +399,11 @@
 				},
 				isStatusBarHeight: '',
 				statusBarHeight: false,
+				QiaozhiPopUp: false,
+				activeIndex: false,
+				QiaozhiComponent: null,
+				Component1: "ContestMobile",
+				Component2: "ChatMobile",
 			}
 		},
 		created() {
@@ -392,8 +413,6 @@
 			let pages = getCurrentPages();
 			// 页面栈中的最后一个即为项为当前页面，route属性为页面路径
 			this.pageUrl = pages[pages.length - 1].route;
-			
-				
 			if(this.pageUrl == 'pages/Wallet/Wallet'){
 				this.Dangidx = 2
 				////console.log('广告',this.Dangidx)
@@ -540,33 +559,102 @@
 				//导出动画
 				this.animationData = this.animation.export()
 			},
-			// Qiaozhi Propagate Animation Only On First Item
+			// Qiaozhi Propagate Menu Animation
 			startAnimation(index) {
 				if (index === 0) {
-				this.JianCeZhuti()
-				//旋转角度 
-				let rota = 180;
-				//判断是否展开
-				if (this.MenuShow) {
-					rota = 0;
-					//标记未展开
-					this.MenuShow = false;
-				} else {
-					this.MenuShow = true
+					this.JianCeZhuti();
+					//旋转角度
+					let rota = 180;
+					//判断是否展开
+					if (this.MenuShow) {
+					  rota = 0;
+					  //标记未展开
+					  this.MenuShow = false;
+					} else {
+					  this.MenuShow = true;
+					}
+					//创建动画
+					this.animation = uni.createAnimation({
+					  duration: 400
+					});
+					//设置旋转角度
+					this.animation.rotate(rota).step();
+					//导出动画
+					this.animationData = this.animation.export();
 				}
-				
-				//创建动画
-				this.animation = uni.createAnimation({
-					duration: 400
-				});
-				//设置旋转角度 
-				this.animation.rotate(rota).step()
-				//导出动画
-				this.animationData = this.animation.export()
-                }
 			},
-			// Qiaozhi Mobile Menu Routing
-			openType(index) {
+				// Qiaozhi: Handle Popups
+				QiaozhiHandleClick(index) {
+				if (this.activeIndex === index) {
+                if (index === 0) {
+                this.startAnimation(index);
+                } else if (index !== 3 && !this.QiaozhiPopUp) {
+                 this.QiaozhiPopUpShow();
+                }
+                return;
+                }
+
+				// Qiaozhi Load Components Dinamically
+				if (index === 1) {
+                  this.Component = 'ContestMobile';
+                  this.QiaozhiComponent = this.Component1;
+                } else if (index === 2) {
+                  this.Component = 'ChatMobile';
+                  this.QiaozhiComponent = this.Component2;
+                 }
+                console.log('Popup Component:', this.Component);
+
+				this.activeIndex = index; 
+
+				// Switch Tabs
+				if (this.MenuShow) {
+				  this.PopUpclose();
+				  this.MenuShow = false;
+				  console.log('Qiaozhi Mobile Menu Close');
+				}
+
+				// Close Popup While Switching
+				this.QiaozhiPopUpclose();
+
+				// Perform Actions Based On Item
+				if (index === 0) {
+				    this.startAnimation(index);
+				} else if (index === 1 || index === 2) {
+				    this.QiaozhiPopUpShow();
+				}	
+				},
+
+                // Show Popup Window
+				QiaozhiPopUpShow() {
+				  this.QiaozhiPopUp = true;
+				  console.log('Qiaozhi Popup Show');
+				},
+
+                // Close Popup Window
+				QiaozhiPopUpclose() {
+				  this.QiaozhiPopUp = false;
+				  console.log('Qiaozhi Popup Close');
+				},
+
+				// Qiaozhi Active Tab Icon
+				IconPath(index) {
+                 if (this.activeIndex === index) {
+                 return this.list[index].selectedIconPath;
+                 } else {
+                  return this.list[index].iconPath;
+                  }
+                 },
+                // Qiaozhi Active Tab Color
+			   QiaozhiGetTextColor(index) {
+				if (this.activeIndex === index) {
+                return this.activeColor;
+                } else {
+                 return this.inactiveColor;
+                 }
+                },
+
+			  // Qiaozhi Mobile Menu Routing
+			  openType(index) {
 				let that = this
 				this.MenuShow = false
 				if(index == 99){
@@ -588,7 +676,6 @@
 				 		url: '/pages/VipClubsNew/VipClubsNew'
 				 	})
 				 } else if (index == 13) {
-					
 					//先复制渠道id安装后获取粘贴板
 					let Codeid = 'pid' +  uni.getStorageSync('channel_id');
 					uni.setClipboardData({
@@ -596,7 +683,6 @@
 						showToast: false,
 						success: function() {}
 					});
-					
 					if(that.is_deviceType == 0){
 						//打开URL安装ios描述文件
 						let url = uni.getStorageSync('ipaUrl');
@@ -606,7 +692,6 @@
 						let url = uni.getStorageSync('apkUrl');
 						window.open(url,'_self');
 					}
-					
 				} else if (index == 11) {
 					this.$refs.Language.openPopup()
 				} else if (index == 10) {
@@ -668,7 +753,7 @@
 				uni.navigateTo({
 					url: '/pages/searchFor/searchFor'
 				})
-			},
+			}
 		}
 	}
 </script>
@@ -838,5 +923,26 @@
 	// Qiaozhi Modification
 	.menu_wrap {
 	 padding: 75px 15px 15px 15px;
+	}
+	// Uni Popup Close
+	.q-tabbar-view {
+	/deep/ .u-close {
+    position: absolute;
+    &.u-close--top-right {
+	top: 85px !important;
+    right: 1.5rem;
+    position: fixed;
+    height: 1rem;
+    width: 1rem;
+    z-index: 110;
+    color: #B1BAD3;
+    border-radius: 50%;
+    font: normal normal normal 14px / 1 "uicon-iconfont";
+    font-size: 0.75rem;
+	&::before {
+	content: "\e685";
+	}
+   }
+  } 
 	}
 </style>

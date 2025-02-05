@@ -304,6 +304,7 @@ uni-main {
 		}
 
 		& .u-tabbar__content__item__topBian {
+		   display: none;
            bottom: 0;
 		   top: auto;
 		   background: linear-gradient(to right,rgba(237, 29, 73, 0) 0%,rgba(237, 29, 73, 1) 48%,rgba(237, 29, 73, 0) 100%);
@@ -320,6 +321,11 @@ uni-main {
 			filter: blur(9.5px);
 			transform: translateX(-50%);
 			pointer-events: none;
+		   }
+		   &.active {
+			display: block !important;
+			background-color: transparent !important;
+			background: linear-gradient(to right,rgba(237, 29, 73, 0) 0%,rgba(237, 29, 73, 1) 48%,rgba(237, 29, 73, 0) 100%) !important;
 		   }
 		}
 	}

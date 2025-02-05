@@ -6,6 +6,7 @@ uni-top-window {
 		& .logo_and_right {
 		  padding: 0 1.5rem;
 		  border-bottom: 1px solid $border-color;
+		  box-shadow: 0px 4px 26px rgba(13, 19, 28, 0.4);
 		  height: 64px;
 		  & .left_logo .logo {
 			width: 6.5rem;
@@ -282,6 +283,7 @@ uni-top-window {
 		border-bottom: 1px solid $border-color;
 		height: 64px;
 		justify-content: space-between;
+		box-shadow: 0px 4px 26px rgba(13, 19, 28, 0.4);
 		& .left_logo {
 			justify-content: start;
 		  .logo {

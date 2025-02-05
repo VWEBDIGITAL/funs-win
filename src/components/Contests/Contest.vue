@@ -50,8 +50,8 @@
               <view class="col">{{ board.game }}</view>
             </uni-col>
             <uni-col class="payout" :xs="12" :sm="12" :md="12" :lg="12">
-              <view class="col">{{ board.payout }}</view>
-              <u-icon class="icon-currency" :name="board.iconCurrency" img-mode="scaleToFill"></u-icon>
+            <view class="col" :class="{ negative: parseFloat(board.payout) < 0 }">{{ board.payout }}</view>
+            <u-icon class="icon-currency" :name="board.iconCurrency" img-mode="scaleToFill"></u-icon>
             </uni-col>
           </view>
         </uni-row>
@@ -119,15 +119,31 @@ export default {
       this.currentTab = index;
     },
     generateNewRecord() {
+      const gameNames = ["Big Bass Xmas Xt…", "Dragon King Hot…", "Stake American B…", "Donny Dough", "Dice", "Starlight Christmas", "Video Poker"];
+      const gameIcons = [
+        "/static/image/contest-games/game21.png",
+        "/static/image/contest-games/seven.png",
+        "/static/image/contest-games/poker.png",
+        "/static/image/contest-games/dice.png"
+      ];
+      const currencyIcons = [
+        "/static/image/contest-games/stake.png",
+        "/static/image/contest-games/gold.png"
+      ];
+
+      const payoutValue = (Math.random() * 10000000).toFixed(2);
+      const payout = Math.random() < 0.5 ? `-${payoutValue}` : payoutValue;
+
       const newRecord = {
-        game: `Game-${Math.random().toString(36).substr(2, 5)}`,
-        payout: (Math.random() * 10000000).toFixed(2),
-        icon: "/static/image/contest-games/game21.png",
-        iconCurrency: "/static/image/contest-games/stake.png"
+        game: gameNames[Math.floor(Math.random() * gameNames.length)],
+        payout,
+        icon: gameIcons[Math.floor(Math.random() * gameIcons.length)],
+        iconCurrency: currencyIcons[Math.floor(Math.random() * currencyIcons.length)]
       };
+
       this.tabs[this.currentTab].boards.push(newRecord);
 
-      // 10 Items
+      // Keep 10 Items
       if (this.tabs[this.currentTab].boards.length > 10) {
         this.tabs[this.currentTab].boards.shift();
       }
